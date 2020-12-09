@@ -10,10 +10,9 @@
 
 #include "CFiles\Include.h"
 
-
 #pragma region Variables/Parameters
-//
-double temperature = 0.0; 
+
+double temperature = 0.0;           //Temperature retrived from the temp sensor 
 #pragma endregion Variables/Parameters
 
 #pragma region Functions
@@ -88,9 +87,5 @@ void full_setup()
     Init_Display();
     clear();
 }
-
-
-
-
 
 

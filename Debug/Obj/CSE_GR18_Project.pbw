@@ -116567,7 +116567,7 @@
     "display": "temperature",
     "location": {
       "column": "8",
-      "line": "16",
+      "line": "15",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "temperature",
@@ -116581,7 +116581,7 @@
     "display": "void full_setup(void)",
     "location": {
       "column": "6",
-      "line": "20",
+      "line": "19",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "full_setup",
@@ -116595,7 +116595,7 @@
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "24",
+      "line": "23",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "main",
@@ -116603,13 +116603,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@579@F@main@str_message1",
+    "ID": "c:main.c@629@F@main@str_message1",
     "What": "Variable",
     "defdec": "Def",
     "display": "str_message1",
     "location": {
       "column": "18",
-      "line": "38",
+      "line": "37",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "str_message1",
@@ -116617,13 +116617,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@625@F@main@temp_message1",
+    "ID": "c:main.c@675@F@main@temp_message1",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp_message1",
     "location": {
       "column": "18",
-      "line": "39",
+      "line": "38",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "temp_message1",
@@ -116631,13 +116631,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@662@F@main@result1",
+    "ID": "c:main.c@712@F@main@result1",
     "What": "Variable",
     "defdec": "Def",
     "display": "result1",
     "location": {
       "column": "18",
-      "line": "40",
+      "line": "39",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "result1",
@@ -116645,13 +116645,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@842@F@main@temp1",
+    "ID": "c:main.c@892@F@main@temp1",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp1",
     "location": {
       "column": "35",
-      "line": "44",
+      "line": "43",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "temp1",
@@ -116659,13 +116659,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1011@F@main@str_message2",
+    "ID": "c:main.c@1061@F@main@str_message2",
     "What": "Variable",
     "defdec": "Def",
     "display": "str_message2",
     "location": {
       "column": "18",
-      "line": "50",
+      "line": "49",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "str_message2",
@@ -116673,13 +116673,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1063@F@main@temp_message2",
+    "ID": "c:main.c@1113@F@main@temp_message2",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp_message2",
     "location": {
       "column": "18",
-      "line": "51",
+      "line": "50",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "temp_message2",
@@ -116687,13 +116687,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1100@F@main@result2",
+    "ID": "c:main.c@1150@F@main@result2",
     "What": "Variable",
     "defdec": "Def",
     "display": "result2",
     "location": {
       "column": "18",
-      "line": "52",
+      "line": "51",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "result2",
@@ -116701,13 +116701,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1285@F@main@sensor1",
+    "ID": "c:main.c@1335@F@main@sensor1",
     "What": "Variable",
     "defdec": "Def",
     "display": "sensor1",
     "location": {
       "column": "35",
-      "line": "56",
+      "line": "55",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "sensor1",
@@ -116715,13 +116715,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1409@F@main@str_message3",
+    "ID": "c:main.c@1459@F@main@str_message3",
     "What": "Variable",
     "defdec": "Def",
     "display": "str_message3",
     "location": {
       "column": "18",
-      "line": "59",
+      "line": "58",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "str_message3",
@@ -116729,13 +116729,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1461@F@main@temp_message3",
+    "ID": "c:main.c@1511@F@main@temp_message3",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp_message3",
     "location": {
       "column": "18",
-      "line": "60",
+      "line": "59",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "temp_message3",
@@ -116743,13 +116743,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1498@F@main@result3",
+    "ID": "c:main.c@1548@F@main@result3",
     "What": "Variable",
     "defdec": "Def",
     "display": "result3",
     "location": {
       "column": "18",
-      "line": "61",
+      "line": "60",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "result3",
@@ -116757,13 +116757,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1683@F@main@sensor2",
+    "ID": "c:main.c@1733@F@main@sensor2",
     "What": "Variable",
     "defdec": "Def",
     "display": "sensor2",
     "location": {
       "column": "35",
-      "line": "65",
+      "line": "64",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "sensor2",
@@ -116771,13 +116771,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1812@F@main@serv",
+    "ID": "c:main.c@1862@F@main@serv",
     "What": "Variable",
     "defdec": "Def",
     "display": "serv",
     "location": {
       "column": "13",
-      "line": "68",
+      "line": "67",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "serv",
@@ -116791,7 +116791,7 @@
     "display": "void full_setup(void)",
     "location": {
       "column": "6",
-      "line": "73",
+      "line": "72",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "full_setup",
