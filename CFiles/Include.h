@@ -3,6 +3,7 @@
 
 #include "system_sam3x.h"
 #include "at91sam3x8.h"
+#include <stdlib.h>
 #include "Structs.c"
 #include "ArduinoBaseInclude.c"
 #include "CommonFunctions.c"
@@ -13,6 +14,5 @@
 #include "LightSensor.c"
 
 
-#include <stdlib.h>
 
 #endif

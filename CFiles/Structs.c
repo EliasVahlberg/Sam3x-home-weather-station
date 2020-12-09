@@ -9,16 +9,17 @@
 */
 
 
-struct screen_cordinate
+typedef struct screen_cordinate
 {
     int pos;
     int screen_half_val;
-};
+}screen_cord;
 
-struct  screen_element{
-    struct screen_cordinate screen_cord; int l;
+typedef struct  screen_element{
+    struct screen_cordinate screen_cord; 
+    int l;
     char* text;
-};
+}screen_element;
 
 typedef struct date{
     int year;

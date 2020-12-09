@@ -27,23 +27,29 @@ void main(void)
     day_temp_data   dtd;
     date            tdate;
     time_hm         thm;
-    tdate.day   =   01;
-    tdate.month =   01;
-    tdate.year  =   21;
+    time_hm         thm2;
+    tdate.day   =   99;
+    tdate.month =   88;
+    tdate.year  =   77;
+
     thm.hour    =   18;
     thm.minute  =   1;
+
+    thm2.hour    =   19;
+    thm2.minute  =   2;
+
     dtd.day     =   tdate;
     dtd.min     =   22.11111;
     dtd.tmin    =   thm;
 
-    thm.hour    =   23;
-
     dtd.avg     =   28.11111;
-    dtd.tmax    =   thm;
+    dtd.tmax    =   thm2;
     dtd.max     =   38.11111;
     dtd.vari    =   12.11;
     char* str_data = day_temp_data_to_string(dtd);
-    
+    int l = DAY_TEMP_DATA_LENGTH;
+    screen_element sel1 = create_screen_element(10,0,l,str_data);
+    display_write(sel1);
 
   while(1)
   {
@@ -90,6 +96,7 @@ void main(void)
         servo_set_position(serv);
         servo_position = ((double) servo_get_position()/43.7);
   }
+  
 }
 void full_setup()
 {

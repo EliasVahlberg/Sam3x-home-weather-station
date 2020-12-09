@@ -19,12 +19,43 @@
         <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
     </SWOTraceHWSettings>
     <DebugChecksum>
-        <Checksum>1657595002</Checksum>
+        <Checksum>3309376498</Checksum>
     </DebugChecksum>
     <Trace1>
         <Enabled>0</Enabled>
         <ShowSource>1</ShowSource>
     </Trace1>
+    <Stack>
+        <FillEnabled>0</FillEnabled>
+        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
+        <WarningThreshold>90</WarningThreshold>
+        <SpWarningsEnabled>1</SpWarningsEnabled>
+        <WarnLogOnly>1</WarnLogOnly>
+        <UseTrigger>1</UseTrigger>
+        <TriggerName>main</TriggerName>
+        <LimitSize>0</LimitSize>
+        <ByteLimit>50</ByteLimit>
+    </Stack>
+    <CodeCoverage>
+        <Enabled>0</Enabled>
+        <ShowSource>0</ShowSource>
+        <HideCovered>0</HideCovered>
+    </CodeCoverage>
+    <Disassembly>
+        <InstrCount>0</InstrCount>
+        <MixedMode>1</MixedMode>
+    </Disassembly>
+    <Exceptions>
+        <StopOnUncaught>_ 0</StopOnUncaught>
+        <StopOnThrow>_ 0</StopOnThrow>
+    </Exceptions>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
+    <JLinkDriver>
+        <CStepIntDis>_ 0</CStepIntDis>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+    </JLinkDriver>
     <Trace2>
         <Enabled>0</Enabled>
         <ShowSource>0</ShowSource>
@@ -70,36 +101,12 @@
         <ShowTimeSum>1</ShowTimeSum>
         <SumSortOrder>0</SumSortOrder>
     </EventLog>
-    <Stack>
-        <FillEnabled>0</FillEnabled>
-        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
-        <WarningThreshold>90</WarningThreshold>
-        <SpWarningsEnabled>1</SpWarningsEnabled>
-        <WarnLogOnly>1</WarnLogOnly>
-        <UseTrigger>1</UseTrigger>
-        <TriggerName>main</TriggerName>
-        <LimitSize>0</LimitSize>
-        <ByteLimit>50</ByteLimit>
-    </Stack>
-    <CodeCoverage>
-        <Enabled>0</Enabled>
-        <ShowSource>0</ShowSource>
-        <HideCovered>0</HideCovered>
-    </CodeCoverage>
-    <Disassembly>
-        <InstrCount>0</InstrCount>
-        <MixedMode>1</MixedMode>
-    </Disassembly>
     <DisassembleMode>
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints2>
         <Count>0</Count>
     </Breakpoints2>
-    <Exceptions>
-        <StopOnUncaught>_ 0</StopOnUncaught>
-        <StopOnThrow>_ 0</StopOnThrow>
-    </Exceptions>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -113,9 +120,6 @@
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
-    <CallStack>
-        <ShowArgs>0</ShowArgs>
-    </CallStack>
     <DriverProfiling>
         <Enabled>0</Enabled>
         <Mode>1</Mode>
@@ -128,8 +132,4 @@
     <CallStackStripe>
         <ShowTiming>1</ShowTiming>
     </CallStackStripe>
-    <JLinkDriver>
-        <CStepIntDis>_ 0</CStepIntDis>
-        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
-    </JLinkDriver>
 </settings>
