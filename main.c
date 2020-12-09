@@ -23,6 +23,28 @@ void full_setup();
 void main(void)
 {
     full_setup();
+
+    day_temp_data   dtd;
+    date            tdate;
+    time_hm         thm;
+    tdate.day   =   01;
+    tdate.month =   01;
+    tdate.year  =   21;
+    thm.hour    =   18;
+    thm.minute  =   1;
+    dtd.day     =   tdate;
+    dtd.min     =   22.11111;
+    dtd.tmin    =   thm;
+
+    thm.hour    =   23;
+
+    dtd.avg     =   28.11111;
+    dtd.tmax    =   thm;
+    dtd.max     =   38.11111;
+    dtd.vari    =   12.11;
+    char* str_data = day_temp_data_to_string(dtd);
+    
+
   while(1)
   {
 

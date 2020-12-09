@@ -42,16 +42,7 @@ void    SysTick_Handler             (                   );
 #pragma endregion Functions
 
 
-struct screen_cordinate
-{
-    int pos;
-    int screen_half_val;
-};
 
-struct  screen_element{
-    struct screen_cordinate screen_cord; int l;
-    char* text;
-};
 //Interrupts every microsecond since microseconds are the smallest unit used
 void  systick_setup()
 {
