@@ -235,9 +235,10 @@ void clear()
     for (int i = 0; i < (DISP_X_MAX*DISP_Y_MAX); i++)
     {
         Write_Data_2_Display(0x00);
-        Write_Data_2_Display(0x00);
         Write_Command_2_Display(0xc0);
+        general_delay(100);
     }
+        general_delay(100);
     
 }
 
