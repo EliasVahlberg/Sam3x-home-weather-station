@@ -10,13 +10,6 @@
 //#include "ArduinoBaseInclude.c"
 
 #pragma region Variables/Parameters
-// double      adc_CDR1_value             = 0.0    ; //
-// double      adc_CDR2_value             = 0.0    ; //
-// double      light_to_volt_coefficcient = 1254.77; //Value extracted from multiple measurements using DMM from the formula (Resolution/System voltage) = (ADC Reading/ Analog Voltage mesured)
-// int         light_sens_ch1_ready       = 0      ; //
-// int         light_sens_ch2_ready       = 0      ; //
-// double      adc_ch1_voltage            = 0.0    ; //
-// double      adc_ch2_voltage            = 0.0    ; //
 #pragma endregion Variables/Parameters
 
 #pragma region Functions

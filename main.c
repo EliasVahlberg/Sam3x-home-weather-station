@@ -11,14 +11,13 @@
 #include "CFiles\Include.h"
 
 #pragma region Variables/Parameters
-
+int        loopCount                   = 0      ; //
 double temperature = 0.0;           //Temperature retrived from the temp sensor 
 #pragma endregion Variables/Parameters
 
 #pragma region Functions
 void full_setup();
 #pragma endregion Functions
-
 
 void main(void)
 {
@@ -56,12 +55,16 @@ void main(void)
     screen_element sel1 = create_screen_element(0,2,l,str_data);
     display_write(sel1);
 
+    get_light_rotation_data();
+    print_light_data();
+    set_to_max_light();
+
   while(1)
   {
 
+    start_pulse();
     if(temp_rdy_flag)
         temperature = get_temp();
-        start_pulse();
     loopCount++;
     light_measure();
     if((loopCount%10)==0)
@@ -98,7 +101,7 @@ void main(void)
             display_write(sensor2);
         }
         int serv = func();
-        servo_set_position(serv);
+        //servo_set_position(serv);
         servo_position = ((double) servo_get_position()/43.7);
   }
   

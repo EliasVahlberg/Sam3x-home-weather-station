@@ -16,6 +16,8 @@
 
 #define DAY_TEMP_DATA_LENGTH (STR_DATE_SIZE+4*(STR_DOUBLE_SIZE)+2*(STR_TIME_SIZE)+6*STR_PADDING_SIZE)
 
+double light_rotation_data [18]; 
+
 #pragma endregion Variables/Parameters
 
 #pragma region Functions
@@ -162,4 +164,10 @@ int double_to_str(char* arr,double d,int decimal_precision)
     }
     return i;
 }
+
+
+
+
+            
+
 

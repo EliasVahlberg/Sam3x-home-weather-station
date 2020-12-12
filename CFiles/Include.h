@@ -10,8 +10,8 @@
 #include "display.c"
 #include "keypad.c"
 #include "TemperatureSensor.c"
-#include "Servo.c"
 #include "LightSensor.c"
+#include "Servo.c"
 
 
 

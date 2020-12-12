@@ -7,12 +7,12 @@
 * \brief 
 *     ...
 */
-//#include "ArduinoBaseInclude.c"
+
 
 #pragma region Variables/Parameters
 double     temp_value                  = 0.0    ; //
 int        get_temp_delay              = 500    ; //
-int        loopCount                   = 0      ; //
+
 int        temp_RS                     = 0      ; //
 //int        temp_rdy_flag               = 0      ; //
 double     curr_temp                   = 0.0    ; //
@@ -55,6 +55,8 @@ void timer_counter_setup()
 void start_pulse()
 {
     temp_RS = 0;
+    //*AT91C_TC0_CCR = 4;                           //sw_reset
+    *AT91C_TC0_IDR = (0x1<<6);                              //Dissable interrupt during temp start pulse 
     *AT91C_PIOB_OER = AT91C_PIO_PB25;      
     delay_micro(25);
     *AT91C_PIOB_ODR = AT91C_PIO_PB25;
