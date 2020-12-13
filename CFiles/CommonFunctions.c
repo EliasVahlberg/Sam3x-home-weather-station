@@ -5,20 +5,8 @@
 *     Elias Vahlberg
 *     Isak Ringdahl
 * \brief 
-*     ...
+*     
 */
-#pragma region Variables/Parameters
-
-#define STR_DATE_SIZE       (8) // eg. "11/11/11" 
-#define STR_DOUBLE_SIZE     (4) //10^1 + comma + 1 decimal
-#define STR_TIME_SIZE       (5) // eg. "23:59" 
-#define STR_PADDING_SIZE    (1)
-
-#define DAY_TEMP_DATA_LENGTH (STR_DATE_SIZE+4*(STR_DOUBLE_SIZE)+2*(STR_TIME_SIZE)+6*STR_PADDING_SIZE)
-
-double light_rotation_data [18]; 
-
-#pragma endregion Variables/Parameters
 
 #pragma region Functions
 int day_temp_data_to_string(day_temp_data t_data,char* t_data_str);
@@ -27,10 +15,8 @@ int time_hm_to_string(time_hm t,char* str);
 void reverse_str(char* arr, int len);
 int int_to_str(char* arr, int zeroes, int n);
 int double_to_str(char* arr,double d,int decimal_precision);
-
 #pragma endregion Functions
 
-// {{day , min , time_min , avg , max, time_max ,var},{...} ...}
 //day : [0][n], min : [1][n], tmin : [2][n], avg : [3][n], max : [4][n], tmax : [5][n], var : [6][n]
 //date        , double      , time         , double      , double      , time         , double
 
@@ -39,26 +25,25 @@ int day_temp_data_to_string(day_temp_data t_data,char* t_data_str)
 {
     int i = 0;
     char temp_double[STR_DOUBLE_SIZE];
-    char padding = '|';
     
     //Date + Padding
     i += date_to_string(t_data.day, t_data_str);
-    t_data_str[i++] = padding;
+    t_data_str[i++] = DAY_TEMP_PADDING;
     //Min + padding
     i += double_to_str(t_data_str+i,t_data.min,1);
-    t_data_str[i++] = padding;
+    t_data_str[i++] = DAY_TEMP_PADDING;
     //Min time + padding
     i += time_hm_to_string(t_data.tmin,t_data_str+i);
-    t_data_str[i++] = padding;
+    t_data_str[i++] = DAY_TEMP_PADDING;
     //Avg + padding
     i += double_to_str(t_data_str+i,t_data.avg,1);
-    t_data_str[i++] = padding;    
+    t_data_str[i++] = DAY_TEMP_PADDING;    
     //Max + padding
     i += double_to_str(t_data_str+i,t_data.max,1);
-    t_data_str[i++] = padding;    
+    t_data_str[i++] = DAY_TEMP_PADDING;    
     //Max time + padding
     i += time_hm_to_string(t_data.tmax,t_data_str+i);
-    t_data_str[i++] = padding;
+    t_data_str[i++] = DAY_TEMP_PADDING;
     //Max variance + padding
     i += double_to_str(t_data_str+i,t_data.vari,1);
 

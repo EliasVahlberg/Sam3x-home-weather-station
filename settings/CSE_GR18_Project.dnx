@@ -19,7 +19,7 @@
         <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
     </SWOTraceHWSettings>
     <DebugChecksum>
-        <Checksum>824713661</Checksum>
+        <Checksum>3251950447</Checksum>
     </DebugChecksum>
     <Trace1>
         <Enabled>0</Enabled>

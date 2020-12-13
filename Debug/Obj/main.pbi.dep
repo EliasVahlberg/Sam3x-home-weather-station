@@ -14,6 +14,8 @@ main.pbi: \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c/iccarm_builtin.h \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/core_cmFunc.h \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project\at91sam3x8.h \
+  C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/Macros.c \
+  C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/GlobalVariables.c \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdlib.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ysizet.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product_stdlib.h \

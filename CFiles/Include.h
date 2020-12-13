@@ -3,6 +3,8 @@
 
 #include "system_sam3x.h"
 #include "at91sam3x8.h"
+#include "Macros.c"
+#include "GlobalVariables.c"
 #include <stdlib.h>
 #include "Structs.c"
 #include "ArduinoBaseInclude.c"

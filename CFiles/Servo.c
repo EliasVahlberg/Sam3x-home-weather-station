@@ -40,43 +40,47 @@ void servo_set_position(int x)
 {
     if(prev_servo_call!=x)
     {
-    prev_servo_call = x;
-    *AT91C_PWMC_CH1_CDTYR = ((1700 + (x-1)*280)); //Rotates x*10 degrees
+        prev_servo_call = x;
+        *AT91C_PWMC_CH1_CDTYR = ((1700 + (x-1)*280)); //Rotates x*10 degrees
     }
     
 }
 
-void get_light_rotation_data(){
+int servo_get_position()
+{
+    return *AT91C_PWMC_CH1_CDTYR;
+}
 
-// int counter = 0;
-for (int i = 0; i < 18; i++)
-    {
-    
-    servo_set_position(i);
-    delay_milis(30);
-        delay_milis(300);//TEMPORARY
-    light_measure();
-    light_rotation_data[i] = adc_CDR1_value;
+void get_light_rotation_data()
+{
+    for (int i = 0; i < 18; i++)
+    { 
+        servo_set_position(i);
+        delay_milis(30);
+        light_measure();
+        light_rotation_data[i] = adc_CDR1_value;
     }
  }
 
 
-void print_light_data(){
+void print_light_data()
+{
     char data[10];
     for (int i = 0; i < 18; i++)
     {
-    int_to_str(data,3,10*i);
-    data[3] = ' ';
-    data[4] = ':';
-    data[5] = ' ';
-    double_to_str(data+6,light_rotation_data[i],0);
-    screen_element element = create_screen_element(0,9,10,data);    
-    display_write(element);
-    delay_milis(500);
+        int_to_str(data,3,10*i);
+        data[3] = ' ';
+        data[4] = ':';
+        data[5] = ' ';
+        double_to_str(data+6,light_rotation_data[i],0);
+        screen_element element = create_screen_element(0,9,10,data);    
+        display_write(element);
+        delay_milis(500);
     }
-    }
+}
 
-void set_to_max_light(){
+void set_to_max_light()
+{
     double min = light_rotation_data[0];
     int min_rot = 0;
     for (int i = 1; i < 18; i++)
@@ -93,7 +97,3 @@ void set_to_max_light(){
 
 
 
-int servo_get_position()
-{
-    return *AT91C_PWMC_CH1_CDTYR;
-}
