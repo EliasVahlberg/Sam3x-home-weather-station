@@ -7,29 +7,13 @@
 * \brief 
 *     ...
 */
-//#include "ArduinoBaseInclude.c"
 
-#pragma region
-#define ROWS 4
-#define COLS 3
- 
-#define OE (1<<2)
- 
-#define COL0 (1<<7)
-#define COL1 (1<<8)
-#define COL2 (1<<9)
- 
-#define ROW0 (1<<2)
-#define ROW1 (1<<3)
-#define ROW2 (1<<4)
-#define ROW3 (1<<5)   
+#pragma region Functions
+int get_keypad_key();
+void keypad_setup();
+#pragma endregion Functions
 
-unsigned short int rowsArr[] = {ROW0, ROW1, ROW2, ROW3};
-unsigned short int colsArr[] = {COL2, COL1, COL0};
-#pragma endregion
-
-
-int func(void)
+int get_keypad_key()
 {
     int val = 0;
     *AT91C_PIOD_CODR = OE;
@@ -64,6 +48,7 @@ int func(void)
 
 
 }
+
 void keypad_setup()
 {
     

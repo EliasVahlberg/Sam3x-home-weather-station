@@ -17,10 +17,9 @@ int int_to_str(char* arr, int zeroes, int n);
 int double_to_str(char* arr,double d,int decimal_precision);
 #pragma endregion Functions
 
+
 //day : [0][n], min : [1][n], tmin : [2][n], avg : [3][n], max : [4][n], tmax : [5][n], var : [6][n]
 //date        , double      , time         , double      , double      , time         , double
-
-
 int day_temp_data_to_string(day_temp_data t_data,char* t_data_str)
 {
     int i = 0;
@@ -51,6 +50,7 @@ int day_temp_data_to_string(day_temp_data t_data,char* t_data_str)
     return i;
     
 }
+
 int date_to_string(date d,char* str)
 {
     int i = 0;

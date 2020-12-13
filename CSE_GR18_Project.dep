@@ -57,6 +57,8 @@
             <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
             <file>$PROJ_DIR$\system_sam3x.h</file>
             <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\CFiles\GlobalVariables.c</file>
+            <file>$PROJ_DIR$\CFiles\Macros.c</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
@@ -179,7 +181,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 36 50 46 51 9 10 15 13 21 20 4 12 39 48 31 1 11 42 7 30 18 16 38 44 22</file>
+                    <file> 36 50 46 51 9 10 15 13 21 20 4 12 39 48 53 52 31 1 11 42 7 30 18 16 38 44 22</file>
                 </tool>
             </inputs>
         </file>

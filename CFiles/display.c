@@ -8,58 +8,23 @@
 *     ...
 */
 
-#pragma region
-#define RESET_DISP (1    ) //DP 25 PIOD
+#pragma region functions
+void            display_setup(void);
+void            Init_Display(void);
+unsigned char   Read_Status_Display(void);
+void            Write_Data_2_Display(unsigned char Data);
+void            Write_Command_2_Display(unsigned char command);
 
-#define B4_DISP    (1<<6 ) //DP 38 
-
-#define OE (1<<2)
-
-#define RV_DISP    (1<<19) //DP 44 PIOC
-#define FS_DISP    (1<<18) //DP 45 PIOC
-#define WR_DISP    (1<<17) //DP 46 PIOC
-#define RD_DISP    (1<<16) //DP 47 PIOC
-#define CE_DISP    (1<<15) //DP 48 PIOC
-#define CD_DISP    (1<<14) //DP 49 PIOC
-#define DIR_DISP   (1<<13) //DP 50 PIOC
-#define OE_DISP    (1<<12) //DP 51 PIOC
-#define BUS_DISP   (0x3FC) //DP 34-41
-#define CONFIG_DISP (0xff000) //DP 44-51
-
-#define DISP_X_MAX (30)
-
-#define DISP_Y_MAX (16)
-
-
-int delay_value = 100;
-int clearKey = 12;
-int p0=0,p1=0,p2=0;
-int prevKey = 0;
-int currentKey = 0;
-int keyset = 0;
-int delayValue = 10000;
-int display_keymap_xy[13]={0,17,18,19,20,21,22,23,24,25,10,16,3};
-
-
-int screen_half = 240;
-
-
-void display_setup(void);
-void Init_Display(void);
-unsigned char Read_Status_Display(void);
-void Write_Data_2_Display(unsigned char Data);
-void Write_Command_2_Display(unsigned char command);
-
-int set_cursor(int pos, int screen_half_select);
-int write_blank_to_display(int length);
-int display_clear(int length, int pos, int screen_half_select);
-void clear();
+int             set_cursor(int pos, int screen_half_select);
+int             write_blank_to_display(int length);
+int             display_clear(int length, int pos, int screen_half_select);
+void            clear();
 
 struct screen_cordinate convert_to_scord(int x, int y);
 struct screen_element create_screen_element(int x, int y, int l, char* text);
-int display_write(struct screen_element screen_el);
-int write_string_to_display(char* message,int length);
-#pragma endregion
+int             display_write(struct screen_element screen_el);
+int             write_string_to_display(char* message,int length);
+#pragma endregion functions
 
 
 void display_setup()
@@ -101,7 +66,7 @@ void Init_Display(void)
 
     *AT91C_PIOC_SODR    =   OE;    //Disable output (74chip)
     *AT91C_PIOD_CODR    =   RESET_DISP; // Clear Reset display
-    general_delay(delay_value);                 //Make a Delay
+    general_delay(DISPLAY_DELAY_VALUE);                 //Make a Delay
     *AT91C_PIOD_SODR    =   RESET_DISP; //Set Reset display
     Write_Data_2_Display(0x00);
     Write_Data_2_Display(0x00);
@@ -131,7 +96,7 @@ unsigned char Read_Status_Display(void)
    *AT91C_PIOC_SODR    =   CD_DISP;    // Set C/D
    *AT91C_PIOC_CODR    =   CE_DISP;    //Clear chip select display
    *AT91C_PIOC_CODR    =   RD_DISP;// Clear read display
-   general_delay(delay_value);                      // Make a Delay
+   general_delay(DISPLAY_DELAY_VALUE);                      // Make a Delay
    temp = *AT91C_PIOC_PDSR & BUS_DISP; // Read data bus and save it in temp
    *AT91C_PIOC_SODR    =   CE_DISP;// Set chip select display
    *AT91C_PIOC_SODR    =   RD_DISP;// Set read display
@@ -156,7 +121,7 @@ void Write_Data_2_Display(unsigned char data)
     *AT91C_PIOC_CODR    =   CD_DISP;    //Clear C/D signal High (0 = Data)
     *AT91C_PIOC_CODR    =   CE_DISP;    //Clear chip select display
     *AT91C_PIOC_CODR    =   WR_DISP;    //Clear write display
-    general_delay(delay_value);   //Make a Delay
+    general_delay(DISPLAY_DELAY_VALUE);   //Make a Delay
     *AT91C_PIOC_SODR    =   CE_DISP;    //Set chip enable display
     *AT91C_PIOC_SODR    =   WR_DISP;    //Set write display
     *AT91C_PIOC_SODR    =   OE_DISP;    //Disable output (74chip)
@@ -181,7 +146,7 @@ void Write_Command_2_Display(unsigned char command)
     *AT91C_PIOC_SODR    =   CD_DISP;    //set C/D signal High (1 = Command)
     *AT91C_PIOC_CODR    =   CE_DISP;    //Clear chip select display
     *AT91C_PIOC_CODR    =   WR_DISP;    //Clear write display
-       general_delay(delay_value);   //Make a Delay
+       general_delay(DISPLAY_DELAY_VALUE);   //Make a Delay
     *AT91C_PIOC_SODR    =   CE_DISP;    //Set chip enable display
     *AT91C_PIOC_SODR    =   WR_DISP;    //Set write display
     *AT91C_PIOC_SODR    =   OE_DISP;    //Disable output (74chip)
@@ -201,7 +166,7 @@ int set_cursor(int pos, int screen_half_select)
 
     Write_Data_2_Display(screen_half_select);
     
-    Write_Command_2_Display(0x24);
+    Write_Command_2_Display(DISPLAY_SET_CURSOR_CMD);
     return 1;
 }
 
@@ -213,7 +178,7 @@ int write_blank_to_display(int length)
         {
 
         Write_Data_2_Display(0);
-        Write_Command_2_Display(0xc0);
+        Write_Command_2_Display(DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD);
         }
         
     
@@ -231,11 +196,11 @@ void clear()
 {
     Write_Data_2_Display(0x00);
     Write_Data_2_Display(0x00);
-    Write_Command_2_Display(0x24);
+    Write_Command_2_Display(DISPLAY_SET_CURSOR_CMD);
     for (int i = 0; i < (DISP_X_MAX*DISP_Y_MAX); i++)
     {
         Write_Data_2_Display(0x00);
-        Write_Command_2_Display(0xc0);
+        Write_Command_2_Display(DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD);
         general_delay(100);
     }
         general_delay(100);
@@ -245,11 +210,11 @@ void clear()
 struct screen_cordinate convert_to_scord(int x, int y)
 {
     struct screen_cordinate sc;
-    if(x + y*30 >screen_half*2)
+    if(x + y*30 >DISPLAY_SCREEN_HALF*2)
         return sc;
 
-    sc.screen_half_val =(x+y*30>screen_half)? 1:0;
-    sc.pos = (sc.screen_half_val==1)? (x+y*30-screen_half):x+y*30;
+    sc.screen_half_val =(x+y*30>DISPLAY_SCREEN_HALF)? 1:0;
+    sc.pos = (sc.screen_half_val==1)? (x+y*30-DISPLAY_SCREEN_HALF):x+y*30;
     return sc;
 
 }
@@ -281,7 +246,7 @@ int display_write(struct screen_element screen_el)
     int write = write_string_to_display(screen_el.text,screen_el.l);
 
     Write_Data_2_Display(0x0);
-    Write_Command_2_Display(0x24);
+    Write_Command_2_Display(DISPLAY_SET_CURSOR_CMD);
     if(cursor == 0)
         return -1;
     if(write == 0)
@@ -301,7 +266,7 @@ int write_string_to_display(char* message,int length)
             return 0;
         
         Write_Data_2_Display(symbol);
-        Write_Command_2_Display(0xc0);
+        Write_Command_2_Display(DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD);
         }
         
     

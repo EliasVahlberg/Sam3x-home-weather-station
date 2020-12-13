@@ -11,8 +11,8 @@
 #include "CFiles\Include.h"
 
 #pragma region Variables/Parameters
-int        loopCount                   = 0      ; //
-double temperature = 0.0;           //Temperature retrived from the temp sensor 
+int    loopCount        = 0     ;           //
+double temperature      = 0.0   ;           //Temperature retrived from the temp sensor 
 #pragma endregion Variables/Parameters
 
 #pragma region Functions
@@ -56,7 +56,7 @@ void main(void)
     display_write(sel1);
 
     get_light_rotation_data();
-    print_light_data();
+    //print_light_data();
     set_to_max_light();
 
   while(1)
@@ -100,7 +100,7 @@ void main(void)
             struct screen_element sensor2 = create_screen_element(0,6,21,result3); 
             display_write(sensor2);
         }
-        int serv = func();
+        int serv = get_keypad_key();
         //servo_set_position(serv);
         servo_position = ((double) servo_get_position()/43.7);
   }

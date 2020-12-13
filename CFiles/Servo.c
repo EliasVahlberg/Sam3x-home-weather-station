@@ -7,13 +7,6 @@
 * \brief 
 *     ...
 */
-
-
-#pragma region Variables/Parameters
-double      servo_position             = 0.0    ; //
-int         prev_servo_call            = 0;
-#pragma endregion Variables/Parameters
-
 #pragma region Functions
 void    servo_set_position          (int x              );
 int     servo_get_position          (                   );
@@ -62,7 +55,7 @@ void get_light_rotation_data()
     }
  }
 
-
+//Mostly used for debugging
 void print_light_data()
 {
     char data[10];

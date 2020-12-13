@@ -9,16 +9,6 @@
 */
 
 
-#pragma region Variables/Parameters
-double     temp_value                  = 0.0    ; //
-int        get_temp_delay              = 500    ; //
-
-int        temp_RS                     = 0      ; //
-//int        temp_rdy_flag               = 0      ; //
-double     curr_temp                   = 0.0    ; //
-double     tcDelta                     = 0.0    ; //
-#pragma endregion Variables/Parameters
-
 #pragma region Functions
 void    timer_counter_setup         (                   );
 void    timer_counter_setup         (                   );
@@ -31,13 +21,12 @@ void    temp_reset                  (                   );
 
 void timer_counter_setup()
 {
-    *AT91C_PMC_PCER         |= (1 << 12);     //Enable PMC, starting peripheral clock PIOB  TEMP
-    *AT91C_PMC_PCER         |= (1 << 27);     //Enable PMC, starting peripheral clock TC0   TEMP
-
-    *AT91C_TC0_CMR          &=      ~(0x7)      ; //set Timer_Clock1 as TCCLK
-    *AT91C_TC0_CCR          |=      0x5       ; //Enable and sw_reset in TC0_CCR0
-    *AT91C_TC0_CMR          |=      (0x2 << 16); //Load counter to A when TIOA falling in (TC0_CMR0)
-    *AT91C_TC0_CMR          |=      (0x1 << 18); //Load counter to B when TIOA rising in (TC0_CMR0)
+    *AT91C_PMC_PCER         |= (1 << 12)    ; //Enable PMC, starting peripheral clock PIOB  TEMP
+    *AT91C_PMC_PCER         |= (1 << 27)    ; //Enable PMC, starting peripheral clock TC0   TEMP
+    *AT91C_TC0_CMR          &= ~(0x7)       ; //set Timer_Clock1 as TCCLK
+    *AT91C_TC0_CCR          |= 0x5          ; //Enable and sw_reset in TC0_CCR0
+    *AT91C_TC0_CMR          |= (0x2 << 16)  ; //Load counter to A when TIOA falling in (TC0_CMR0)
+    *AT91C_TC0_CMR          |= (0x1 << 18)  ; //Load counter to B when TIOA rising in (TC0_CMR0)
 
     //##### Interrupt setup #####
     NVIC_ClearPendingIRQ(TC0_IRQn);                        //Clear pending interrupts during setup
@@ -54,8 +43,6 @@ void timer_counter_setup()
 
 void start_pulse()
 {
-    temp_RS = 0;
-    //*AT91C_TC0_CCR = 4;                           //sw_reset
     *AT91C_TC0_IDR = (0x1<<6);                              //Dissable interrupt during temp start pulse 
     *AT91C_PIOB_OER = AT91C_PIO_PB25;      
     delay_micro(25);
@@ -77,7 +64,6 @@ void temp_reset()
 void temp_setup()
 {
     timer_counter_setup();
-    temp_RS = 1;
     start_pulse();
 
 }
@@ -88,7 +74,6 @@ double get_temp()
     int reg_B       =   *AT91C_TC0_RB;
     tcDelta         =   (double)(reg_B-reg_A);
     curr_temp       =   (tcDelta/210.0) -273.15;//210 = 5*(40+2), (5*40 from the datasheet) +2 for accuracy
-    temp_RS         =   1;
     temp_rdy_flag   =   0;
     return curr_temp;
 }

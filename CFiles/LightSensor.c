@@ -9,9 +9,6 @@
 */
 //#include "ArduinoBaseInclude.c"
 
-#pragma region Variables/Parameters
-#pragma endregion Variables/Parameters
-
 #pragma region Functions
 void    adc_setup                   (                   );
 void    ADC_Handler                 (                   );

@@ -8,7 +8,6 @@
 *     ...
 */
 
-
 typedef struct screen_cordinate
 {
     int pos;
