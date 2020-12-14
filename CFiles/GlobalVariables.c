@@ -8,6 +8,11 @@
 *     ...
 */
 
+#pragma region GlobalFlags
+int temp_alarm_flag             = 0;
+int display_write_disable_flag  = 0; //Disables the write acces to the display (used during alarm)
+#pragma endregion GlobalFlags
+
 #pragma region Servo 
 double      servo_position             = 0.0    ; //
 int         prev_servo_call            = 0      ;

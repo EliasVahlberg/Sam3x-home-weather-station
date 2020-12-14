@@ -106,6 +106,8 @@ void main(void)
         }
         //servo_set_position(serv);
         servo_position = ((double) servo_get_position()/43.7);
+        if(loopCount>15)
+            temperature_alarm();
   }
   
 }

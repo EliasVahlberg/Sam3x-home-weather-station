@@ -172,39 +172,50 @@ int set_cursor(int pos, int screen_half_select)
 
 int write_blank_to_display(int length)
 {
+    if(display_write_disable_flag==0)
+    {
         if(length == 0)
         return 0;
         for (int i = 0; i < length; i++)
         {
-
-        Write_Data_2_Display(0);
-        Write_Command_2_Display(DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD);
+            Write_Data_2_Display(0);
+            Write_Command_2_Display(DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD);
         }
-        
-    
-    general_delay(1000);
-    return 1;
+        general_delay(1000);
+        return 1;
+    }
+    else
+        return -3;
 }
 
 int display_clear(int length, int pos, int screen_half_select)
 {
-    int cursor = set_cursor(pos,screen_half_select);
-    int write = write_blank_to_display(length);
+    if(display_write_disable_flag==0)
+    {
+        int cursor = set_cursor(pos,screen_half_select);
+        int write = write_blank_to_display(length);
+        return 1;
+    }
+    else
+        return -3;
 }
 
 void clear()
 {
-    Write_Data_2_Display(0x00);
-    Write_Data_2_Display(0x00);
-    Write_Command_2_Display(DISPLAY_SET_CURSOR_CMD);
-    for (int i = 0; i < (DISP_X_MAX*DISP_Y_MAX); i++)
+    if(display_write_disable_flag==0)
     {
         Write_Data_2_Display(0x00);
-        Write_Command_2_Display(DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD);
+        Write_Data_2_Display(0x00);
+        Write_Command_2_Display(DISPLAY_SET_CURSOR_CMD);
+        for (int i = 0; i < (DISP_X_MAX*DISP_Y_MAX); i++)
+        {
+            Write_Data_2_Display(0x00);
+            Write_Command_2_Display(DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD);
+            general_delay(100);
+        }
         general_delay(100);
+        
     }
-        general_delay(100);
-    
 }
 
 struct screen_cordinate convert_to_scord(int x, int y)
@@ -232,44 +243,50 @@ struct screen_element create_screen_element(int x, int y, int l, char* text)
 
 int display_write(struct screen_element screen_el)
 {
+    if(display_write_disable_flag==0)
+    {
+         display_clear(
+         screen_el.l,
+         screen_el.screen_cord.pos,
+         screen_el.screen_cord.screen_half_val
+         );
+        int cursor = set_cursor(
+        screen_el.screen_cord.pos,
+        screen_el.screen_cord.screen_half_val
+        );
 
-     display_clear(
-     screen_el.l,
-     screen_el.screen_cord.pos,
-     screen_el.screen_cord.screen_half_val
-     );
-    int cursor = set_cursor(
-    screen_el.screen_cord.pos,
-    screen_el.screen_cord.screen_half_val
-    );
-    
-    int write = write_string_to_display(screen_el.text,screen_el.l);
+        int write = write_string_to_display(screen_el.text,screen_el.l);
 
-    Write_Data_2_Display(0x0);
-    Write_Command_2_Display(DISPLAY_SET_CURSOR_CMD);
-    if(cursor == 0)
-        return -1;
-    if(write == 0)
-        return -2;
+        Write_Data_2_Display(0x0);
+        Write_Command_2_Display(DISPLAY_SET_CURSOR_CMD);
+        if(cursor == 0)
+            return -1;
+        if(write == 0)
+            return -2;
+        else
+            return 1;
+    }
     else
-        return 1;
+        return -3;
 } 
 
 int write_string_to_display(char* message,int length)
 {   
-    if(length == 0)
-        return 0;
+    if(display_write_disable_flag==0)
+    {
+        if(length == 0)
+            return 0;
         for (int i = 0; i < length; i++)
         {
-        unsigned char symbol = (unsigned char)(((int) message[i])-32);
-        if(((int)symbol)>94 || ((int)symbol)<0)
-            return 0;
-        
-        Write_Data_2_Display(symbol);
-        Write_Command_2_Display(DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD);
+            unsigned char symbol = (unsigned char)(((int) message[i])-32);
+            if(((int)symbol)>94 || ((int)symbol)<0)
+                return 0;
+            Write_Data_2_Display(symbol);
+            Write_Command_2_Display(DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD);
         }
-        
-    
-    general_delay(1000);
-    return 1;
+        general_delay(1000);
+        return 1;
+    }
+    else
+        return -3;
 }

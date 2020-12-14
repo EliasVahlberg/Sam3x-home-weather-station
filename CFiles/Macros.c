@@ -22,7 +22,28 @@
 #pragma  region ArduinoBaseInclude
 #define SYSTICK_CONFIG_MICRO    (84) //Systick calibration value for 1us period (MCKf / 1000000)
 #pragma endregion ArduinoBaseInclude
+#pragma region TemperatureSensor
+     
+#define TEMP_ALARM_UPPER_VALUE           (30.0                                      ) //
+#define TEMP_ALARM_LOWER_VALUE           (15.0                                      ) // 
+#define TEMP_ALARM_TYPE                  (2                                         ) //0: Display alarm, 1: LED alarm, 2: both
+#define TEMP_ALARM_RECHECK               (5                                         ) //The number of times it rechecks the temperature (to mitigate alarms caused by bugs)
 
+
+#define TEMP_ALARM_LED_PIO_PMC_BIT       (14                                        )
+#define TEMP_ALARM_LED_PIO_ADRESS_ENABLE (AT91_CAST(AT91_REG *) 	AT91C_PIOD_PER  )
+#define TEMP_ALARM_LED_PIO_ADRESS_OUTPUT (AT91_CAST(AT91_REG *) 	AT91C_PIOD_OER  )
+#define TEMP_ALARM_LED_PIO_ADRESS_SET    (AT91_CAST(AT91_REG *) 	AT91C_PIOD_SODR )
+#define TEMP_ALARM_LED_PIO_ADRESS_CLEAR  (AT91_CAST(AT91_REG *) 	AT91C_PIOD_CODR )
+#define TEMP_ALARM_LED_BIT               (1                                         )
+
+#define TEMP_ALARM_DISPLAY_MES_LOW       ("TEMPERATURE IS TOO LOW "                 ) // 
+#define TEMP_ALARM_DISPLAY_MES_HIGH      ("TEMPERATURE IS TOO HIGH"                 ) // 
+#define TEMP_ALARM_DISPLAY_LENGTH        (23                                        ) //
+#define TEMP_ALARM_DISPLAY_X             (4                                         ) //
+#define TEMP_ALARM_DISPLAY_Y             (5                                         ) // 
+
+#pragma endregion TemperatureSensor
 #pragma region keypad  
 #define ROWS    (4)
 #define COLS    (3)
@@ -58,6 +79,7 @@
 #define DISP_X_MAX                             (30          ) //
 #define DISP_Y_MAX                             (16          ) //
 #pragma endregion display
+
 #pragma region  LightSensor
 #define LIGHT_ROT_DATA_LENGTH  (36)
 #pragma endregion  LightSensor
