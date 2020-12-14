@@ -74,7 +74,7 @@ void SysTick_Handler(void)
 }
 
 void ADC_Handler(void){
-  unsigned int channel_number = ((*AT91C_ADCC_LCDR&(0xF<<12))>>12);
+  unsigned int channel_number = ((*AT91C_ADCC_LCDR>>12)&0xF);
   if(channel_number == 1)
     light_sens_ch1_ready = 1;                           //Flag to indicate that a measure value on CH1 is ready
   if(channel_number==2)

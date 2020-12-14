@@ -46,12 +46,14 @@ int servo_get_position()
 
 void get_light_rotation_data()
 {
-    for (int i = 0; i < 18; i++)
+    for (int i = 0; i < (int)LIGHT_ROT_DATA_LENGTH/2; i++)
     { 
         servo_set_position(i);
-        delay_milis(30);
+        delay_milis(50);
         light_measure();
         light_rotation_data[i] = adc_CDR1_value;
+        light_rotation_data[(int)(LIGHT_ROT_DATA_LENGTH/2)+i] = adc_CDR2_value;
+
     }
  }
 
@@ -59,9 +61,9 @@ void get_light_rotation_data()
 void print_light_data()
 {
     char data[10];
-    for (int i = 0; i < 18; i++)
+    for (int i = 0; i < LIGHT_ROT_DATA_LENGTH; i++)
     {
-        int_to_str(data,3,10*i);
+        int_to_str(data,3,10*(i%18));
         data[3] = ' ';
         data[4] = ':';
         data[5] = ' ';
@@ -76,7 +78,7 @@ void set_to_max_light()
 {
     double min = light_rotation_data[0];
     int min_rot = 0;
-    for (int i = 1; i < 18; i++)
+    for (int i = 1; i < LIGHT_ROT_DATA_LENGTH; i++)
     {
         if(min > light_rotation_data[i])
         {
@@ -85,7 +87,7 @@ void set_to_max_light()
         }
 
     }
-    servo_set_position(min_rot);
+    servo_set_position((min_rot%18));
 }
 
 

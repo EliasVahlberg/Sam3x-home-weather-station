@@ -21,7 +21,7 @@ int        systick_trigger             = 0      ; //If a delay function is curre
 #pragma endregion ArduinoBaseInclude
 
 #pragma region LightSensor 
-double light_rotation_data [18]; 
+double light_rotation_data [LIGHT_ROT_DATA_LENGTH]; 
 double      adc_CDR1_value             = 0.0    ; //
 double      adc_CDR2_value             = 0.0    ; //
 double      light_to_volt_coefficcient = 1254.77; //Value extracted from multiple measurements using DMM from the formula (Resolution/System voltage) = (ADC Reading/ Analog Voltage mesured)

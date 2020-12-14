@@ -58,3 +58,6 @@
 #define DISP_X_MAX                             (30          ) //
 #define DISP_Y_MAX                             (16          ) //
 #pragma endregion display
+#pragma region  LightSensor
+#define LIGHT_ROT_DATA_LENGTH  (36)
+#pragma endregion  LightSensor

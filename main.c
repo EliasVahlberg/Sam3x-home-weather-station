@@ -55,9 +55,7 @@ void main(void)
     screen_element sel1 = create_screen_element(0,2,l,str_data);
     display_write(sel1);
 
-    get_light_rotation_data();
-    //print_light_data();
-    set_to_max_light();
+
 
   while(1)
   {
@@ -101,6 +99,11 @@ void main(void)
             display_write(sensor2);
         }
         int serv = get_keypad_key();
+        if(serv==12)
+        {
+            get_light_rotation_data();
+            set_to_max_light();
+        }
         //servo_set_position(serv);
         servo_position = ((double) servo_get_position()/43.7);
   }
