@@ -47,3 +47,18 @@ unsigned short int rowsArr[] = {ROW0, ROW1, ROW2, ROW3};
 unsigned short int colsArr[] = {COL2, COL1, COL0};
 #pragma endregion keypad
 
+#pragma region LoginSystem
+char login_text[]               =   "Enter Username and Password";
+const int  login_text_length    =   27;
+char login_user_str[]           =   "Username:";
+char login_pass_str[]           =   "Password:";
+const int  usr_pass_str_length  =   9;
+
+int number_of_users             =   1;
+const char default_username[4]          = "1234";
+const char default_password[4]          = "1234";
+const int def_us_len                  = 4;
+const int def_pass_len                = 4;
+user *default_user;
+user_list* users;
+#pragma endregion LoginSystem

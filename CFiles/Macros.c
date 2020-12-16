@@ -83,3 +83,16 @@
 #pragma region  LightSensor
 #define LIGHT_ROT_DATA_LENGTH  (36)
 #pragma endregion  LightSensor
+
+#pragma region LoginSystem
+
+
+
+#define LOGIN_USERNAME_X_POS    (0)
+#define LOGIN_PASSWORD_X_POS    (0)
+#define LOGIN_USERNAME_Y_POS    (3)
+#define LOGIN_PASSWORD_Y_POS    (5)
+#define LOGIN_USERNAME_MAX_LEN  (21)
+#define LOGIN_PASSWORD_MAX_LEN  (21)
+
+#pragma endregion LoginSystem
