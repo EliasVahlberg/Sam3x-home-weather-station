@@ -23,7 +23,9 @@ void main(void)
 {
   
     full_setup();
-   // login();
+    login();
+    edit_user();
+    login();
 
     char* table = "Date    |min |tmin |avg |max |tmax |var ";
     int table_len = 40;
@@ -118,6 +120,7 @@ void full_setup()
     display_setup();
     Init_Display();
     clear();
+    login_init();
 }
 
 

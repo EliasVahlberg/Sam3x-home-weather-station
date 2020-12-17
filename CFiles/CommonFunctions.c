@@ -210,6 +210,14 @@ void str_concat(char* dest,char* src, int length)
     }
 }
 
+void char_array_erase(char* arr,int length, char erase_val)
+{
+    for (int i = 0; i < length; i++)
+    {
+        arr[i]=erase_val;
+    }
+    
+}
 
 
             

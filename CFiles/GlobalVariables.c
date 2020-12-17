@@ -68,6 +68,7 @@ user* current_user = NULL;
 
 char edit_user_text[]           =   "Enter new Username and Password";
 int edit_user_text_length       =   31;
-screen_element pre_password;
-screen_element pre_username;
+screen_element* pre_password;
+screen_element* pre_username;
+screen_element* pre_login;
 #pragma endregion LoginSystem

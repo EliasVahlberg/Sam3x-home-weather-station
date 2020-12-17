@@ -13,7 +13,7 @@ void login();
 int login_get_user_input(char *dest, screen_element *sc_el);
 int create_user();
 int edit_user();
-void hash_password(char* password, int length);
+void hash_password(char *password, int length);
 #pragma endregion functions
 
 void login_init()
@@ -37,24 +37,45 @@ void login_init()
     {
         (*default_user).password[i] = default_password[i];
     }
-    (*default_user).acess_level=0;
+    (*default_user).acess_level = 0;
     users->this_user = default_user;
     users->next_user = NULL;
 
+}
+
+void screen_pre_login(char* head_text, int head_text_length)
+{
     clear();
-    screen_element pre_login = create_screen_element(0, 0, login_text_length, login_text);
-    pre_username = create_screen_element(LOGIN_USERNAME_X_POS, LOGIN_USERNAME_Y_POS, usr_pass_str_length, login_user_str);
-    pre_password = create_screen_element(LOGIN_PASSWORD_X_POS, LOGIN_PASSWORD_Y_POS, usr_pass_str_length, login_pass_str);
-    display_write(pre_login);
-    display_write(pre_username);
-    display_write(pre_password);
+    pre_login       = malloc(sizeof(screen_element));
+    pre_username    = malloc(sizeof(screen_element));
+    pre_password    = malloc(sizeof(screen_element));
+    (*pre_login)    = create_screen_element(0, 0, head_text_length, head_text);
+    (*pre_username) = create_screen_element(LOGIN_USERNAME_X_POS, LOGIN_USERNAME_Y_POS, usr_pass_str_length, login_user_str);
+    (*pre_password) = create_screen_element(LOGIN_PASSWORD_X_POS, LOGIN_PASSWORD_Y_POS, usr_pass_str_length, login_pass_str);
+    display_write(*pre_login);
+    display_write(*pre_username);
+    display_write(*pre_password);
+    screen_username = malloc(sizeof(screen_element));
+    screen_password = malloc(sizeof(screen_element));
+}
+
+void screen_post_login()
+{
+    char_array_erase((*screen_username).text,(*screen_username).l,(char) 0); //For security reasons
+    char_array_erase((*screen_password).text,(*screen_password).l,(char) 0); //For security reasons
+    free(screen_username);
+    free(screen_password);
+    free(pre_login);
+    free(pre_username);
+    free(pre_password);
+    clear();
 }
 
 void login()
 {
+    screen_pre_login(login_text, login_text_length);
     while (1)
     {
-        login_init();
         char screen_usrname[LOGIN_USERNAME_MAX_LEN];
         char screen_pass[LOGIN_PASSWORD_MAX_LEN];
         char username[56];
@@ -62,13 +83,20 @@ void login()
         int d = 0, e = 0;
         (*screen_username) = create_screen_element(LOGIN_USERNAME_X_POS + usr_pass_str_length, LOGIN_USERNAME_Y_POS, d, screen_usrname);
         (*screen_password) = create_screen_element(LOGIN_PASSWORD_X_POS + usr_pass_str_length, LOGIN_PASSWORD_Y_POS, e, screen_pass);
-        int username_length = login_get_user_input(username, &screen_username);
-        int password_length = login_get_user_input(password, &screen_password);
-        hash_password(password,password_length);
+        int username_length = login_get_user_input(username, screen_username);
+        int password_length = login_get_user_input(password, screen_password);
+        hash_password(password, password_length);
         if (validate_login(username, username_length, password, password_length) == 1)
+        {
+            display_clear((*screen_username).l,(*screen_username).screen_cord.pos,(*screen_username).screen_cord.screen_half_val);
+            display_clear((*screen_password).l,(*screen_password).screen_cord.pos,(*screen_password).screen_cord.screen_half_val);
+
+            char_array_erase((*screen_username).text,(*screen_username).l,(char) 0); //For security reasons
+            char_array_erase((*screen_password).text,(*screen_password).l,(char) 0); //For security reasons
             break;
+        }
     }
-    clear();
+    screen_post_login();
 }
 
 int login_get_user_input(char *dest, screen_element *sc_el)
@@ -78,6 +106,7 @@ int login_get_user_input(char *dest, screen_element *sc_el)
     char zeroSet = 0;
     while (length != 56) //max length of username
     {
+        delay_milis(50);
         c = (unsigned char)(get_keypad_key());
         if (c == 0)
         {
@@ -159,43 +188,41 @@ int validate_login(char *new_username, int new_username_len, char *new_password,
 
 int create_user()
 {
-
 }
 
 int edit_user()
 {
-    if(current_user!=NULL)
+    if (current_user != NULL)
     {
-        screen_element pre_edit_user = create_screen_element(0, 0, edit_user_text_length, edit_user_text);
-        display_write(pre_edit_user);
-        display_write(pre_username); 
-        display_write(pre_password);
+        screen_pre_login(edit_user_text, edit_user_text_length);
+        
         char screen_usrname[LOGIN_USERNAME_MAX_LEN];
         char screen_pass[LOGIN_PASSWORD_MAX_LEN];
-        int d = 0, e= 0;
+        int d = 0, e = 0;
         (*screen_username) = create_screen_element(LOGIN_USERNAME_X_POS + usr_pass_str_length, LOGIN_USERNAME_Y_POS, d, screen_usrname);
         (*screen_password) = create_screen_element(LOGIN_PASSWORD_X_POS + usr_pass_str_length, LOGIN_PASSWORD_Y_POS, e, screen_pass);
         char new_username[56];
         char new_password[56];
-        int username_len=login_get_user_input(new_username,screen_username);
-        int pass_len=login_get_user_input(new_username,screen_password);
-        if(username_len!=0)
+        int username_len = login_get_user_input(new_username, screen_username);
+        int pass_len = login_get_user_input(new_username, screen_password);
+        if (username_len != 0)
         {
-        (*current_user).u_len = username_len;
-        (*current_user).username = new_username;
+            (*current_user).u_len = username_len;
+            (*current_user).username = new_username;
         }
-        if(pass_len!=0)
+        if (pass_len != 0)
         {
-        hash_password(new_password,pass_len);
-        (*current_user).p_len = pass_len;
-        (*current_user).password = new_password;
-        }            
+            hash_password(new_password, pass_len);
+            (*current_user).p_len = pass_len;
+            (*current_user).password = new_password;
+        }
+
+        screen_post_login();
         return 1;
     }
     return 0;
 }
 
-void hash_password(char* password, int length)
+void hash_password(char *password, int length)
 {
-
 }
