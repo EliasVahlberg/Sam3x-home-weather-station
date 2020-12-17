@@ -14,7 +14,9 @@ int date_to_string(date d,char* str);
 int time_hm_to_string(time_hm t,char* str);
 void reverse_str(char* arr, int len);
 int int_to_str(char* arr, int zeroes, int n);
+void int_to_str_fixed_length(char* arr, int length, int n);
 int double_to_str(char* arr,double d,int decimal_precision);
+void double_to_str_fixed_length(char* arr,double d,int length);
 #pragma endregion Functions
 
 
@@ -119,6 +121,24 @@ int int_to_str(char* arr, int length, int n)
     return i;
 }
 
+void int_to_str_fixed_length(char* arr, int length, int n)
+{
+    int i = 0;
+    while(n)
+    {
+        if(i==length)
+            break;
+        arr[i++] = (n % 10)+'0';
+        n = n/10;
+    }
+    while(i<length)
+        arr[i++]='0';
+
+    reverse_str(arr,i);
+    arr[i] = '\0';
+    return;
+}
+
 /**
 * \brief Utilizes the int_to_str and to convert a double value to an array of chars
 * @param arr the allready initialized char array (used as destination for the output)
@@ -128,6 +148,7 @@ int int_to_str(char* arr, int length, int n)
 */
 int double_to_str(char* arr,double d,int decimal_precision)
 {
+
     //Extracts the integer part of the double
     int int_part = (int)d;
     //Extracts the decimal part of the double
@@ -143,13 +164,51 @@ int double_to_str(char* arr,double d,int decimal_precision)
         {
         double_part = double_part*10;
         }
-        //fille the rest of the array
+        //fill the rest of the array
         
         i += int_to_str(arr+i,decimal_precision,(int)double_part);
     }
     return i;
 }
 
+void double_to_str_fixed_length(char* arr,double d,int length)
+{
+    //Extracts the integer part of the double
+    int int_part = (int)d;
+    int c=0;
+    while (int_part)
+    {
+        int_part = int_part/10;
+        c++;
+    }
+    c = (c<(length-1))?c:length;
+    int_part = (int)d;
+    //Extracts the decimal part of the double
+    double double_part = d-(double)int_part;
+    //Start filling array with the digits
+    int_to_str_fixed_length(arr,c,int_part);
+    //If the double consists of a decimal part    
+    arr[c++]='.';
+    if(length>=c)
+    {
+        for (int j = 0; j < (length-c); j++)
+        {
+        double_part = double_part*10;
+        }
+        //fill the rest of the array
+        
+        int_to_str_fixed_length(arr+c,length-c,(int)double_part);
+    }
+    return;
+}
+
+void str_concat(char* dest,char* src, int length)
+{
+    for (int i = 0; i < length; i++)    
+    {
+        dest[i] = src[i];
+    }
+}
 
 
 

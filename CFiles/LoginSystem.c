@@ -11,6 +11,9 @@
 void login_init();
 void login();
 int login_get_user_input(char *dest, screen_element *sc_el);
+int create_user();
+int edit_user();
+void hash_password(char* password, int length);
 #pragma endregion functions
 
 void login_init()
@@ -34,18 +37,19 @@ void login_init()
     {
         (*default_user).password[i] = default_password[i];
     }
-
+    (*default_user).acess_level=0;
     users->this_user = default_user;
     users->next_user = NULL;
 
     clear();
     screen_element pre_login = create_screen_element(0, 0, login_text_length, login_text);
-    screen_element pre_username = create_screen_element(LOGIN_USERNAME_X_POS, LOGIN_USERNAME_Y_POS, usr_pass_str_length, login_user_str);
-    screen_element pre_password = create_screen_element(LOGIN_PASSWORD_X_POS, LOGIN_PASSWORD_Y_POS, usr_pass_str_length, login_pass_str);
+    pre_username = create_screen_element(LOGIN_USERNAME_X_POS, LOGIN_USERNAME_Y_POS, usr_pass_str_length, login_user_str);
+    pre_password = create_screen_element(LOGIN_PASSWORD_X_POS, LOGIN_PASSWORD_Y_POS, usr_pass_str_length, login_pass_str);
     display_write(pre_login);
     display_write(pre_username);
     display_write(pre_password);
 }
+
 void login()
 {
     while (1)
@@ -56,15 +60,14 @@ void login()
         char username[56];
         char password[56];
         int d = 0, e = 0;
-        screen_element screen_username = create_screen_element(LOGIN_USERNAME_X_POS + usr_pass_str_length, LOGIN_USERNAME_Y_POS, d, screen_usrname);
-        screen_element screen_password = create_screen_element(LOGIN_PASSWORD_X_POS + usr_pass_str_length, LOGIN_PASSWORD_Y_POS, e, screen_pass);
+        (*screen_username) = create_screen_element(LOGIN_USERNAME_X_POS + usr_pass_str_length, LOGIN_USERNAME_Y_POS, d, screen_usrname);
+        (*screen_password) = create_screen_element(LOGIN_PASSWORD_X_POS + usr_pass_str_length, LOGIN_PASSWORD_Y_POS, e, screen_pass);
         int username_length = login_get_user_input(username, &screen_username);
         int password_length = login_get_user_input(password, &screen_password);
-        //CALL HASH FUNCTION and change PASS to that value
+        hash_password(password,password_length);
         if (validate_login(username, username_length, password, password_length) == 1)
             break;
     }
-
     clear();
 }
 
@@ -112,6 +115,7 @@ int login_get_user_input(char *dest, screen_element *sc_el)
 
     return length;
 }
+
 int validate_login(char *new_username, int new_username_len, char *new_password, int new_password_len)
 {
     user_list *temporary = users;
@@ -141,6 +145,7 @@ int validate_login(char *new_username, int new_username_len, char *new_password,
                 }
                 if (same_password == 1)
                 {
+                    current_user = (*temporary).this_user;
                     return 1;
                 }
             }
@@ -150,4 +155,47 @@ int validate_login(char *new_username, int new_username_len, char *new_password,
         temporary = temporary->next_user;
     }
     return 0;
+}
+
+int create_user()
+{
+
+}
+
+int edit_user()
+{
+    if(current_user!=NULL)
+    {
+        screen_element pre_edit_user = create_screen_element(0, 0, edit_user_text_length, edit_user_text);
+        display_write(pre_edit_user);
+        display_write(pre_username); 
+        display_write(pre_password);
+        char screen_usrname[LOGIN_USERNAME_MAX_LEN];
+        char screen_pass[LOGIN_PASSWORD_MAX_LEN];
+        int d = 0, e= 0;
+        (*screen_username) = create_screen_element(LOGIN_USERNAME_X_POS + usr_pass_str_length, LOGIN_USERNAME_Y_POS, d, screen_usrname);
+        (*screen_password) = create_screen_element(LOGIN_PASSWORD_X_POS + usr_pass_str_length, LOGIN_PASSWORD_Y_POS, e, screen_pass);
+        char new_username[56];
+        char new_password[56];
+        int username_len=login_get_user_input(new_username,screen_username);
+        int pass_len=login_get_user_input(new_username,screen_password);
+        if(username_len!=0)
+        {
+        (*current_user).u_len = username_len;
+        (*current_user).username = new_username;
+        }
+        if(pass_len!=0)
+        {
+        hash_password(new_password,pass_len);
+        (*current_user).p_len = pass_len;
+        (*current_user).password = new_password;
+        }            
+        return 1;
+    }
+    return 0;
+}
+
+void hash_password(char* password, int length)
+{
+
 }

@@ -46,12 +46,15 @@ typedef struct day_temp_data{
     time_hm     tmax;       //Timestamp where the maximum valuse was recorded; 
     double      vari;       //Temperature variance during the day 
 }day_temp_data;
+
 typedef struct User{
     char* username;
     int u_len;
     char* password;
     int p_len;
+    int acess_level;  //0 = normal, 1= admin
 }user;
+
 typedef struct User_List{
     struct User* this_user;
     struct User_List* next_user;

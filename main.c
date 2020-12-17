@@ -21,8 +21,9 @@ void full_setup();
 
 void main(void)
 {
+  
     full_setup();
-    login();
+   // login();
 
     char* table = "Date    |min |tmin |avg |max |tmax |var ";
     int table_len = 40;
@@ -68,35 +69,23 @@ void main(void)
     light_measure();
     if((loopCount%10)==0)
         {
-            
-            char str_message1[6] = "Temp: ";
-            char temp_message1[10];
-            char result1[16];
-            snprintf(temp_message1, 10, "%f",temperature);
-            strcpy(result1, str_message1);
-            strcat(result1, temp_message1);
-            struct screen_element temp1 = create_screen_element(0,4,16,result1); 
+            char str_message1[16] = "Temp: ";
+            double_to_str_fixed_length(str_message1+6,temperature,10);
+            struct screen_element temp1 = create_screen_element(0,4,16,str_message1); 
             display_write(temp1);
 
         }
     if((loopCount%20)==0)
         {
-            char str_message2[11] = "Voltage 1: ";
-            char temp_message2[10];
-            char result2[21];
-            snprintf(temp_message2, 10, "%f", adc_ch1_voltage);
-            strcpy(result2, str_message2);
-            strcat(result2, temp_message2);
-            struct screen_element sensor1 = create_screen_element(0,5,21,result2); 
+            char str_message2[21] = "Voltage 1: ";
+            double_to_str_fixed_length(str_message2+11,adc_ch1_voltage,10);
+
+            struct screen_element sensor1 = create_screen_element(0,5,21,str_message2); 
             display_write(sensor1);
 
-            char str_message3[11] = "Voltage 2: ";
-            char temp_message3[10];
-            char result3[21];
-            snprintf(temp_message3, 10, "%f", adc_ch2_voltage);
-            strcpy(result3, str_message3);
-            strcat(result3, temp_message3);
-            struct screen_element sensor2 = create_screen_element(0,6,21,result3); 
+            char str_message3[21] = "Voltage 2: ";
+            double_to_str_fixed_length(str_message3+11,adc_ch2_voltage,10);
+            struct screen_element sensor2 = create_screen_element(0,6,21,str_message3); 
             display_write(sensor2);
         }
         int serv = get_keypad_key();
