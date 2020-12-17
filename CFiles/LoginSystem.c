@@ -27,8 +27,11 @@ void login_init()
     (*default_user).u_len = def_us_len;
     (*default_user).p_len = def_pass_len;
     (*default_user).username = (char *)malloc(def_us_len * sizeof(char));
+    if ((*default_user).username == NULL)
+        return;
     (*default_user).password = (char *)malloc(def_pass_len * sizeof(char));
-    ;
+    if ((*default_user).password == NULL)
+        return;
     for (int i = 0; i < def_us_len; i++)
     {
         (*default_user).username[i] = default_username[i];
@@ -40,29 +43,38 @@ void login_init()
     (*default_user).acess_level = 0;
     users->this_user = default_user;
     users->next_user = NULL;
-
 }
 
-void screen_pre_login(char* head_text, int head_text_length)
+void screen_pre_login(char *head_text, int head_text_length)
 {
     clear();
     pre_login       = malloc(sizeof(screen_element));
+    if (pre_login == NULL)
+        return;
     pre_username    = malloc(sizeof(screen_element));
+    if (pre_username == NULL)
+        return;
     pre_password    = malloc(sizeof(screen_element));
-    (*pre_login)    = create_screen_element(0, 0, head_text_length, head_text);
+    if (pre_password == NULL)
+        return;
+    screen_username = malloc(sizeof(screen_element));
+    if (screen_username == NULL)
+        return;
+    screen_password = malloc(sizeof(screen_element));
+    if (screen_password == NULL)
+        return;
+    (*pre_login) = create_screen_element(0, 0, head_text_length, head_text);
     (*pre_username) = create_screen_element(LOGIN_USERNAME_X_POS, LOGIN_USERNAME_Y_POS, usr_pass_str_length, login_user_str);
     (*pre_password) = create_screen_element(LOGIN_PASSWORD_X_POS, LOGIN_PASSWORD_Y_POS, usr_pass_str_length, login_pass_str);
     display_write(*pre_login);
     display_write(*pre_username);
     display_write(*pre_password);
-    screen_username = malloc(sizeof(screen_element));
-    screen_password = malloc(sizeof(screen_element));
 }
 
 void screen_post_login()
 {
-    char_array_erase((*screen_username).text,(*screen_username).l,(char) 0); //For security reasons
-    char_array_erase((*screen_password).text,(*screen_password).l,(char) 0); //For security reasons
+    char_array_erase((*screen_username).text, (*screen_username).l, (char)0); //For security reasons
+    char_array_erase((*screen_password).text, (*screen_password).l, (char)0); //For security reasons
     free(screen_username);
     free(screen_password);
     free(pre_login);
@@ -88,11 +100,11 @@ void login()
         hash_password(password, password_length);
         if (validate_login(username, username_length, password, password_length) == 1)
         {
-            display_clear((*screen_username).l,(*screen_username).screen_cord.pos,(*screen_username).screen_cord.screen_half_val);
-            display_clear((*screen_password).l,(*screen_password).screen_cord.pos,(*screen_password).screen_cord.screen_half_val);
+            display_clear((*screen_username).l, (*screen_username).screen_cord.pos, (*screen_username).screen_cord.screen_half_val);
+            display_clear((*screen_password).l, (*screen_password).screen_cord.pos, (*screen_password).screen_cord.screen_half_val);
 
-            char_array_erase((*screen_username).text,(*screen_username).l,(char) 0); //For security reasons
-            char_array_erase((*screen_password).text,(*screen_password).l,(char) 0); //For security reasons
+            char_array_erase((*screen_username).text, (*screen_username).l, (char)0); //For security reasons
+            char_array_erase((*screen_password).text, (*screen_password).l, (char)0); //For security reasons
             break;
         }
     }
@@ -195,7 +207,7 @@ int edit_user()
     if (current_user != NULL)
     {
         screen_pre_login(edit_user_text, edit_user_text_length);
-        
+
         char screen_usrname[LOGIN_USERNAME_MAX_LEN];
         char screen_pass[LOGIN_PASSWORD_MAX_LEN];
         int d = 0, e = 0;
