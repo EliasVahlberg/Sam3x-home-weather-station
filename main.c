@@ -17,6 +17,7 @@ double temperature      = 0.0   ;           //Temperature retrived from the temp
 
 #pragma region Functions
 void full_setup();
+void day_temp_data_test();
 #pragma endregion Functions
 
 void main(void)

@@ -144,10 +144,6 @@
             <name>$PROJ_DIR$\main.c</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 54</file>
-                </tool>
-                <tool>
                     <name>__cstat</name>
                     <file> 40</file>
                 </tool>
