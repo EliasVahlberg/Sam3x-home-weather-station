@@ -27,4 +27,5 @@ main.pbi: \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/TemperatureSensor.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/LightSensor.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/Servo.c \
+  C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/MD5.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/LoginSystem.c

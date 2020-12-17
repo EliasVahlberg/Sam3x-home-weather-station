@@ -60,6 +60,7 @@
             <file>$PROJ_DIR$\CFiles\ArduinoBaseInclude.c</file>
             <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.__cstat.et</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\CFiles\MD5.c</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
@@ -144,6 +145,10 @@
             <name>$PROJ_DIR$\main.c</name>
             <outputs>
                 <tool>
+                    <name>ICCARM</name>
+                    <file> 54</file>
+                </tool>
+                <tool>
                     <name>__cstat</name>
                     <file> 40</file>
                 </tool>
@@ -155,7 +160,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 20 47 10 39 44 30 3 22 7 2 21 27 41 49 8 1 38 51 45 50 52 31 0 46 29 5 12 42</file>
+                    <file> 20 47 10 39 44 30 3 22 7 2 21 27 41 49 8 1 38 51 45 50 52 31 0 46 29 5 12 55 42</file>
                 </tool>
             </inputs>
         </file>

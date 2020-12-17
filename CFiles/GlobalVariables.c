@@ -58,10 +58,10 @@ screen_element* screen_username;
 screen_element* screen_password;
 
 int number_of_users             =   1;
-const char default_username[4]          = "1234";
-const char default_password[4]          = "1234";
-const int def_us_len                  = 4;
-const int def_pass_len                = 4;
+char default_username[4]          = "1234";
+char default_password[4]          = "1234";
+int def_us_len                  = 4;
+int def_pass_len                = 4;
 user *default_user;
 user_list* users;
 user* current_user = NULL;
@@ -71,4 +71,8 @@ int edit_user_text_length       =   31;
 screen_element* pre_password;
 screen_element* pre_username;
 screen_element* pre_login;
+
+char* username;
+char* password;
+
 #pragma endregion LoginSystem

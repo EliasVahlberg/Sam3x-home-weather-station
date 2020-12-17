@@ -50,7 +50,7 @@ typedef struct day_temp_data{
 typedef struct User{
     char* username;
     int u_len;
-    char* password;
+    unsigned char* password;
     int p_len;
     int acess_level;  //0 = normal, 1= admin
 }user;

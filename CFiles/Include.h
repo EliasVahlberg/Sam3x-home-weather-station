@@ -14,6 +14,7 @@
 #include "TemperatureSensor.c"
 #include "LightSensor.c"
 #include "Servo.c"
+#include "MD5.c"
 #include "LoginSystem.c"
 
 

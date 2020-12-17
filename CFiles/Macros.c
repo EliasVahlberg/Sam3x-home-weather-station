@@ -94,5 +94,6 @@
 #define LOGIN_PASSWORD_Y_POS    (5)
 #define LOGIN_USERNAME_MAX_LEN  (21)
 #define LOGIN_PASSWORD_MAX_LEN  (21)
+#define HASHED_PASS_LEN         (32)
 
 #pragma endregion LoginSystem
