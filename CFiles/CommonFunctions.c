@@ -17,6 +17,8 @@ int int_to_str(char* arr, int zeroes, int n);
 void int_to_str_fixed_length(char* arr, int length, int n);
 int double_to_str(char* arr,double d,int decimal_precision);
 void double_to_str_fixed_length(char* arr,double d,int length);
+void str_concat(char* dest,char* src, int length);
+void char_array_erase(char* arr,int length, char erase_val);
 #pragma endregion Functions
 
 
@@ -218,8 +220,3 @@ void char_array_erase(char* arr,int length, char erase_val)
     }
     
 }
-
-
-            
-
-

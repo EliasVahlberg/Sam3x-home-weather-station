@@ -27,39 +27,7 @@ void main(void)
     edit_user();
     login();
 
-    char* table = "Date    |min |tmin |avg |max |tmax |var ";
-    int table_len = 40;
-    screen_element tel1 = create_screen_element(0,0,table_len,table);
-    display_write(tel1);
-    day_temp_data   dtd;
-    date            tdate;
-    time_hm         thm;
-    time_hm         thm2;
-    tdate.day   =   99;
-    tdate.month =   88;
-    tdate.year  =   77;
-
-    thm.hour    =   18;
-    thm.minute  =   1;
-
-    thm2.hour    =   19;
-    thm2.minute  =   2;
-
-    dtd.day     =   tdate;
-    dtd.min     =   22.11111;
-    dtd.tmin    =   thm;
-
-    dtd.avg     =   28.11111;
-    dtd.tmax    =   thm2;
-    dtd.max     =   38.11111;
-    dtd.vari    =   12.11;
-    char str_data[DAY_TEMP_DATA_LENGTH];
-    day_temp_data_to_string(dtd,str_data);
-    int l = DAY_TEMP_DATA_LENGTH;
-    screen_element sel1 = create_screen_element(0,2,l,str_data);
-    display_write(sel1);
-
-
+    day_temp_data_test();
 
   while(1)
   {
@@ -123,4 +91,39 @@ void full_setup()
     login_init();
 }
 
+
+void day_temp_data_test()
+{
+    char* table = "Date    |min |tmin |avg |max |tmax |var ";
+    int table_len = 40;
+    screen_element tel1 = create_screen_element(0,0,table_len,table);
+    display_write(tel1);
+    day_temp_data   dtd;
+    date            tdate;
+    time_hm         thm;
+    time_hm         thm2;
+    tdate.day   =   99;
+    tdate.month =   88;
+    tdate.year  =   77;
+
+    thm.hour    =   18;
+    thm.minute  =   1;
+
+    thm2.hour    =   19;
+    thm2.minute  =   2;
+
+    dtd.day     =   tdate;
+    dtd.min     =   22.11111;
+    dtd.tmin    =   thm;
+
+    dtd.avg     =   28.11111;
+    dtd.tmax    =   thm2;
+    dtd.max     =   38.11111;
+    dtd.vari    =   12.11;
+    char str_data[DAY_TEMP_DATA_LENGTH];
+    day_temp_data_to_string(dtd,str_data);
+    int l = DAY_TEMP_DATA_LENGTH;
+    screen_element sel1 = create_screen_element(0,2,l,str_data);
+    display_write(sel1);
+    }
 
