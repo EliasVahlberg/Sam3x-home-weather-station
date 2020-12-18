@@ -56,11 +56,50 @@ void display_date_time()
     display_write(screen_time);
     display_write(screen_date);
 }
-void config_date(int d, int m, int y)
+void config_date()
 {
+    delay_micro(20);
+    date_to_str(zero_date, date_str);
+    screen_date = create_screen_element(DATE_POS_X, DATE_POS_Y, DATE_LEN, date_str);
+    display_write(screen_date);
+    int d = 0, m = 0, y = 0, k = 0, i = 0, zeroset = 0;
+    do
+    {
+        delay_micro(50);
+        k = get_keypad_key();
+        if(k==0)
+        {
+            zeroset=1;
+            delay_micro(50);
+            continue;
+        }
+        else if(zeroset==1)
+        {
+            k = (k>=11)?0:k;
+            zeroset=0;
+           switch (i)
+            {
+            case 0:d=10*k;  break;
+            case 1:d+=k;    break;
+            case 2:m=10*k;  break;
+            case 3:m+=k;    break;
+            case 4:y=10*k;  break;
+            case 5:y+=k;    break;
+            default:        break;
+            }
+            date_str[(i > 1) ? ((i > 3) ? i + 4 : i + 1) : i] = (char)(k + INT_TO_CHAR);
+            display_write(screen_date);
+            i++;
+        }
+    
+    } while (i < 6);
+    int maxday = (LEAP_YEAR_CHECK(y+YEAR_OFFSET)&&m==2)?leap_feb:month_days[m];
+    d = (d>maxday)?0:d;
+    m = (m>MONTH_TO_YEAR)?0:m;
+
     current_date[2] = (unsigned char)d;
     current_date[1] = (unsigned char)m;
-    current_date[0] = (unsigned char)(y - YEAR_OFFSET);
+    current_date[0] = (unsigned char)y;
 }
 void config_time()
 {
@@ -83,25 +122,28 @@ void config_time()
         if (zeroset == 1)
         {
             zeroset = 0;
-            k = (k == 11) ? 0 : k;
-            for (int j = 0; j < i; j++)
-                pow = pow * 10;
-            h += k * pow;
+            k = (k >= 11) ? 0 : k;
+            switch (i)
+            {
+            case 0:h=10*k;  break;
+            case 1:h+=k;    break;
+            case 2:m=10*k;  break;
+            case 3:m+=k;    break;
+            case 4:s=10*k;  break;
+            case 5:s+=k;    break;
+            default:        break;
+            }
             time_str[(i > 1) ? ((i > 3) ? i + 2 : i + 1) : i] = (char)(k + INT_TO_CHAR);
             display_write(screen_time);
             i++;
         }
     } while (i < 6);
-    h = reverse_int(h, 6);
-    s = h % 100;
-    h = h / 100;
-    m = h % 100;
-    h = h / 100;
     s = (s >= SEC_TO_MIN) ? 0 : s;
     m = (m >= MIN_TO_HOUR) ? 0 : m;
     h = (h >= HOUR_TO_DAY) ? 0 : h;
 
-    microseconds = (volatile unsigned long long)(MICRO_TO_SEC * ((volatile unsigned long long)s + SEC_TO_MIN * (m + h * MIN_TO_HOUR)));
+    microseconds = ( unsigned long long)(MICRO_TO_SEC * (( unsigned long long)s + SEC_TO_MIN * (m + h * MIN_TO_HOUR)));
+    delay_micro(20);
     time_config_flag = 0;
 }
 void time_to_str(Time time, char *str)

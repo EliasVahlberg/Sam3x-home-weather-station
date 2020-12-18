@@ -31,6 +31,7 @@ void main(void)
 
     //day_temp_data_test();
     config_time();
+    config_date();
 
   while(1)
   {

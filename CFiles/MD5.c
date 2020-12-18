@@ -104,8 +104,8 @@ const unsigned long int md5_T[64] = {
     0xfffa3942 /* 33 (HH)*/, 0x8771f681 /* 34 (HH)*/, 0x6d9d6122 /* 35 (HH)*/, 0xfde5380c /* 36 (HH)*/, 0xa4beea44 /* 37 (HH)*/, 0x4bdecfa9 /* 38 (HH)*/, 0xf6bb4b60 /* 39 (HH)*/, 0xbebfbc70 /* 40 (HH)*/, 0x289b7ec6 /* 41 (HH)*/, 0xeaa127fa /* 42 (HH)*/, 0xd4ef3085 /* 43 (HH)*/, 0x4881d05 /* 44 (HH)*/, 0xd9d4d039 /* 45 (HH)*/, 0xe6db99e5 /* 46 (HH)*/, 0x1fa27cf8 /* 47 (HH)*/, 0xc4ac5665 /* 48 (HH)*/,
     0xf4292244 /* 49 (II)*/, 0x432aff97 /* 50 (II)*/, 0xab9423a7 /* 51 (II)*/, 0xfc93a039 /* 52 (II)*/, 0x655b59c3 /* 53 (II)*/, 0x8f0ccc92 /* 54 (II)*/, 0xffeff47d /* 55 (II)*/, 0x85845dd1 /* 56 (II)*/, 0x6fa87e4f /* 57 (II)*/, 0xfe2ce6e0 /* 58 (II)*/, 0xa3014314 /* 59 (II)*/, 0x4e0811a1 /* 60 (II)*/, 0xf7537e82 /* 61 (II)*/, 0xbd3af235 /* 62 (II)*/, 0x2ad7d2bb /* 63 (II)*/, 0xeb86d391 /* 64 (II)*/};
 
-  
-static unsigned char md5_padding [64] = { /* 512 Bits */
+//maximum padding 64 bytes / 512 Bits 
+static unsigned char md5_padding [64] = { 
     0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
