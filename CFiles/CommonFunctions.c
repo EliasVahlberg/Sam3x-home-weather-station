@@ -220,3 +220,23 @@ void char_array_erase(char* arr,int length, char erase_val)
     }
     
 }
+
+int reverse_int(int n,int len)
+{
+    int t=0,i = 0;
+    while(n)
+    {
+        i++;
+        t += (n % 10);
+        n = n/10;
+        if(n==0)
+            break;
+        t *= 10;
+    }
+    while(len-1>i)
+    {
+        t *= 10;
+        i++;
+    }
+    return t;
+}

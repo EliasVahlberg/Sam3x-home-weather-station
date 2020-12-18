@@ -76,3 +76,21 @@ char* username;
 char* password;
 
 #pragma endregion LoginSystem
+
+#pragma region DateTime
+Date current_date = {00,00,00};
+Time current_time = {00,00,00};
+Time zero_time    = {00,00,00}; 
+Date zero_date    = {00,00,00}; 
+volatile unsigned long long microseconds = 0; 
+const int month_days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+const int leap_feb = 29;
+volatile int time_config_flag = 1;
+
+screen_element screen_time;
+screen_element screen_date;
+
+char time_str[TIME_LEN];
+char date_str[DATE_LEN];
+
+#pragma endregion DateTime

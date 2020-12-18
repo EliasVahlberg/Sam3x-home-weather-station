@@ -25,7 +25,7 @@ void login_init()
     if (default_user == NULL)
         return;
     (*default_user).u_len = def_us_len;
-    (*default_user).p_len = def_pass_len;
+    (*default_user).p_len = HASHED_PASS_LEN;
     (*default_user).username = (char *)malloc(def_us_len * sizeof(char));
     if ((*default_user).username == NULL)
         return;

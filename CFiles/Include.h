@@ -11,6 +11,7 @@
 #include "CommonFunctions.c"
 #include "display.c"
 #include "keypad.c"
+#include "DateTime.c"
 #include "TemperatureSensor.c"
 #include "LightSensor.c"
 #include "Servo.c"

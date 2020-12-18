@@ -24,15 +24,17 @@ void main(void)
 {
   
     full_setup();
-    login();
-    edit_user();
-    login();
 
-    day_temp_data_test();
+    //login();
+    //edit_user();
+    //login();
+
+    //day_temp_data_test();
+    config_time();
 
   while(1)
   {
-
+    
     start_pulse();
     if(temp_rdy_flag)
         temperature = get_temp();
@@ -69,6 +71,9 @@ void main(void)
         servo_position = ((double) servo_get_position()/43.7);
         if(loopCount>15)
             temperature_alarm();
+            
+            set_timedate();
+            display_date_time();
   }
   
 }
@@ -90,6 +95,7 @@ void full_setup()
     Init_Display();
     clear();
     login_init();
+    init_date_time();
 }
 
 

@@ -97,3 +97,23 @@
 #define HASHED_PASS_LEN         (32)
 
 #pragma endregion LoginSystem
+
+#pragma region DateTime
+#define MICRO_TO_SEC         (1000000)
+#define SEC_TO_MIN           (60)
+#define MIN_TO_HOUR          (60)
+#define HOUR_TO_DAY          (24)
+#define YEAR_OFFSET          (2000)
+#define MONTH_TO_YEAR        (12)
+#define LEAP_YEAR_CHECK(Y) ( (((Y%4==0)&&(Y%100 != 0))||(Y%400 == 0))?1:0)
+
+#define TIME_POS_X            (22)            
+#define TIME_POS_Y            (0)
+#define TIME_LEN              (8)
+
+#define DATE_POS_X            (20)
+#define DATE_POS_Y            (1)
+#define DATE_LEN              (10)  
+#define INT_TO_CHAR           (48)
+
+#pragma endregion DateTime

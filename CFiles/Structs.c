@@ -59,3 +59,11 @@ typedef struct User_List{
     struct User* this_user;
     struct User_List* next_user;
 }user_list;
+
+typedef unsigned char Date[3];
+typedef unsigned char Time[3];
+typedef unsigned char Time_hm[2];
+
+
+
+

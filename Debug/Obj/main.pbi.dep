@@ -24,6 +24,7 @@ main.pbi: \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/CommonFunctions.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/display.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/keypad.c \
+  C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/DateTime.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/TemperatureSensor.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/LightSensor.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/Servo.c \
