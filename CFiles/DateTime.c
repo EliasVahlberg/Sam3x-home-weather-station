@@ -31,7 +31,7 @@ void set_timedate()
     temp_seconds = temp_seconds / MIN_TO_HOUR;
     current_time[0] = (unsigned char)(temp_seconds % HOUR_TO_DAY);
     temp_seconds = temp_seconds / HOUR_TO_DAY;
-    if (current_time[0] >= HOUR_TO_DAY)
+    if (temp_seconds>0)
     {
         microseconds = 0;
         int max_day = (current_date[1] != 2 || LEAP_YEAR_CHECK(current_date[0]) != 1) ? month_days[current_date[1]] : leap_feb;
@@ -62,7 +62,7 @@ void config_date()
     date_to_str(zero_date, date_str);
     screen_date = create_screen_element(DATE_POS_X, DATE_POS_Y, DATE_LEN, date_str);
     display_write(screen_date);
-    int d = 0, m = 0, y = 0, k = 0, i = 0, zeroset = 0;
+    int d = 0, m = 0, y = 0, k = 0, i = 0, zeroset = 0,erase = 0;
     do
     {
         delay_micro(50);
@@ -75,21 +75,48 @@ void config_date()
         }
         else if(zeroset==1)
         {
-            k = (k>=11)?0:k;
+            k = (k==11)?0:k;
             zeroset=0;
-           switch (i)
+            if(k==10)               //If the asterisk is pressed (backspace)
             {
-            case 0:d=10*k;  break;
-            case 1:d+=k;    break;
-            case 2:m=10*k;  break;
-            case 3:m+=k;    break;
-            case 4:y=10*k;  break;
-            case 5:y+=k;    break;
-            default:        break;
+                i = (i!=0)?i-1:0;
+                k=0;
+                erase=1;
+                switch (i)
+                {
+                    case 0:d=0;         break;
+                    case 1:d-=d%10;     break;
+                    case 2:m=0;         break;
+                    case 3:m-=m%10;     break;
+                    case 4:y=0;         break;
+                    case 5:y-=y%10;     break;
+                    default:            break;
+                }
+            }
+            else if(k==12)               //If the hash symbol is pressed break
+            {
+                break;
+            }
+            else 
+            {
+
+                switch (i)
+                {
+                    case 0:d=10*k;  break;
+                    case 1:d+=k;    break;
+                    case 2:m=10*k;  break;
+                    case 3:m+=k;    break;
+                    case 4:y=10*k;  break;
+                    case 5:y+=k;    break;
+                    default:        break;
+                }
             }
             date_str[(i > 1) ? ((i > 3) ? i + 4 : i + 1) : i] = (char)(k + INT_TO_CHAR);
             display_write(screen_date);
-            i++;
+            if(erase)
+                erase = 0;
+            else 
+                i++;
         }
     
     } while (i < 6);
@@ -107,10 +134,9 @@ void config_time()
     time_to_str(zero_time, time_str);
     screen_time = create_screen_element(TIME_POS_X, TIME_POS_Y, TIME_LEN, time_str);
     display_write(screen_time);
-    int s = 0, m = 0, h = 0, k = 0, i = 0, zeroset = 0;
+    int s = 0, m = 0, h = 0, k = 0, i = 0, zeroset = 0, erase=0;
     do
     {
-        int pow = 1;
         delay_micro(50);
         k = get_keypad_key();
         if (k == 0)
@@ -119,23 +145,52 @@ void config_time()
             delay_micro(50);
             continue;
         }
-        if (zeroset == 1)
+        else if (zeroset == 1)
         {
             zeroset = 0;
-            k = (k >= 11) ? 0 : k;
-            switch (i)
+            k = (k == 11) ? 0 : k;  //If the zero key is pressed
+            if(k==10)               //If the asterisk is pressed (backspace)
             {
-            case 0:h=10*k;  break;
-            case 1:h+=k;    break;
-            case 2:m=10*k;  break;
-            case 3:m+=k;    break;
-            case 4:s=10*k;  break;
-            case 5:s+=k;    break;
-            default:        break;
+                i = (i!=0)?i-1:0;
+                k=0;
+                erase=1;
+
+                switch (i)
+                {
+                    case 0:h=0;         break;
+                    case 1:h-=h%10;     break;
+                    case 2:m=0;         break;
+                    case 3:m-=m%10;     break;
+                    case 4:s=0;         break;
+                    case 5:s-=s%10;     break;
+                    default:            break;
+                }
+
+            }
+            else if(k==12)               //If the hash symbol is pressed break
+            {
+                break;
+            }
+            else
+            {
+                
+                switch (i)
+                {
+                    case 0:h=10*k;  break;
+                    case 1:h+=k;    break;
+                    case 2:m=10*k;  break;
+                    case 3:m+=k;    break;
+                    case 4:s=10*k;  break;
+                    case 5:s+=k;    break;
+                    default:        break;
+                }
             }
             time_str[(i > 1) ? ((i > 3) ? i + 2 : i + 1) : i] = (char)(k + INT_TO_CHAR);
             display_write(screen_time);
-            i++;
+            if(erase)
+                erase = 0;
+            else 
+                i++;
         }
     } while (i < 6);
     s = (s >= SEC_TO_MIN) ? 0 : s;
