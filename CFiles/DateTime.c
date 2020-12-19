@@ -17,10 +17,12 @@ void config_time();
 void time_to_str(Time time, char *str);
 void date_to_str(Date date, char *str);
 #pragma endregion functions
+
 void init_date_time()
 {
     time_config_flag = 0;
 }
+
 void set_timedate()
 {
     time_config_flag = 1;
@@ -45,10 +47,14 @@ void set_timedate()
         }
         current_date[2] = (unsigned char)(current_date[2] + 1) % max_day;
     }
+    current_time_hm[0] = current_time[0];
+    current_time_hm[1] = current_time[1];
     time_config_flag = 0;
 }
+
 void display_date_time()
 {
+    set_timedate();
     time_to_str(current_time, time_str);
     screen_time = create_screen_element(TIME_POS_X, TIME_POS_Y, TIME_LEN, time_str);
     date_to_str(current_date, date_str);
@@ -56,6 +62,7 @@ void display_date_time()
     display_write(screen_time);
     display_write(screen_date);
 }
+
 void config_date()
 {
     delay_micro(20);
@@ -128,6 +135,7 @@ void config_date()
     current_date[1] = (unsigned char)m;
     current_date[0] = (unsigned char)y;
 }
+
 void config_time()
 {
     time_config_flag = 1;
@@ -201,6 +209,7 @@ void config_time()
     delay_micro(20);
     time_config_flag = 0;
 }
+
 void time_to_str(Time time, char *str)
 {
     int i = 0;
@@ -212,6 +221,7 @@ void time_to_str(Time time, char *str)
 
     return;
 }
+
 void date_to_str(Date date, char *str)
 {
     int i = 0;
@@ -222,3 +232,4 @@ void date_to_str(Date date, char *str)
     i += int_to_str(str + i, 4, ((int)date[0] + YEAR_OFFSET));
     return;
 }
+

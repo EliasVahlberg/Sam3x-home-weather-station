@@ -999,7 +999,7 @@
                     <item>screen_time</item>
                     <item>date_str</item>
                     <item>screen_date</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>

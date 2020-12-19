@@ -80,6 +80,7 @@ char* password;
 #pragma region DateTime
 Date current_date = {00,00,00};
 Time current_time = {00,00,00};
+Time_hm current_time_hm = {00,00};
 Time zero_time    = {00,00,00}; 
 Date zero_date    = {00,00,00}; 
 volatile unsigned long long microseconds = 0; 
@@ -94,3 +95,8 @@ char time_str[TIME_LEN];
 char date_str[DATE_LEN];
 
 #pragma endregion DateTime
+
+#pragma region LinkedList
+node head;
+node tail;
+#pragma endregion LinkedList

@@ -12,6 +12,7 @@
 #include "display.c"
 #include "keypad.c"
 #include "DateTime.c"
+#include "LinkedList.c"
 #include "TemperatureSensor.c"
 #include "LightSensor.c"
 #include "Servo.c"

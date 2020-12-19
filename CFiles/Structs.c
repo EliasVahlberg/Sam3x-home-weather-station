@@ -63,6 +63,14 @@ typedef struct User_List{
 typedef unsigned char Date[3];
 typedef unsigned char Time[3];
 typedef unsigned char Time_hm[2];
+typedef unsigned char* temp_d;
+
+
+typedef struct Linked_List* node;
+struct Linked_List{
+    node next;
+    temp_d data;
+};
 
 
 

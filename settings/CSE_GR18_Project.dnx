@@ -19,7 +19,7 @@
         <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
     </SWOTraceHWSettings>
     <DebugChecksum>
-        <Checksum>203290472</Checksum>
+        <Checksum>2994546229</Checksum>
     </DebugChecksum>
     <Trace1>
         <Enabled>0</Enabled>
@@ -56,6 +56,15 @@
         <CStepIntDis>_ 0</CStepIntDis>
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </JLinkDriver>
+    <InterruptStripe>
+        <Title0>TC0</Title0>
+        <Setup0>3 1 3 0 1 0 0 6549929189191775296 -2449622640084119148</Setup0>
+        <Title1>ADC</Title1>
+        <Setup1>3 1 3 0 1 0 0 6549929189191775296 5692858402137969044</Setup1>
+        <Title2>SysTick</Title2>
+        <Setup2>3 1 3 0 1 0 0 6549929189191775296 -2449622640084381914</Setup2>
+        <Sort>1</Sort>
+    </InterruptStripe>
     <Trace2>
         <Enabled>0</Enabled>
         <ShowSource>0</ShowSource>
@@ -72,16 +81,16 @@
     </SWOTraceWindow>
     <DataLog>
         <LogEnabled>0</LogEnabled>
-        <GraphEnabled>0</GraphEnabled>
+        <GraphEnabled>1</GraphEnabled>
         <ShowTimeLog>1</ShowTimeLog>
         <SumEnabled>0</SumEnabled>
         <ShowTimeSum>1</ShowTimeSum>
     </DataLog>
     <InterruptLog>
-        <LogEnabled>0</LogEnabled>
-        <GraphEnabled>0</GraphEnabled>
+        <LogEnabled>1</LogEnabled>
+        <GraphEnabled>1</GraphEnabled>
         <ShowTimeLog>1</ShowTimeLog>
-        <SumEnabled>0</SumEnabled>
+        <SumEnabled>1</SumEnabled>
         <ShowTimeSum>1</ShowTimeSum>
         <SumSortOrder>0</SumSortOrder>
     </InterruptLog>
@@ -105,7 +114,10 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints2>
-        <Count>0</Count>
+        <Bp0>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\LinkedList.c}.114.5" 0 0 1 "" 0 "" 0</Bp0>
+        <Bp1>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\LinkedList.c}.135.5" 0 0 1 "" 0 "" 0</Bp1>
+        <Bp2>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\LinkedList.c}.62.9" 0 0 1 "" 0 "" 0</Bp2>
+        <Count>3</Count>
     </Breakpoints2>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>

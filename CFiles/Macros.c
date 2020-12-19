@@ -117,3 +117,8 @@
 #define INT_TO_CHAR           (48)
 
 #pragma endregion DateTime
+
+#pragma region LinkedList
+#define TEMP_D_OFFSET        (100)
+#define TEMP_D_MAX            (255)
+#pragma endregion LinkedList

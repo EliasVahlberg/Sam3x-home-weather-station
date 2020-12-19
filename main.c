@@ -30,9 +30,12 @@ void main(void)
     //login();
 
     //day_temp_data_test();
-    config_time();
-    config_date();
-
+    //config_time();
+    //config_date();
+    current_time[0]= (unsigned char) 11;
+    head = create_node();
+    tail = create_node();
+    double avg = 0.0;
   while(1)
   {
     
@@ -72,9 +75,12 @@ void main(void)
         servo_position = ((double) servo_get_position()/43.7);
         if(loopCount>15)
             temperature_alarm();
-            
-            set_timedate();
+
             display_date_time();
+        expand_List(head, tail,temperature);
+        int k = get_keypad_key();
+        if(k == 10)
+            avg = list_avg(head);
   }
   
 }
