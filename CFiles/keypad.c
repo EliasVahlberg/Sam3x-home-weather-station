@@ -5,7 +5,7 @@
 *     Elias Vahlberg
 *     Isak Ringdahl
 * \brief 
-*     ...
+*     Keypad Init and functions used to get information from the keypad
 */
 
 #pragma region Functions
@@ -13,6 +13,14 @@ int get_keypad_key();
 void keypad_setup();
 #pragma endregion Functions
 
+
+/**
+ * get_keypad_key
+* \brief Retrives the key that is pressed by setting the cols and clearing them one by one,
+*  if multiple keys are pressed the highest one is saved  
+* @return int value representing the possition on the keypad e.g. ["1"=1...,"9"=9,"*"=10,"0"=11,"#"=12]
+*  0 representing no key press
+*/
 int get_keypad_key()
 {
     int val = 0;
@@ -49,6 +57,12 @@ int get_keypad_key()
 
 }
 
+/**
+* keypad_setup
+* \brief Init for the keypad,
+* enables the pins 27, 34-37 and 39-41.
+* Dissables the pullup resistors
+*/
 void keypad_setup()
 {
     

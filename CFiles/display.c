@@ -5,7 +5,7 @@
 *     Elias Vahlberg
 *     Isak Ringdahl
 * \brief 
-*     ...
+*     Display Init and functions used to interface with the display
 */
 
 #pragma region functions

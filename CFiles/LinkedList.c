@@ -5,7 +5,7 @@
 *     Elias Vahlberg
 *     Isak Ringdahl
 * \brief 
-*     ...
+*     A simple signle linked list implementation 
 */
 #pragma region functions
 node create_node();

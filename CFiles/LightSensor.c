@@ -5,9 +5,8 @@
 *     Elias Vahlberg
 *     Isak Ringdahl
 * \brief 
-*     ...
+*     Light sensor Init and functions used to get light measurements
 */
-//#include "ArduinoBaseInclude.c"
 
 #pragma region Functions
 void    adc_setup                   (                   );
@@ -16,30 +15,38 @@ void    light_measure               (                   );
 void    adc_measure                 (                   );
 #pragma endregion Functions
 
-
+/**
+* \brief Init for the Light sensor,
+* Enables the PMC PIOA and adc,
+* Enables the pins A6/5
+* Configures the ADC interrupt
+*/
 void adc_setup(){ 
-  *AT91C_PMC_PCER         |= (1 << 11);     //Enable PMC, starting peripheral clock PIOA  Light
-  *AT91C_PMC_PCER1         = 1<<5;               //Enables the PMC for the ADC
+  *AT91C_PMC_PCER         |= (1 << 11);   //Enable PMC, starting peripheral clock PIOA  Light
+  *AT91C_PMC_PCER1         = 1<<5;        //Enables the PMC for the ADC
 
-  *AT91C_PIOA_PER         |= 1<<4;               //Enable Digital Pin A6
-  *AT91C_PIOA_PER         |= 1<<3;               //Enable Digital Pin A5
+  *AT91C_PIOA_PER         |= 1<<4;        //Enable Digital Pin A6
+  *AT91C_PIOA_PER         |= 1<<3;        //Enable Digital Pin A5
   *AT91C_ADCC_MR           = 1<<9;                 
-  // Division value: MCK/((ADC MR>>8 + 1)*2) Prescaler to 2 in ADC_MR
+                                          // Division value: MCK/((ADC MR>>8 + 1)*2) Prescaler to 2 in ADC_MR
 
-  *AT91C_ADCC_CWR          = 0x1000000;           //= ADC_EMR, Used to: "append the channel number to the conversion result in ADC_LDCR register"
+  *AT91C_ADCC_CWR          = 0x1000000;   //= ADC_EMR, Used to: "append the channel number to the conversion result in ADC_LDCR register"
   NVIC_ClearPendingIRQ(ADC_IRQn);
-  NVIC_SetPriority(ADC_IRQn, 1);        //Priority of one (high) since the interrupt is not enabled for long durations and is time sensitive 
+  NVIC_SetPriority(ADC_IRQn, 1);          //Priority of one (high) since the interrupt is not enabled for long durations and is time sensitive 
   NVIC_EnableIRQ(ADC_IRQn);
   
 }
 
-//A combined function to get photoresistor data using adc
+
+/**
+* \brief A combined function to get photoresistor data from both resistors using adc
+*/
 void adc_measure(){
   light_sens_ch1_ready=0;
   light_sens_ch2_ready=0;
-   *AT91C_ADCC_CHER = 0x6;                          //Bit number nr. 1 and 2 (0x6) enables CH1 and CH2 in the ADC
-   *AT91C_ADCC_CR = 0x2;                            //Bit 1 = Start, Starts ADC
-   *AT91C_ADCC_IER = (1<<24);                       //Enable interrupt (DRDY: Data Ready Interrupt Enable) on the ADC
+   *AT91C_ADCC_CHER = 0x6;               //Bit number nr. 1 and 2 (0x6) enables CH1 and CH2 in the ADC
+   *AT91C_ADCC_CR = 0x2;                 //Bit 1 = Start, Starts ADC
+   *AT91C_ADCC_IER = (1<<24);            //Enable interrupt (DRDY: Data Ready Interrupt Enable) on the ADC
    int adc_read_status = 0;
    while(1)
    {
@@ -62,6 +69,9 @@ void adc_measure(){
    light_sens_ch2_ready = 0;
 }
 
+/**
+* \brief Calls adc_measure and converts the CH1 and CH2 values to voltage readings 
+*/
 void light_measure(){
   adc_measure();
     adc_ch1_voltage = adc_CDR1_value/light_to_volt_coefficcient; 
