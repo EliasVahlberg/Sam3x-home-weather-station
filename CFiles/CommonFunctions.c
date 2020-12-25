@@ -4,26 +4,41 @@
 * @authors 
 *     Elias Vahlberg
 *     Isak Ringdahl
-* \brief 
+* \brief A collection of non-specific functions used in other parts of the system 
+          mainly regarding string, double and char conversions along with some struct conversions.
 *     
 */
 
 #pragma region Functions
-int day_temp_data_to_string(day_temp_data t_data,char* t_data_str);
-int date_to_string(date d,char* str);
-int time_hm_to_string(time_hm t,char* str);
-void reverse_str(char* arr, int len);
-int int_to_str(char* arr, int zeroes, int n);
-void int_to_str_fixed_length(char* arr, int length, int n);
-int double_to_str(char* arr,double d,int decimal_precision);
-void double_to_str_fixed_length(char* arr,double d,int length);
-void str_concat(char* dest,char* src, int length);
-void char_array_erase(char* arr,int length, char erase_val);
+int     day_temp_data_to_string    (day_temp_data t_data,  char* t_data_str                        );
+int     date_to_string             (date d,                char* str                               );
+int     time_hm_to_string          (time_hm t,             char* str                               );
+void    reverse_str                (char* arr,             int len                                 );
+int     int_to_str                 (char* arr,             int zeroes,     int n                   );
+void    int_to_str_fixed_length    (char* arr,             int length,     int n                   );
+int     double_to_str              (char* arr,             double d,       int decimal_precision   );
+void    double_to_str_fixed_length (char* arr,             double d,       int length              );
+void    str_concat                 (char* dest,            char* src,      int length              );
+void    char_array_erase           (char* arr,             int length,     char erase_val          );
 #pragma endregion Functions
 
+/**
+* \brief Summary
+* @param input1
+* @param input2
+* @return value returned
+*/
 
-//day : [0][n], min : [1][n], tmin : [2][n], avg : [3][n], max : [4][n], tmax : [5][n], var : [6][n]
-//date        , double      , time         , double      , double      , time         , double
+/**
+* day_temp_data_to_string 
+* \brief Converts the struct day_temp_data which contains all the statistics for one day in to a string
+*         where each element is separated by the char literal DAY_TEMP_PADDING    
+* @param t_data source of the struct. 
+* @param t_data_str the destination of the resulting string.
+* @return The resulting length of the string with the following format:
+* day : [0][n], min : [1][n], tmin : [2][n], avg : [3][n], max : [4][n], tmax : [5][n], var : [6][n]
+*  date       , double      , time         , double      , double      , time         , double
+*/
 int day_temp_data_to_string(day_temp_data t_data,char* t_data_str)
 {
     int i = 0;
@@ -55,6 +70,13 @@ int day_temp_data_to_string(day_temp_data t_data,char* t_data_str)
     
 }
 
+/**
+* date_to_string
+* \brief Converts a struct date to a string with the format dd/mm/yyyy
+* @param d source of the struct date 
+* @param str the destination of the string 
+* @return the added offset used in further appending
+*/
 int date_to_string(date d,char* str)
 {
     int i = 0;
@@ -69,6 +91,13 @@ int date_to_string(date d,char* str)
 
 }
 
+/**
+* time_hm_to_string 
+* \brief Converts a struct time_hm (hm = hour:minute) to a string with the format hh:mm
+* @param t source of the struct time_hm
+* @param str the destination of the string 
+* @return the added offset used in further appending
+*/
 int time_hm_to_string(time_hm t,char* str)
 {
     int i = 0;
@@ -80,9 +109,10 @@ int time_hm_to_string(time_hm t,char* str)
 }
 
 /**
+* reverse_str 
 * \brief Reverses an array of chars (used in int/double string conversion)
-* @param arr
-* @param len
+* @param arr the distination of the string
+* @param len the length of the string in arr
 * @return (the reversed array via the arr variable)
 */
 void reverse_str(char* arr, int len) 
@@ -101,6 +131,7 @@ void reverse_str(char* arr, int len)
 }
 
 /**
+* int_to_str
 * \brief Converts an int to an array of chars with a predetermined length
 * @param arr the allready initialized char array
 * @param length the number of digits, (0 will convert the whole number, otherwise it will add zeroes iff length>log10(n)) 
@@ -123,6 +154,14 @@ int int_to_str(char* arr, int length, int n)
     return i;
 }
 
+/**
+* int_to_str_fixed_length
+* \brief Works as int_to_str the difference beeing that if the int is longer than length it is cut off highest digit first
+*         e.g. [length = 3, n = 12345, arr: "345"]
+* @param arr the allready initialized char array
+* @param length the number of digits
+* @param n the integer to be converted
+*/
 void int_to_str_fixed_length(char* arr, int length, int n)
 {
     int i = 0;
@@ -142,11 +181,11 @@ void int_to_str_fixed_length(char* arr, int length, int n)
 }
 
 /**
+* double_to_str 
 * \brief Utilizes the int_to_str and to convert a double value to an array of chars
 * @param arr the allready initialized char array (used as destination for the output)
 * @param d double value to be converted
 * @param decimal_precision number of digits after the decimal point to be converted
-* @return void (the resultion array is stored in arr )
 */
 int double_to_str(char* arr,double d,int decimal_precision)
 {
@@ -173,6 +212,14 @@ int double_to_str(char* arr,double d,int decimal_precision)
     return i;
 }
 
+/**
+* double_to_str_fixed_length 
+* \brief Works the same as double_to_str the diffrence being that the whole length is fixed and will cut off highest digit first then smallest decimal
+* e.g. [length = 2, d = 123.45, arr: "23"], [length = 4, d = 123.45, arr:"123."]
+* @param arr the allready initialized char array (used as destination for the output)
+* @param d double value to be converted
+* @param length number of symbols to be converted (decimal point included)
+*/
 void double_to_str_fixed_length(char* arr,double d,int length)
 {
     //Extracts the integer part of the double
@@ -204,6 +251,13 @@ void double_to_str_fixed_length(char* arr,double d,int length)
     return;
 }
 
+/**
+* str_concat 
+* \brief Concatenates two string (char arrays) from the adress given in dest 
+* @param dest the destination adress from where to begin appending
+* @param src source of the string to be concatenated
+* @param length number of symbols to be concatenated
+*/
 void str_concat(char* dest,char* src, int length)
 {
     for (int i = 0; i < length; i++)    
@@ -212,6 +266,13 @@ void str_concat(char* dest,char* src, int length)
     }
 }
 
+/**
+* char_array_erase 
+* \brief sets all elements in the char array to the value erase_val effectively erasing the array from memory 
+* @param arr source of the string to be erased
+* @param length number of symbols to erased
+* @param erase_val the value set to all array elements in arr (most commonly "\0" i.e. integer 0)
+*/
 void char_array_erase(char* arr,int length, char erase_val)
 {
     for (int i = 0; i < length; i++)
