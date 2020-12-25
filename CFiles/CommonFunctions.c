@@ -22,12 +22,6 @@ void    str_concat                 (char* dest,            char* src,      int l
 void    char_array_erase           (char* arr,             int length,     char erase_val          );
 #pragma endregion Functions
 
-/**
-* \brief Summary
-* @param input1
-* @param input2
-* @return value returned
-*/
 
 /**
 * day_temp_data_to_string 

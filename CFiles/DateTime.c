@@ -1,28 +1,37 @@
-
-
 /**
 * @file
-*     main.c
+*     DateTime.c
 * @authors 
 *     Elias Vahlberg
 *     Isak Ringdahl
 * \brief 
-*     ...
+*     Functions sourrounding time and date initialization/configuration/Updating
 */
 #pragma region functions
-void init_date_time();
-void display_date_time();
-void config_date();
-void config_time();
-void time_to_str(Time time, char *str);
-void date_to_str(Date date, char *str);
+void init_date_time     (                    );
+void display_date_time  (                    );
+void config_date        (                    );
+void config_time        (                    );
+void time_to_str        (Time time, char *str);
+void date_to_str        (Date date, char *str);
 #pragma endregion functions
 
+
+/**
+* init_date_time 
+* \brief Sets the time config flag awaiting the configuration at startup
+*/
 void init_date_time()
 {
     time_config_flag = 0;
 }
 
+/**
+* set_timedate
+* \brief Updates the time and pauses the incrementing of microseconds in the systick handler for a 
+*  breif moment while uppdating the global variables current_time and current_date.
+*  Called before updating the screen time or when adding a timestamp to a temperature 
+*/
 void set_timedate()
 {
     time_config_flag = 1;
@@ -52,6 +61,11 @@ void set_timedate()
     time_config_flag = 0;
 }
 
+/**
+* display_date_time
+* \brief Calls set_timedate then updates the screen time/date via the the global variables
+*  struct screen_element screen_time  and struct screen_element screen_date
+*/
 void display_date_time()
 {
     set_timedate();
@@ -63,6 +77,11 @@ void display_date_time()
     display_write(screen_date);
 }
 
+/**
+* config_date
+* \brief Allows the user to configure the current date via the keypad and updates the screen after each keypress, 
+*  function keys : (* = backspace, # = end input)
+*/
 void config_date()
 {
     delay_micro(20);
@@ -136,6 +155,11 @@ void config_date()
     current_date[0] = (unsigned char)y;
 }
 
+/**
+* config_time
+* \brief Allows the user to configure the current time via the keypad and updates the screen after each keypress, 
+*  function keys : (* = backspace, # = end input)
+*/
 void config_time()
 {
     time_config_flag = 1;
@@ -210,6 +234,12 @@ void config_time()
     time_config_flag = 0;
 }
 
+/**
+* time_to_str
+* \brief Converts from struct Time to string with the format "hh:mm:ss" 
+* @param time source, struct Time
+* @param str destination char* str
+*/
 void time_to_str(Time time, char *str)
 {
     int i = 0;
@@ -222,6 +252,12 @@ void time_to_str(Time time, char *str)
     return;
 }
 
+/**
+* date_to_str
+* \brief Converts from struct Date to string with the format "dd:mm:20YY" 
+* @param date source, struct Date
+* @param str destination char* str
+*/
 void date_to_str(Date date, char *str)
 {
     int i = 0;
