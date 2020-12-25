@@ -9,24 +9,26 @@
 */
 
 #pragma region functions
-void            display_setup(void);
-void            Init_Display(void);
-unsigned char   Read_Status_Display(void);
-void            Write_Data_2_Display(unsigned char Data);
-void            Write_Command_2_Display(unsigned char command);
-
-int             set_cursor(int pos, int screen_half_select);
-int             write_blank_to_display(int length);
-int             display_clear(int length, int pos, int screen_half_select);
-void            clear();
-
-struct screen_cordinate convert_to_scord(int x, int y);
-struct screen_element create_screen_element(int x, int y, int l, char* text);
-int             display_write(struct screen_element screen_el);
-int             write_string_to_display(char* message,int length);
+void                    display_setup           (                                                                                             );
+void                    Init_Display            (                                                                                             );
+unsigned char           Read_Status_Display     (                                                                                             );
+void                    Write_Data_2_Display    (unsigned char Data                                                                           );
+void                    Write_Command_2_Display (unsigned char command                                                                        );
+int                     set_cursor              (int pos,                           int screen_half_select                                    );
+int                     write_blank_to_display  (int length                                                                                   );
+int                     display_clear           (int length,                        int pos,                int screen_half_select            );
+void                    clear                   (                                                                                             );
+struct screen_cordinate convert_to_scord        (int x,                             int y                                                     );
+struct screen_element   create_screen_element   (int x,                             int y,                  int l,                  char* text);
+int                     display_write           (struct screen_element screen_el                                                              );
+int                     write_string_to_display (char* message,                     int length                                                );
 #pragma endregion functions
 
-
+/**
+* display_setup
+* \brief Starts the PMC for PIOC/D, enables all pins for the display and sets 
+*  corresponding input and output
+*/
 void display_setup()
 {
     *AT91C_PMC_PCER = (1 << 13);     //Enable PMC, starting peripheral clock
@@ -59,11 +61,16 @@ void display_setup()
 
 }
 
-void Init_Display(void)
+/**
+* Init_Display 
+* \brief Resets the display, 
+*  sets the text home adress,
+*  Sets the graphics home adress,
+*  Sets the text area/Graphics,
+*  Enables text mode and turns off graphics mode
+*/
+void Init_Display()
 {
-    *AT91C_PMC_PCER    |= (1 << 13);     //Enable PMC, starting peripheral clock PIOC  DISP
-    *AT91C_PMC_PCER    |= (1 << 14);     //Enable PMC, starting peripheral clock PIOD  DISP
-
     *AT91C_PIOC_SODR    =   OE;    //Disable output (74chip)
     *AT91C_PIOD_CODR    =   RESET_DISP; // Clear Reset display
     general_delay(DISPLAY_DELAY_VALUE);                 //Make a Delay
@@ -85,7 +92,11 @@ void Init_Display(void)
     *AT91C_PIOC_CODR    =   OE;    //Disable output (74chip)
 }
 
-unsigned char Read_Status_Display(void)
+/**
+* Read_Status_Display 
+* \brief Reads the status from the display via the databuss 
+*/
+unsigned char Read_Status_Display()
 {
    unsigned char temp;
 
@@ -106,6 +117,10 @@ unsigned char Read_Status_Display(void)
 
 }
 
+/**
+* Write_Data_2_Display 
+* \brief Writes data to the display via the databuss (usually followed by a command)
+*/
 void Write_Data_2_Display(unsigned char data)
 {
 
@@ -130,6 +145,10 @@ void Write_Data_2_Display(unsigned char data)
 
 }
 
+/**
+* Write_Command_2_Display 
+* \brief Writes command to the display via the databuss (usually after one or two data writes)
+*/
 void Write_Command_2_Display(unsigned char command)
 {
 
@@ -156,6 +175,13 @@ void Write_Command_2_Display(unsigned char command)
 
 }
 
+/**
+* set_cursor 
+* \brief Sets the cursor pointer to a specific adress given the the pos and the screen half
+* @param pos between 0 and 240 repressenting the lower half of the screen
+* @param screen_half_select determines what screen half the cursor is set to
+* @return 1 if it was sucsessfull, 0 if the cordinate was out of bounds 
+*/
 int set_cursor(int pos, int screen_half_select)
 {
     if(screen_half_select>1)
@@ -170,6 +196,12 @@ int set_cursor(int pos, int screen_half_select)
     return 1;
 }
 
+/**
+* write_blank_to_display 
+* \brief erases the values from the cursor possition to the cursor possition + length
+* @param length how many spaces to erase
+* @return 1 if it was sucsessfull, 0 if nothing was deleted, -3 if write acess is blocked 
+*/
 int write_blank_to_display(int length)
 {
     if(display_write_disable_flag==0)
@@ -188,6 +220,12 @@ int write_blank_to_display(int length)
         return -3;
 }
 
+/**
+* display_clear
+* \brief erases the values from given screen possition 
+* @param length how many spaces to erase
+* @return 1 if it was sucsessfull, 0 if nothing was deleted or if it was out of bounds, -3 if write acess is blocked 
+*/
 int display_clear(int length, int pos, int screen_half_select)
 {
     if(display_write_disable_flag==0)
@@ -200,6 +238,10 @@ int display_clear(int length, int pos, int screen_half_select)
         return -3;
 }
 
+/**
+* clear
+* \brief clears the whole screen if write access is enabeled 
+*/
 void clear()
 {
     if(display_write_disable_flag==0)
@@ -218,6 +260,13 @@ void clear()
     }
 }
 
+/**
+* convert_to_scord 
+* \brief Converts from conventional conrdinates to the format Low_adress:0-240, High_adress:0-1
+* @param x cordinate
+* @param y cordinate
+* @return struct screen_cordinate containing the converted cordinate
+*/
 struct screen_cordinate convert_to_scord(int x, int y)
 {
     struct screen_cordinate sc;
@@ -230,6 +279,15 @@ struct screen_cordinate convert_to_scord(int x, int y)
 
 }
 
+/**
+* create_screen_element 
+* \brief Constructs an struct screen_element from x/y pos length and a string to be displayed
+* @param x cordinate
+* @param y cordinate
+* @param l length of the string
+* @param text string to be displayed
+* @return struct screen_element containing the input data
+*/
 struct screen_element create_screen_element(int x, int y, int l, char* text)
 {
     struct screen_element screen_el;
@@ -241,6 +299,13 @@ struct screen_element create_screen_element(int x, int y, int l, char* text)
 
 }
 
+/**
+* display_write 
+* \brief Shortens the proscess of writing to the display calling all needed functions and supplying 
+*  the data given in the screen element.
+* @param screen_el a struct screen_element containing all the data needed to write to the screen
+* @return 1 if successful, -1 if cursor out of bounds, -2 if write faliure, -3 if write acess is disabled 
+*/
 int display_write(struct screen_element screen_el)
 {
     if(display_write_disable_flag==0)
@@ -270,6 +335,15 @@ int display_write(struct screen_element screen_el)
         return -3;
 } 
 
+/**
+* convert_to_scord 
+* \brief writes the string contained in message, converts from regular char 
+*  to the display symbol on the fly
+* @param message string containing the message
+* @param length the length of message
+* @return 1 if successful, 0 if nothing was written, -3 if write acess is disabled 
+* @return 1 if successful, 0 if nothing was written, -3 if write acess is disabled 
+*/
 int write_string_to_display(char* message,int length)
 {   
     if(display_write_disable_flag==0)
