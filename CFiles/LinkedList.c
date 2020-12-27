@@ -5,7 +5,7 @@
 *     Elias Vahlberg
 *     Isak Ringdahl
 * \brief 
-*     A simple signle linked list implementation 
+*     A simple singly linked list implementation 
 */
 #pragma region functions
 node create_node();
@@ -17,6 +17,24 @@ temp_d create_temp_time_data(unsigned char temp, Time time);
 double list_avg(node head);
 #pragma endregion functions
 
+
+/**
+* \brief Summary
+* @param input1
+* @param input2
+* @return value returned
+*/
+
+/**
+* expand_List
+* \brief Expands the list with the given head/tail by converting and appending
+*  the temp value. Uses double_to_temp(), create_temp_time_data(),
+*  create_node_with_data(), append_node().  
+* @param head First node of the linked list
+* @param tail Last node of the linked list
+* @param temp temp data to append
+*
+*/
 void expand_List(node head, node tail, double temp)
 {
     set_timedate();
@@ -42,6 +60,12 @@ void expand_List(node head, node tail, double temp)
     }
 }
 
+
+/**
+* create_node
+* \brief allocates space for a node and initialize all values as NULL, then returns said node
+* @return empty allocated node
+*/
 node create_node()
 {
     node temp;
@@ -53,6 +77,12 @@ node create_node()
     return temp;
 } 
 
+/**
+* create_node_with_data
+* \brief Works the same as create_node(), diffrence being that the data is set.
+* @param data struct temp_d containing temperature and timestamp.
+* @return allocated node containing the input data.
+*/
 node create_node_with_data(temp_d data)
 {
     node temp;
@@ -68,6 +98,13 @@ node create_node_with_data(temp_d data)
     return temp;
 }
 
+/**
+* append_node
+* \brief appends newnode at the first NULL pointer next value in the 
+*  list starting with head.
+* @param head Starting node of the list.
+* @param newnode Node to be appended.
+*/
 void append_node(node head, node newnode)
 {
     node tempnode = head;
@@ -77,6 +114,11 @@ void append_node(node head, node newnode)
     tempnode->next = newnode;
 }
 
+/**
+* delete_first_node 
+* \brief deletes the first node in the list and changes the head value
+* @param head_l first node of the list
+*/
 void delete_first_node(node head_l)
 {
     node temp = head_l;
@@ -85,6 +127,16 @@ void delete_first_node(node head_l)
     free(temp);
 }
 
+/**
+* double_to_temp
+* \brief Converts a double temp value (between 10 and 35.5 degrees )
+* by multiplying it with 10 (to get 1 decimal precission), 
+* converting it to a int and then subtracting with the offset.
+* Example: [d = 21.5141, return = (char)(d*10-100) = 115 ]
+* @param d  temp to be converted
+* @param input2
+* @return value returned
+*/
 unsigned char double_to_temp(double d)
 {
     int n = (int)(d*10) - TEMP_D_OFFSET;
@@ -94,6 +146,12 @@ unsigned char double_to_temp(double d)
 
 }
 
+/**
+* \brief Summary
+* @param input1
+* @param input2
+* @return value returned
+*/
 temp_d create_temp_time_data(unsigned char temp, Time_hm time)
 {
     temp_d dest = calloc(3,sizeof(char));
@@ -103,6 +161,12 @@ temp_d create_temp_time_data(unsigned char temp, Time_hm time)
     return dest;
 }
 
+/**
+* \brief Summary
+* @param input1
+* @param input2
+* @return value returned
+*/
 double temp_to_double(unsigned char uc)
 {
     
@@ -110,6 +174,7 @@ double temp_to_double(unsigned char uc)
     return d;
 }
 
+/*Temporary!*/
 double list_avg(node head)
 {
     if(head == NULL)

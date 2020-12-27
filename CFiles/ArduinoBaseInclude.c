@@ -18,7 +18,6 @@ void general_delay      (int Value       );
 void pmc_setup          (                );
 void TC0_Handler        (                );
 void SysTick_Handler    (                );
-
 #pragma endregion Functions
 
 /**
