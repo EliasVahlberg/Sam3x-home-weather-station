@@ -18,7 +18,6 @@ double  get_temp                    (                   );
 void    temp_reset                  (                   );
 int     temperature_alarm           (                   );
 void    temp_display_alarm          (                   );
-void    temp_led_alarm              (                   );
 #pragma endregion Functions
 
 
@@ -66,14 +65,6 @@ void temp_reset()
 
 void temp_setup()
 {
-    if(TEMP_ALARM_TYPE!=0)
-    {
-        *AT91C_PMC_PCER |= (1 << TEMP_ALARM_LED_PIO_PMC_BIT);
-        *TEMP_ALARM_LED_PIO_ADRESS_ENABLE |= (1<<TEMP_ALARM_LED_BIT);
-        *TEMP_ALARM_LED_PIO_ADRESS_OUTPUT |= (1<<TEMP_ALARM_LED_BIT);
-        *TEMP_ALARM_LED_PIO_ADRESS_CLEAR = (1<<TEMP_ALARM_LED_BIT);
-
-    }
     timer_counter_setup();
     start_pulse();
 
@@ -91,24 +82,17 @@ double get_temp()
 
 int temperature_alarm()
 {
-    if(temp_alarm_flag!=0)
+    if(temp_alarm_flag!=0) //Checks if alarms should be disabled
     {
         if(!(curr_temp>= TEMP_ALARM_UPPER_VALUE||curr_temp<=TEMP_ALARM_LOWER_VALUE))
         {
             display_write_disable_flag = 0;
-            if(TEMP_ALARM_TYPE==0||TEMP_ALARM_TYPE==2)
-            {
-                screen_cord sc_temp_alarm = convert_to_scord(TEMP_ALARM_DISPLAY_X,TEMP_ALARM_DISPLAY_Y);
-                display_clear(TEMP_ALARM_DISPLAY_LENGTH,sc_temp_alarm.pos,sc_temp_alarm.screen_half_val);
-            }
-            if(TEMP_ALARM_TYPE==1||TEMP_ALARM_TYPE==2)
-            {
-                *TEMP_ALARM_LED_PIO_ADRESS_CLEAR = (1<<TEMP_ALARM_LED_BIT);
-            }
+            screen_cord sc_temp_alarm = convert_to_scord(TEMP_ALARM_DISPLAY_X,TEMP_ALARM_DISPLAY_Y);
+            display_clear(TEMP_ALARM_DISPLAY_LENGTH,sc_temp_alarm.pos,sc_temp_alarm.screen_half_val);
             temp_alarm_flag=0;
         }
     }
-    else if(curr_temp>= TEMP_ALARM_UPPER_VALUE||curr_temp<=TEMP_ALARM_LOWER_VALUE)
+    else if(curr_temp>= TEMP_ALARM_UPPER_VALUE||curr_temp<=TEMP_ALARM_LOWER_VALUE) //Check if alarm should be enabled
     {
         temp_alarm_flag = (curr_temp>= TEMP_ALARM_UPPER_VALUE)?2:1;
 
@@ -117,32 +101,24 @@ int temperature_alarm()
         double d = 0.0;
         for (int  i = 0; i < TEMP_ALARM_RECHECK; i++)
         {
-            d = get_temp();
+            while(1)
+            {
+                start_pulse();
+                if(temp_rdy_flag)
+                    {
+                        d = get_temp();
+                        break;
+                    }
+            }
             f = (d>= TEMP_ALARM_UPPER_VALUE)?2:
             ((d<=TEMP_ALARM_LOWER_VALUE)?1:0);
-            if(f!=temp_alarm_flag) //Ches if the new temporary "flag" f is equal to the last, if not it's considered a bug and will terminate the alarm
+            if(f!=temp_alarm_flag) //Checks if the new temporary "flag" f is equal to the last, if not it's considered a bug and will terminate the alarm
             {
                 temp_alarm_flag = 0;
                 return temp_alarm_flag;
             }
         }
-
-        switch (TEMP_ALARM_TYPE)
-        {
-        case 0:
             temp_display_alarm();
-            break;
-        case 1:
-            temp_led_alarm();
-            break;
-        case 2:
-            temp_display_alarm();
-            temp_led_alarm();
-            break;
-
-        default:
-            break;
-        }
     }
     return temp_alarm_flag;
     
@@ -161,9 +137,4 @@ void temp_display_alarm()
     display_write(temp_alarm_element);
     display_write_disable_flag = 1;
 
-}
-
-void temp_led_alarm()
-{
-    *TEMP_ALARM_LED_PIO_ADRESS_SET = (1<<TEMP_ALARM_LED_BIT);
 }

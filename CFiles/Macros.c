@@ -26,16 +26,8 @@
      
 #define TEMP_ALARM_UPPER_VALUE           (30.0                                      ) //
 #define TEMP_ALARM_LOWER_VALUE           (15.0                                      ) // 
-#define TEMP_ALARM_TYPE                  (2                                         ) //0: Display alarm, 1: LED alarm, 2: both
 #define TEMP_ALARM_RECHECK               (5                                         ) //The number of times it rechecks the temperature (to mitigate alarms caused by bugs)
 
-
-#define TEMP_ALARM_LED_PIO_PMC_BIT       (14                                        )
-#define TEMP_ALARM_LED_PIO_ADRESS_ENABLE (AT91_CAST(AT91_REG *) 	AT91C_PIOD_PER  )
-#define TEMP_ALARM_LED_PIO_ADRESS_OUTPUT (AT91_CAST(AT91_REG *) 	AT91C_PIOD_OER  )
-#define TEMP_ALARM_LED_PIO_ADRESS_SET    (AT91_CAST(AT91_REG *) 	AT91C_PIOD_SODR )
-#define TEMP_ALARM_LED_PIO_ADRESS_CLEAR  (AT91_CAST(AT91_REG *) 	AT91C_PIOD_CODR )
-#define TEMP_ALARM_LED_BIT               (1                                         )
 
 #define TEMP_ALARM_DISPLAY_MES_LOW       ("TEMPERATURE IS TOO LOW "                 ) // 
 #define TEMP_ALARM_DISPLAY_MES_HIGH      ("TEMPERATURE IS TOO HIGH"                 ) // 

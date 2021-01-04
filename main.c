@@ -19,6 +19,7 @@ double temperature      = 0.0   ;           //Temperature retrived from the temp
 void full_setup();
 void set_day_statistics();
 void add_temp_recording();
+void get_num_mes_per_min();
 #pragma endregion Functions
 
 void main(void)
@@ -33,7 +34,6 @@ void main(void)
     //config_time();
     //config_date();
     fast_mode_flag = 1;
-    measures_per_min = 10;
     curr_day_data = calloc(1,sizeof(day_temp_data));
     microseconds = 86390000000;
     head= calloc(1,sizeof(linked_node));
@@ -108,6 +108,7 @@ void full_setup()
     clear();
     login_init();
     init_date_time();
+    get_num_mes_per_min();
 }
 void add_temp_recording()
 {
@@ -130,7 +131,7 @@ void add_temp_recording()
             start_pulse();
             if(temp_rdy_flag)
             {
-                temp_minute_avg =+ get_temp();
+                temp_minute_avg += get_temp();
                 if(temp_minute_count==0)
                 {
                 set_timedate();
@@ -161,4 +162,17 @@ void set_day_statistics()
     screen_element daydt = create_screen_element(0,9,l,curr_day_data_str);
     display_write(daydt);
     new_day_flag=0;
+}
+void get_num_mes_per_min()
+{
+    char* str = "Enter measurements per minute";
+    screen_element sc = create_screen_element(0,3,29,str);
+    display_write(sc);
+    int k = 0;
+    while(!k)
+    {
+        k = get_keypad_key();
+    }
+    measures_per_min = (k>10)?10:k;
+    display_clear(29,sc.screen_cord.pos,sc.screen_cord.screen_half_val);
 }

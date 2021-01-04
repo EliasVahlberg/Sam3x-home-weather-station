@@ -97116,1000 +97116,6 @@
     "scope": null
   },
   {
-    "ID": "c:@temp_alarm_flag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp_alarm_flag",
-    "location": {
-      "column": "5",
-      "line": "12",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "temp_alarm_flag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@display_write_disable_flag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "display_write_disable_flag",
-    "location": {
-      "column": "5",
-      "line": "13",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "display_write_disable_flag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@servo_position",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "servo_position",
-    "location": {
-      "column": "13",
-      "line": "17",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "servo_position",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@prev_servo_call",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "prev_servo_call",
-    "location": {
-      "column": "13",
-      "line": "18",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "prev_servo_call",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@syst",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "syst",
-    "location": {
-      "column": "13",
-      "line": "23",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "syst",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@systick_delay",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "systick_delay",
-    "location": {
-      "column": "12",
-      "line": "24",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "systick_delay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@systick_trigger",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "systick_trigger",
-    "location": {
-      "column": "12",
-      "line": "25",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "systick_trigger",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@light_rotation_data",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "light_rotation_data",
-    "location": {
-      "column": "8",
-      "line": "29",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "light_rotation_data",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@adc_CDR1_value",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "adc_CDR1_value",
-    "location": {
-      "column": "13",
-      "line": "30",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "adc_CDR1_value",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@adc_CDR2_value",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "adc_CDR2_value",
-    "location": {
-      "column": "13",
-      "line": "31",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "adc_CDR2_value",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@light_to_volt_coefficcient",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "light_to_volt_coefficcient",
-    "location": {
-      "column": "13",
-      "line": "32",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "light_to_volt_coefficcient",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@light_sens_ch1_ready",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "light_sens_ch1_ready",
-    "location": {
-      "column": "13",
-      "line": "33",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "light_sens_ch1_ready",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@light_sens_ch2_ready",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "light_sens_ch2_ready",
-    "location": {
-      "column": "13",
-      "line": "34",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "light_sens_ch2_ready",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@adc_ch1_voltage",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "adc_ch1_voltage",
-    "location": {
-      "column": "13",
-      "line": "35",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "adc_ch1_voltage",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@adc_ch2_voltage",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "adc_ch2_voltage",
-    "location": {
-      "column": "13",
-      "line": "36",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "adc_ch2_voltage",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@temp_rdy_flag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp_rdy_flag",
-    "location": {
-      "column": "12",
-      "line": "40",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "temp_rdy_flag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@curr_temp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "curr_temp",
-    "location": {
-      "column": "12",
-      "line": "41",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "curr_temp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@tcDelta",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "tcDelta",
-    "location": {
-      "column": "12",
-      "line": "42",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "tcDelta",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@rowsArr",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "rowsArr",
-    "location": {
-      "column": "20",
-      "line": "46",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "rowsArr",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@colsArr",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "colsArr",
-    "location": {
-      "column": "20",
-      "line": "47",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "colsArr",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@login_text",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "login_text",
-    "location": {
-      "column": "6",
-      "line": "51",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "login_text",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@login_text_length",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "login_text_length",
-    "location": {
-      "column": "12",
-      "line": "52",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "login_text_length",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@login_user_str",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "login_user_str",
-    "location": {
-      "column": "6",
-      "line": "53",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "login_user_str",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@login_pass_str",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "login_pass_str",
-    "location": {
-      "column": "6",
-      "line": "54",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "login_pass_str",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@usr_pass_str_length",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "usr_pass_str_length",
-    "location": {
-      "column": "12",
-      "line": "55",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "usr_pass_str_length",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@screen_username",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "screen_username",
-    "location": {
-      "column": "17",
-      "line": "57",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "screen_username",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@screen_password",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "screen_password",
-    "location": {
-      "column": "17",
-      "line": "58",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "screen_password",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@number_of_users",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "number_of_users",
-    "location": {
-      "column": "5",
-      "line": "60",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "number_of_users",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@default_username",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "default_username",
-    "location": {
-      "column": "6",
-      "line": "61",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "default_username",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@default_password",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "default_password",
-    "location": {
-      "column": "6",
-      "line": "62",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "default_password",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@def_us_len",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "def_us_len",
-    "location": {
-      "column": "5",
-      "line": "63",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "def_us_len",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@def_pass_len",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "def_pass_len",
-    "location": {
-      "column": "5",
-      "line": "64",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "def_pass_len",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@default_user",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "default_user",
-    "location": {
-      "column": "7",
-      "line": "65",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "default_user",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@users",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "users",
-    "location": {
-      "column": "12",
-      "line": "66",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "users",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@current_user",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "current_user",
-    "location": {
-      "column": "7",
-      "line": "67",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "current_user",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@edit_user_text",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "edit_user_text",
-    "location": {
-      "column": "6",
-      "line": "69",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "edit_user_text",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@edit_user_text_length",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "edit_user_text_length",
-    "location": {
-      "column": "5",
-      "line": "70",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "edit_user_text_length",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@pre_password",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "pre_password",
-    "location": {
-      "column": "17",
-      "line": "71",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "pre_password",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@pre_username",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "pre_username",
-    "location": {
-      "column": "17",
-      "line": "72",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "pre_username",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@pre_login",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "pre_login",
-    "location": {
-      "column": "17",
-      "line": "73",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "pre_login",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@username",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "username",
-    "location": {
-      "column": "7",
-      "line": "75",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "username",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@password",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "password",
-    "location": {
-      "column": "7",
-      "line": "76",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "password",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@current_date",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "current_date",
-    "location": {
-      "column": "6",
-      "line": "81",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "current_date",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@current_time",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "current_time",
-    "location": {
-      "column": "6",
-      "line": "82",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "current_time",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@current_time_hm",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "current_time_hm",
-    "location": {
-      "column": "9",
-      "line": "83",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "current_time_hm",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@zero_time",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "zero_time",
-    "location": {
-      "column": "6",
-      "line": "84",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "zero_time",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@zero_date",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "zero_date",
-    "location": {
-      "column": "6",
-      "line": "85",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "zero_date",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@microseconds",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "microseconds",
-    "location": {
-      "column": "29",
-      "line": "86",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "microseconds",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@month_days",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "month_days",
-    "location": {
-      "column": "11",
-      "line": "87",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "month_days",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@leap_feb",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "leap_feb",
-    "location": {
-      "column": "11",
-      "line": "88",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "leap_feb",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@time_config_flag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "time_config_flag",
-    "location": {
-      "column": "14",
-      "line": "89",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "time_config_flag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@screen_time",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "screen_time",
-    "location": {
-      "column": "16",
-      "line": "91",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "screen_time",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@screen_date",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "screen_date",
-    "location": {
-      "column": "16",
-      "line": "92",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "screen_date",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@time_str",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "time_str",
-    "location": {
-      "column": "6",
-      "line": "94",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "time_str",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@date_str",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "date_str",
-    "location": {
-      "column": "6",
-      "line": "95",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "date_str",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@head",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "head",
-    "location": {
-      "column": "14",
-      "line": "100",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "head",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@tail",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "tail",
-    "location": {
-      "column": "14",
-      "line": "101",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "tail",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@list_size",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "list_size",
-    "location": {
-      "column": "5",
-      "line": "102",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "list_size",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@curr_day_data",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "curr_day_data",
-    "location": {
-      "column": "16",
-      "line": "107",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "curr_day_data",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@var_sum1",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "var_sum1",
-    "location": {
-      "column": "8",
-      "line": "108",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "var_sum1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@var_sum2",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "var_sum2",
-    "location": {
-      "column": "8",
-      "line": "109",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "var_sum2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@num_of_measurements",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "num_of_measurements",
-    "location": {
-      "column": "5",
-      "line": "110",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "num_of_measurements",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@new_day_flag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "new_day_flag",
-    "location": {
-      "column": "5",
-      "line": "111",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "new_day_flag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@measure_temp_flag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "measure_temp_flag",
-    "location": {
-      "column": "5",
-      "line": "112",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "measure_temp_flag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@last_temp_mesure",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "last_temp_mesure",
-    "location": {
-      "column": "5",
-      "line": "113",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "last_temp_mesure",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@new_minute_flag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "new_minute_flag",
-    "location": {
-      "column": "5",
-      "line": "114",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "new_minute_flag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@measures_per_min",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "measures_per_min",
-    "location": {
-      "column": "5",
-      "line": "116",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "measures_per_min",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@temp_minute_count",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp_minute_count",
-    "location": {
-      "column": "5",
-      "line": "117",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "temp_minute_count",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@temp_minute_avg",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp_minute_avg",
-    "location": {
-      "column": "8",
-      "line": "118",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "temp_minute_avg",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@curr_day_data_str",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "curr_day_data_str",
-    "location": {
-      "column": "7",
-      "line": "121",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "curr_day_data_str",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@fast_mode_flag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "fast_mode_flag",
-    "location": {
-      "column": "14",
-      "line": "123",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
-    },
-    "name": "fast_mode_flag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:system_sam3x.h@1895@macro@SYSTEM_SAM3X_H_INCLUDED",
     "What": "MacroDef",
     "defdec": "Def",
@@ -114200,254 +113206,450 @@
     "scope": null
   },
   {
-    "ID": "c:@F@update_avg_min_max",
+    "ID": "c:@F@init_date_time",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void update_avg_min_max(linked_node *, day_temp_data *)",
+    "display": "void init_date_time(void)",
+    "location": {
+      "column": "6",
+      "line": "11",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "init_date_time",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@display_date_time",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void display_date_time(void)",
+    "location": {
+      "column": "6",
+      "line": "12",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "display_date_time",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@config_date",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void config_date(void)",
     "location": {
       "column": "6",
       "line": "13",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "update_avg_min_max",
+    "name": "config_date",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@update_statistics",
+    "ID": "c:@F@config_time",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void update_statistics(linked_node *, day_temp_data *)",
+    "display": "void config_time(void)",
     "location": {
       "column": "6",
       "line": "14",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "update_statistics",
+    "name": "config_time",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@calc_var",
+    "ID": "c:@F@time_to_str",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void calc_var(day_temp_data *)",
+    "display": "void time_to_str(unsigned char *, char *)",
     "location": {
       "column": "6",
       "line": "15",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "calc_var",
+    "name": "time_to_str",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@update_statistics",
+    "ID": "c:@F@date_to_str",
     "What": "Function",
-    "defdec": "Def",
-    "display": "void update_statistics(linked_node *, day_temp_data *)",
+    "defdec": "Dec",
+    "display": "void date_to_str(unsigned char *, char *)",
     "location": {
       "column": "6",
-      "line": "18",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "line": "16",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "update_statistics",
+    "name": "date_to_str",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@calc_statistics",
+    "ID": "c:@F@init_date_time",
     "What": "Function",
     "defdec": "Def",
-    "display": "void calc_statistics(linked_node *, day_temp_data *)",
+    "display": "void init_date_time(void)",
     "location": {
       "column": "6",
-      "line": "25",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "line": "24",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "calc_statistics",
+    "name": "init_date_time",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@update_avg_min_max",
+    "ID": "c:@F@set_timedate",
     "What": "Function",
     "defdec": "Def",
-    "display": "void update_avg_min_max(linked_node *, day_temp_data *)",
+    "display": "void set_timedate(void)",
     "location": {
       "column": "6",
-      "line": "34",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "line": "35",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "update_avg_min_max",
+    "name": "set_timedate",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:TempStatistics.c@1060@F@update_avg_min_max@temp_node",
+    "ID": "c:DateTime.c@1052@F@set_timedate@temp_seconds",
     "What": "Variable",
     "defdec": "Def",
-    "display": "temp_node",
+    "display": "temp_seconds",
     "location": {
-      "column": "17",
-      "line": "36",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "column": "24",
+      "line": "38",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "temp_node",
+    "name": "temp_seconds",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:TempStatistics.c@1140@F@update_avg_min_max@i",
+    "ID": "c:DateTime.c@1667@F@set_timedate@max_day",
     "What": "Variable",
     "defdec": "Def",
-    "display": "i",
+    "display": "max_day",
+    "location": {
+      "column": "13",
+      "line": "52",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "max_day",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@display_date_time",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void display_date_time(void)",
+    "location": {
+      "column": "6",
+      "line": "76",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "display_date_time",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@config_date",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void config_date(void)",
+    "location": {
+      "column": "6",
+      "line": "92",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "config_date",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DateTime.c@3439@F@config_date@d",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "d",
     "location": {
       "column": "9",
-      "line": "39",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "line": "98",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "d",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DateTime.c@3439@F@config_date@m",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "m",
+    "location": {
+      "column": "16",
+      "line": "98",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "m",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DateTime.c@3439@F@config_date@y",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "y",
+    "location": {
+      "column": "23",
+      "line": "98",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "y",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DateTime.c@3439@F@config_date@k",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "k",
+    "location": {
+      "column": "30",
+      "line": "98",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "k",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DateTime.c@3439@F@config_date@i",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "i",
+    "location": {
+      "column": "37",
+      "line": "98",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
     "name": "i",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:TempStatistics.c@1156@F@update_avg_min_max@temp_double",
+    "ID": "c:DateTime.c@3439@F@config_date@zeroset",
     "What": "Variable",
-    "defdec": "Def",
-    "display": "temp_double",
+    "defdec": "Dec",
+    "display": "zeroset",
     "location": {
-      "column": "12",
-      "line": "40",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "column": "44",
+      "line": "98",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "temp_double",
+    "name": "zeroset",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:TempStatistics.c@1185@F@update_avg_min_max@tmin",
+    "ID": "c:DateTime.c@3439@F@config_date@erase",
     "What": "Variable",
-    "defdec": "Def",
-    "display": "tmin",
+    "defdec": "Dec",
+    "display": "erase",
     "location": {
-      "column": "19",
-      "line": "41",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "column": "56",
+      "line": "98",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "tmin",
+    "name": "erase",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:TempStatistics.c@1214@F@update_avg_min_max@tmax",
+    "ID": "c:DateTime.c@5203@F@config_date@maxday",
     "What": "Variable",
     "defdec": "Def",
-    "display": "tmax",
+    "display": "maxday",
     "location": {
-      "column": "19",
-      "line": "42",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "column": "9",
+      "line": "156",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "tmax",
+    "name": "maxday",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:TempStatistics.c@1242@F@update_avg_min_max@min",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "min",
-    "location": {
-      "column": "12",
-      "line": "43",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
-    },
-    "name": "min",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:TempStatistics.c@1293@F@update_avg_min_max@max",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "max",
-    "location": {
-      "column": "12",
-      "line": "44",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
-    },
-    "name": "max",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:TempStatistics.c@1316@F@update_avg_min_max@avg",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "avg",
-    "location": {
-      "column": "12",
-      "line": "45",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
-    },
-    "name": "avg",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@calc_avg",
+    "ID": "c:@F@config_time",
     "What": "Function",
     "defdec": "Def",
-    "display": "void calc_avg(linked_node *)",
+    "display": "void config_time(void)",
     "location": {
       "column": "6",
-      "line": "86",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "line": "170",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "calc_avg",
+    "name": "config_time",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@calc_max",
-    "What": "Function",
+    "ID": "c:DateTime.c@5870@F@config_time@s",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "void calc_max(linked_node *)",
+    "display": "s",
     "location": {
-      "column": "6",
-      "line": "91",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "column": "9",
+      "line": "176",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "calc_max",
+    "name": "s",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@calc_min",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void calc_min(linked_node *)",
+    "ID": "c:DateTime.c@5870@F@config_time@m",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "m",
     "location": {
-      "column": "6",
-      "line": "96",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "column": "16",
+      "line": "176",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "calc_min",
+    "name": "m",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@calc_var",
+    "ID": "c:DateTime.c@5870@F@config_time@h",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "h",
+    "location": {
+      "column": "23",
+      "line": "176",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "h",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DateTime.c@5870@F@config_time@k",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "k",
+    "location": {
+      "column": "30",
+      "line": "176",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "k",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DateTime.c@5870@F@config_time@i",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "i",
+    "location": {
+      "column": "37",
+      "line": "176",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DateTime.c@5870@F@config_time@zeroset",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "zeroset",
+    "location": {
+      "column": "44",
+      "line": "176",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "zeroset",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DateTime.c@5870@F@config_time@erase",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "erase",
+    "location": {
+      "column": "57",
+      "line": "176",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "erase",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@time_to_str",
     "What": "Function",
     "defdec": "Def",
-    "display": "void calc_var(day_temp_data *)",
+    "display": "void time_to_str(unsigned char *, char *)",
     "location": {
       "column": "6",
-      "line": "100",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+      "line": "250",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
     },
-    "name": "calc_var",
+    "name": "time_to_str",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DateTime.c@8191@F@time_to_str@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "9",
+      "line": "252",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@date_to_str",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void date_to_str(unsigned char *, char *)",
+    "location": {
+      "column": "6",
+      "line": "268",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "date_to_str",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DateTime.c@8629@F@date_to_str@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "9",
+      "line": "270",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+    },
+    "name": "i",
     "origin": "project_file",
     "scope": null
   },
@@ -115436,13 +114638,27 @@
     "scope": null
   },
   {
+    "ID": "c:@F@get_num_mes_per_min",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void get_num_mes_per_min(void)",
+    "location": {
+      "column": "6",
+      "line": "22",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
+    },
+    "name": "get_num_mes_per_min",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@main",
     "What": "Function",
     "defdec": "Def",
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "24",
+      "line": "25",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "main",
@@ -115450,7 +114666,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1223@F@main@str_message1",
+    "ID": "c:main.c@1224@F@main@str_message1",
     "What": "Variable",
     "defdec": "Def",
     "display": "str_message1",
@@ -115464,7 +114680,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1342@F@main@temp1",
+    "ID": "c:main.c@1343@F@main@temp1",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp1",
@@ -115478,7 +114694,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1516@F@main@str_message2",
+    "ID": "c:main.c@1517@F@main@str_message2",
     "What": "Variable",
     "defdec": "Def",
     "display": "str_message2",
@@ -115492,7 +114708,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1647@F@main@sensor1",
+    "ID": "c:main.c@1648@F@main@sensor1",
     "What": "Variable",
     "defdec": "Def",
     "display": "sensor1",
@@ -115506,7 +114722,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1776@F@main@str_message3",
+    "ID": "c:main.c@1777@F@main@str_message3",
     "What": "Variable",
     "defdec": "Def",
     "display": "str_message3",
@@ -115520,7 +114736,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1905@F@main@sensor2",
+    "ID": "c:main.c@1906@F@main@sensor2",
     "What": "Variable",
     "defdec": "Def",
     "display": "sensor2",
@@ -115534,7 +114750,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2039@F@main@serv",
+    "ID": "c:main.c@2040@F@main@serv",
     "What": "Variable",
     "defdec": "Def",
     "display": "serv",
@@ -115568,7 +114784,7 @@
     "display": "void add_temp_recording(void)",
     "location": {
       "column": "6",
-      "line": "112",
+      "line": "113",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "add_temp_recording",
@@ -115576,13 +114792,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3691@F@add_temp_recording@str_message1",
+    "ID": "c:main.c@3720@F@add_temp_recording@str_message1",
     "What": "Variable",
     "defdec": "Def",
     "display": "str_message1",
     "location": {
       "column": "10",
-      "line": "146",
+      "line": "147",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "str_message1",
@@ -115590,13 +114806,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3792@F@add_temp_recording@temp1",
+    "ID": "c:main.c@3821@F@add_temp_recording@temp1",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp1",
     "location": {
       "column": "27",
-      "line": "148",
+      "line": "149",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "temp1",
@@ -115610,7 +114826,7 @@
     "display": "void set_day_statistics(void)",
     "location": {
       "column": "6",
-      "line": "151",
+      "line": "152",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "set_day_statistics",
@@ -115618,13 +114834,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3932@F@set_day_statistics@table",
+    "ID": "c:main.c@3961@F@set_day_statistics@table",
     "What": "Variable",
     "defdec": "Def",
     "display": "table",
     "location": {
       "column": "11",
-      "line": "153",
+      "line": "154",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "table",
@@ -115632,13 +114848,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3995@F@set_day_statistics@table_len",
+    "ID": "c:main.c@4024@F@set_day_statistics@table_len",
     "What": "Variable",
     "defdec": "Def",
     "display": "table_len",
     "location": {
       "column": "9",
-      "line": "154",
+      "line": "155",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "table_len",
@@ -115646,13 +114862,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4020@F@set_day_statistics@tel1",
+    "ID": "c:main.c@4049@F@set_day_statistics@tel1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tel1",
     "location": {
       "column": "20",
-      "line": "155",
+      "line": "156",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "tel1",
@@ -115660,13 +114876,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4161@F@set_day_statistics@l",
+    "ID": "c:main.c@4190@F@set_day_statistics@l",
     "What": "Variable",
     "defdec": "Def",
     "display": "l",
     "location": {
       "column": "9",
-      "line": "159",
+      "line": "160",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "l",
@@ -115674,16 +114890,72 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4260@F@set_day_statistics@daydt",
+    "ID": "c:main.c@4289@F@set_day_statistics@daydt",
     "What": "Variable",
     "defdec": "Def",
     "display": "daydt",
     "location": {
       "column": "20",
-      "line": "161",
+      "line": "162",
       "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
     },
     "name": "daydt",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@get_num_mes_per_min",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void get_num_mes_per_min(void)",
+    "location": {
+      "column": "6",
+      "line": "166",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
+    },
+    "name": "get_num_mes_per_min",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4447@F@get_num_mes_per_min@str",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "str",
+    "location": {
+      "column": "11",
+      "line": "168",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
+    },
+    "name": "str",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4497@F@get_num_mes_per_min@sc",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sc",
+    "location": {
+      "column": "20",
+      "line": "169",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
+    },
+    "name": "sc",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@4581@F@get_num_mes_per_min@k",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "k",
+    "location": {
+      "column": "9",
+      "line": "171",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\main.c"
+    },
+    "name": "k",
     "origin": "project_file",
     "scope": null
   },
@@ -117953,450 +117225,226 @@
     "scope": null
   },
   {
-    "ID": "c:@F@init_date_time",
+    "ID": "c:@F@systick_setup",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void init_date_time(void)",
-    "location": {
-      "column": "6",
-      "line": "11",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "init_date_time",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@display_date_time",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void display_date_time(void)",
-    "location": {
-      "column": "6",
-      "line": "12",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "display_date_time",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@config_date",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void config_date(void)",
-    "location": {
-      "column": "6",
-      "line": "13",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "config_date",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@config_time",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void config_time(void)",
+    "display": "void systick_setup(void)",
     "location": {
       "column": "6",
       "line": "14",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
     },
-    "name": "config_time",
+    "name": "systick_setup",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@time_to_str",
+    "ID": "c:@F@delay_milis",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void time_to_str(unsigned char *, char *)",
+    "display": "void delay_milis(int)",
     "location": {
       "column": "6",
       "line": "15",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
     },
-    "name": "time_to_str",
+    "name": "delay_milis",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@date_to_str",
+    "ID": "c:@F@delay_micro",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void date_to_str(unsigned char *, char *)",
+    "display": "void delay_micro(int)",
     "location": {
       "column": "6",
       "line": "16",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
     },
-    "name": "date_to_str",
+    "name": "delay_micro",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@init_date_time",
+    "ID": "c:@F@general_delay",
     "What": "Function",
-    "defdec": "Def",
-    "display": "void init_date_time(void)",
+    "defdec": "Dec",
+    "display": "void general_delay(int)",
     "location": {
       "column": "6",
-      "line": "24",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+      "line": "17",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
     },
-    "name": "init_date_time",
+    "name": "general_delay",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@set_timedate",
+    "ID": "c:@F@pmc_setup",
     "What": "Function",
-    "defdec": "Def",
-    "display": "void set_timedate(void)",
+    "defdec": "Dec",
+    "display": "void pmc_setup(void)",
     "location": {
       "column": "6",
-      "line": "35",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+      "line": "18",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
     },
-    "name": "set_timedate",
+    "name": "pmc_setup",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:DateTime.c@1052@F@set_timedate@temp_seconds",
+    "ID": "c:@F@TC0_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void TC0_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "19",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
+    },
+    "name": "TC0_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTick_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SysTick_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "20",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
+    },
+    "name": "SysTick_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@systick_setup",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void systick_setup(void)",
+    "location": {
+      "column": "6",
+      "line": "28",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
+    },
+    "name": "systick_setup",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@delay_milis",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void delay_milis(int)",
+    "location": {
+      "column": "6",
+      "line": "43",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
+    },
+    "name": "delay_milis",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@delay_micro",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void delay_micro(int)",
+    "location": {
+      "column": "6",
+      "line": "58",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
+    },
+    "name": "delay_micro",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@general_delay",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void general_delay(int)",
+    "location": {
+      "column": "6",
+      "line": "74",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
+    },
+    "name": "general_delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:ArduinoBaseInclude.c@2637@F@general_delay@i",
     "What": "Variable",
     "defdec": "Def",
-    "display": "temp_seconds",
+    "display": "i",
     "location": {
-      "column": "24",
-      "line": "38",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "temp_seconds",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@1667@F@set_timedate@max_day",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "max_day",
-    "location": {
-      "column": "13",
-      "line": "52",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "max_day",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@display_date_time",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void display_date_time(void)",
-    "location": {
-      "column": "6",
+      "column": "9",
       "line": "76",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "display_date_time",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@config_date",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void config_date(void)",
-    "location": {
-      "column": "6",
-      "line": "92",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "config_date",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@3439@F@config_date@d",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "d",
-    "location": {
-      "column": "9",
-      "line": "98",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "d",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@3439@F@config_date@m",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "m",
-    "location": {
-      "column": "16",
-      "line": "98",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "m",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@3439@F@config_date@y",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "y",
-    "location": {
-      "column": "23",
-      "line": "98",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "y",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@3439@F@config_date@k",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "k",
-    "location": {
-      "column": "30",
-      "line": "98",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "k",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@3439@F@config_date@i",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "i",
-    "location": {
-      "column": "37",
-      "line": "98",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
     },
     "name": "i",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:DateTime.c@3439@F@config_date@zeroset",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "zeroset",
-    "location": {
-      "column": "44",
-      "line": "98",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "zeroset",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@3439@F@config_date@erase",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "erase",
-    "location": {
-      "column": "56",
-      "line": "98",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "erase",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@5203@F@config_date@maxday",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "maxday",
-    "location": {
-      "column": "9",
-      "line": "156",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "maxday",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@config_time",
+    "ID": "c:@F@TC0_Handler",
     "What": "Function",
     "defdec": "Def",
-    "display": "void config_time(void)",
+    "display": "void TC0_Handler(void)",
     "location": {
       "column": "6",
-      "line": "170",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+      "line": "90",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
     },
-    "name": "config_time",
+    "name": "TC0_Handler",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:DateTime.c@5870@F@config_time@s",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "s",
-    "location": {
-      "column": "9",
-      "line": "176",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "s",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@5870@F@config_time@m",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "m",
-    "location": {
-      "column": "16",
-      "line": "176",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "m",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@5870@F@config_time@h",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "h",
-    "location": {
-      "column": "23",
-      "line": "176",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "h",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@5870@F@config_time@k",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "k",
-    "location": {
-      "column": "30",
-      "line": "176",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "k",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@5870@F@config_time@i",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "i",
-    "location": {
-      "column": "37",
-      "line": "176",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@5870@F@config_time@zeroset",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "zeroset",
-    "location": {
-      "column": "44",
-      "line": "176",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "zeroset",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DateTime.c@5870@F@config_time@erase",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "erase",
-    "location": {
-      "column": "57",
-      "line": "176",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "erase",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@time_to_str",
+    "ID": "c:@F@SysTick_Handler",
     "What": "Function",
     "defdec": "Def",
-    "display": "void time_to_str(unsigned char *, char *)",
+    "display": "void SysTick_Handler(void)",
     "location": {
       "column": "6",
-      "line": "250",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+      "line": "103",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
     },
-    "name": "time_to_str",
+    "name": "SysTick_Handler",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:DateTime.c@8191@F@time_to_str@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "9",
-      "line": "252",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@date_to_str",
+    "ID": "c:@F@ADC_Handler",
     "What": "Function",
     "defdec": "Def",
-    "display": "void date_to_str(unsigned char *, char *)",
+    "display": "void ADC_Handler(void)",
     "location": {
       "column": "6",
-      "line": "268",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+      "line": "126",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
     },
-    "name": "date_to_str",
+    "name": "ADC_Handler",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:DateTime.c@8629@F@date_to_str@i",
+    "ID": "c:ArduinoBaseInclude.c@4260@F@ADC_Handler@channel_number",
     "What": "Variable",
     "defdec": "Def",
-    "display": "i",
+    "display": "channel_number",
     "location": {
-      "column": "9",
-      "line": "270",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\DateTime.c"
+      "column": "18",
+      "line": "128",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
     },
-    "name": "i",
+    "name": "channel_number",
     "origin": "project_file",
     "scope": null
   },
@@ -120993,6 +120041,2680 @@
     "scope": null
   },
   {
+    "ID": "c:@temp_alarm_flag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp_alarm_flag",
+    "location": {
+      "column": "5",
+      "line": "12",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "temp_alarm_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@display_write_disable_flag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "display_write_disable_flag",
+    "location": {
+      "column": "5",
+      "line": "13",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "display_write_disable_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@servo_position",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "servo_position",
+    "location": {
+      "column": "13",
+      "line": "17",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "servo_position",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@prev_servo_call",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "prev_servo_call",
+    "location": {
+      "column": "13",
+      "line": "18",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "prev_servo_call",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@syst",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "syst",
+    "location": {
+      "column": "13",
+      "line": "23",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "syst",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@systick_delay",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "systick_delay",
+    "location": {
+      "column": "12",
+      "line": "24",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "systick_delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@systick_trigger",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "systick_trigger",
+    "location": {
+      "column": "12",
+      "line": "25",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "systick_trigger",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@light_rotation_data",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "light_rotation_data",
+    "location": {
+      "column": "8",
+      "line": "29",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "light_rotation_data",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@adc_CDR1_value",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "adc_CDR1_value",
+    "location": {
+      "column": "13",
+      "line": "30",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "adc_CDR1_value",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@adc_CDR2_value",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "adc_CDR2_value",
+    "location": {
+      "column": "13",
+      "line": "31",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "adc_CDR2_value",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@light_to_volt_coefficcient",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "light_to_volt_coefficcient",
+    "location": {
+      "column": "13",
+      "line": "32",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "light_to_volt_coefficcient",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@light_sens_ch1_ready",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "light_sens_ch1_ready",
+    "location": {
+      "column": "13",
+      "line": "33",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "light_sens_ch1_ready",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@light_sens_ch2_ready",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "light_sens_ch2_ready",
+    "location": {
+      "column": "13",
+      "line": "34",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "light_sens_ch2_ready",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@adc_ch1_voltage",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "adc_ch1_voltage",
+    "location": {
+      "column": "13",
+      "line": "35",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "adc_ch1_voltage",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@adc_ch2_voltage",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "adc_ch2_voltage",
+    "location": {
+      "column": "13",
+      "line": "36",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "adc_ch2_voltage",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@temp_rdy_flag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp_rdy_flag",
+    "location": {
+      "column": "12",
+      "line": "40",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "temp_rdy_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@curr_temp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "curr_temp",
+    "location": {
+      "column": "12",
+      "line": "41",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "curr_temp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@tcDelta",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tcDelta",
+    "location": {
+      "column": "12",
+      "line": "42",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "tcDelta",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@rowsArr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "rowsArr",
+    "location": {
+      "column": "20",
+      "line": "46",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "rowsArr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@colsArr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "colsArr",
+    "location": {
+      "column": "20",
+      "line": "47",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "colsArr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@login_text",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "login_text",
+    "location": {
+      "column": "6",
+      "line": "51",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "login_text",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@login_text_length",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "login_text_length",
+    "location": {
+      "column": "12",
+      "line": "52",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "login_text_length",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@login_user_str",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "login_user_str",
+    "location": {
+      "column": "6",
+      "line": "53",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "login_user_str",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@login_pass_str",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "login_pass_str",
+    "location": {
+      "column": "6",
+      "line": "54",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "login_pass_str",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@usr_pass_str_length",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "usr_pass_str_length",
+    "location": {
+      "column": "12",
+      "line": "55",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "usr_pass_str_length",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@screen_username",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "screen_username",
+    "location": {
+      "column": "17",
+      "line": "57",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "screen_username",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@screen_password",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "screen_password",
+    "location": {
+      "column": "17",
+      "line": "58",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "screen_password",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@number_of_users",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "number_of_users",
+    "location": {
+      "column": "5",
+      "line": "60",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "number_of_users",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@default_username",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "default_username",
+    "location": {
+      "column": "6",
+      "line": "61",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "default_username",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@default_password",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "default_password",
+    "location": {
+      "column": "6",
+      "line": "62",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "default_password",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@def_us_len",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "def_us_len",
+    "location": {
+      "column": "5",
+      "line": "63",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "def_us_len",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@def_pass_len",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "def_pass_len",
+    "location": {
+      "column": "5",
+      "line": "64",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "def_pass_len",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@default_user",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "default_user",
+    "location": {
+      "column": "7",
+      "line": "65",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "default_user",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@users",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "users",
+    "location": {
+      "column": "12",
+      "line": "66",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "users",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@current_user",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "current_user",
+    "location": {
+      "column": "7",
+      "line": "67",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "current_user",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@edit_user_text",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "edit_user_text",
+    "location": {
+      "column": "6",
+      "line": "69",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "edit_user_text",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@edit_user_text_length",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "edit_user_text_length",
+    "location": {
+      "column": "5",
+      "line": "70",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "edit_user_text_length",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@pre_password",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "pre_password",
+    "location": {
+      "column": "17",
+      "line": "71",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "pre_password",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@pre_username",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "pre_username",
+    "location": {
+      "column": "17",
+      "line": "72",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "pre_username",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@pre_login",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "pre_login",
+    "location": {
+      "column": "17",
+      "line": "73",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "pre_login",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@username",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "username",
+    "location": {
+      "column": "7",
+      "line": "75",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "username",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@password",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "password",
+    "location": {
+      "column": "7",
+      "line": "76",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "password",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@current_date",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "current_date",
+    "location": {
+      "column": "6",
+      "line": "81",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "current_date",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@current_time",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "current_time",
+    "location": {
+      "column": "6",
+      "line": "82",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "current_time",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@current_time_hm",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "current_time_hm",
+    "location": {
+      "column": "9",
+      "line": "83",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "current_time_hm",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@zero_time",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "zero_time",
+    "location": {
+      "column": "6",
+      "line": "84",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "zero_time",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@zero_date",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "zero_date",
+    "location": {
+      "column": "6",
+      "line": "85",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "zero_date",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@microseconds",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "microseconds",
+    "location": {
+      "column": "29",
+      "line": "86",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "microseconds",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@month_days",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "month_days",
+    "location": {
+      "column": "11",
+      "line": "87",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "month_days",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@leap_feb",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "leap_feb",
+    "location": {
+      "column": "11",
+      "line": "88",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "leap_feb",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@time_config_flag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "time_config_flag",
+    "location": {
+      "column": "14",
+      "line": "89",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "time_config_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@screen_time",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "screen_time",
+    "location": {
+      "column": "16",
+      "line": "91",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "screen_time",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@screen_date",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "screen_date",
+    "location": {
+      "column": "16",
+      "line": "92",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "screen_date",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@time_str",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "time_str",
+    "location": {
+      "column": "6",
+      "line": "94",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "time_str",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@date_str",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "date_str",
+    "location": {
+      "column": "6",
+      "line": "95",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "date_str",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@head",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "head",
+    "location": {
+      "column": "14",
+      "line": "100",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "head",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@tail",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "tail",
+    "location": {
+      "column": "14",
+      "line": "101",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "tail",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@list_size",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "list_size",
+    "location": {
+      "column": "5",
+      "line": "102",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "list_size",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@curr_day_data",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "curr_day_data",
+    "location": {
+      "column": "16",
+      "line": "107",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "curr_day_data",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@var_sum1",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "var_sum1",
+    "location": {
+      "column": "8",
+      "line": "108",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "var_sum1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@var_sum2",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "var_sum2",
+    "location": {
+      "column": "8",
+      "line": "109",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "var_sum2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@num_of_measurements",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "num_of_measurements",
+    "location": {
+      "column": "5",
+      "line": "110",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "num_of_measurements",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@new_day_flag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "new_day_flag",
+    "location": {
+      "column": "5",
+      "line": "111",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "new_day_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@measure_temp_flag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "measure_temp_flag",
+    "location": {
+      "column": "5",
+      "line": "112",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "measure_temp_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@last_temp_mesure",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "last_temp_mesure",
+    "location": {
+      "column": "5",
+      "line": "113",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "last_temp_mesure",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@new_minute_flag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "new_minute_flag",
+    "location": {
+      "column": "5",
+      "line": "114",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "new_minute_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@measures_per_min",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "measures_per_min",
+    "location": {
+      "column": "5",
+      "line": "116",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "measures_per_min",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@temp_minute_count",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp_minute_count",
+    "location": {
+      "column": "5",
+      "line": "117",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "temp_minute_count",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@temp_minute_avg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp_minute_avg",
+    "location": {
+      "column": "8",
+      "line": "118",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "temp_minute_avg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@curr_day_data_str",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "curr_day_data_str",
+    "location": {
+      "column": "7",
+      "line": "121",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "curr_day_data_str",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@fast_mode_flag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "fast_mode_flag",
+    "location": {
+      "column": "14",
+      "line": "123",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\GlobalVariables.c"
+    },
+    "name": "fast_mode_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@get_keypad_key",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int get_keypad_key(void)",
+    "location": {
+      "column": "5",
+      "line": "12",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
+    },
+    "name": "get_keypad_key",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@keypad_setup",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void keypad_setup(void)",
+    "location": {
+      "column": "6",
+      "line": "13",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
+    },
+    "name": "keypad_setup",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@get_keypad_key",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int get_keypad_key(void)",
+    "location": {
+      "column": "5",
+      "line": "24",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
+    },
+    "name": "get_keypad_key",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.c@627@F@get_keypad_key@val",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "val",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
+    },
+    "name": "val",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.c@680@F@get_keypad_key@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "14",
+      "line": "29",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.c@818@F@get_keypad_key@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "14",
+      "line": "35",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.c@905@F@get_keypad_key@j",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "j",
+    "location": {
+      "column": "18",
+      "line": "38",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
+    },
+    "name": "j",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.c@1105@F@get_keypad_key@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "14",
+      "line": "48",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.c@1141@F@get_keypad_key@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "14",
+      "line": "49",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@keypad_setup",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void keypad_setup(void)",
+    "location": {
+      "column": "6",
+      "line": "66",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
+    },
+    "name": "keypad_setup",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@200@macro@STR_DATE_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STR_DATE_SIZE",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "STR_DATE_SIZE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@252@macro@STR_DOUBLE_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STR_DOUBLE_SIZE",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "STR_DOUBLE_SIZE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@312@macro@STR_TIME_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STR_TIME_SIZE",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "STR_TIME_SIZE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@361@macro@STR_PADDING_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STR_PADDING_SIZE",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "STR_PADDING_SIZE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@401@macro@DAY_TEMP_PADDING",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DAY_TEMP_PADDING",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DAY_TEMP_PADDING",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@436@macro@DAY_TEMP_DATA_LENGTH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DAY_TEMP_DATA_LENGTH",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DAY_TEMP_DATA_LENGTH",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@614@macro@SYSTICK_CONFIG_MICRO",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SYSTICK_CONFIG_MICRO",
+    "location": {
+      "column": "9",
+      "line": "23",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "SYSTICK_CONFIG_MICRO",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@791@macro@TEMP_ALARM_UPPER_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TEMP_ALARM_UPPER_VALUE",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TEMP_ALARM_UPPER_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@881@macro@TEMP_ALARM_LOWER_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TEMP_ALARM_LOWER_VALUE",
+    "location": {
+      "column": "9",
+      "line": "28",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TEMP_ALARM_LOWER_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@972@macro@TEMP_ALARM_RECHECK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TEMP_ALARM_RECHECK",
+    "location": {
+      "column": "9",
+      "line": "29",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TEMP_ALARM_RECHECK",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1149@macro@TEMP_ALARM_DISPLAY_MES_LOW",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TEMP_ALARM_DISPLAY_MES_LOW",
+    "location": {
+      "column": "9",
+      "line": "32",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TEMP_ALARM_DISPLAY_MES_LOW",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1240@macro@TEMP_ALARM_DISPLAY_MES_HIGH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TEMP_ALARM_DISPLAY_MES_HIGH",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TEMP_ALARM_DISPLAY_MES_HIGH",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1331@macro@TEMP_ALARM_DISPLAY_LENGTH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TEMP_ALARM_DISPLAY_LENGTH",
+    "location": {
+      "column": "9",
+      "line": "34",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TEMP_ALARM_DISPLAY_LENGTH",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1421@macro@TEMP_ALARM_DISPLAY_X",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TEMP_ALARM_DISPLAY_X",
+    "location": {
+      "column": "9",
+      "line": "35",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TEMP_ALARM_DISPLAY_X",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1511@macro@TEMP_ALARM_DISPLAY_Y",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TEMP_ALARM_DISPLAY_Y",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TEMP_ALARM_DISPLAY_Y",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1666@macro@ROWS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROWS",
+    "location": {
+      "column": "9",
+      "line": "40",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "ROWS",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1687@macro@COLS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COLS",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "COLS",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1708@macro@OE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OE",
+    "location": {
+      "column": "9",
+      "line": "42",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "OE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1732@macro@COL0",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COL0",
+    "location": {
+      "column": "9",
+      "line": "43",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "COL0",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1756@macro@COL1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COL1",
+    "location": {
+      "column": "9",
+      "line": "44",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "COL1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1780@macro@COL2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COL2",
+    "location": {
+      "column": "9",
+      "line": "45",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "COL2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1804@macro@ROW0",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW0",
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "ROW0",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1828@macro@ROW1",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW1",
+    "location": {
+      "column": "9",
+      "line": "47",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "ROW1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1852@macro@ROW2",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW2",
+    "location": {
+      "column": "9",
+      "line": "48",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "ROW2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1876@macro@ROW3",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW3",
+    "location": {
+      "column": "9",
+      "line": "49",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "ROW3",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@1956@macro@DISPLAY_SET_CURSOR_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DISPLAY_SET_CURSOR_CMD",
+    "location": {
+      "column": "9",
+      "line": "53",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DISPLAY_SET_CURSOR_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@2104@macro@DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD",
+    "location": {
+      "column": "9",
+      "line": "54",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@2252@macro@DISPLAY_DELAY_VALUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DISPLAY_DELAY_VALUE",
+    "location": {
+      "column": "9",
+      "line": "55",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DISPLAY_DELAY_VALUE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@2396@macro@DISPLAY_SCREEN_HALF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DISPLAY_SCREEN_HALF",
+    "location": {
+      "column": "9",
+      "line": "56",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DISPLAY_SCREEN_HALF",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@2552@macro@RESET_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RESET_DISP",
+    "location": {
+      "column": "9",
+      "line": "58",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "RESET_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@2628@macro@B4_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "B4_DISP",
+    "location": {
+      "column": "9",
+      "line": "59",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "B4_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@2699@macro@OE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OE",
+    "location": {
+      "column": "9",
+      "line": "60",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "OE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@2764@macro@RV_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RV_DISP",
+    "location": {
+      "column": "9",
+      "line": "61",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "RV_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@2840@macro@FS_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FS_DISP",
+    "location": {
+      "column": "9",
+      "line": "62",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "FS_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@2916@macro@WR_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "WR_DISP",
+    "location": {
+      "column": "9",
+      "line": "63",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "WR_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@2992@macro@RD_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RD_DISP",
+    "location": {
+      "column": "9",
+      "line": "64",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "RD_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3068@macro@CE_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CE_DISP",
+    "location": {
+      "column": "9",
+      "line": "65",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "CE_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3144@macro@CD_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CD_DISP",
+    "location": {
+      "column": "9",
+      "line": "66",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "CD_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3220@macro@DIR_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIR_DISP",
+    "location": {
+      "column": "9",
+      "line": "67",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DIR_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3296@macro@OE_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OE_DISP",
+    "location": {
+      "column": "9",
+      "line": "68",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "OE_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3372@macro@BUS_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BUS_DISP",
+    "location": {
+      "column": "9",
+      "line": "69",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "BUS_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3446@macro@CONFIG_DISP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CONFIG_DISP",
+    "location": {
+      "column": "9",
+      "line": "70",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "CONFIG_DISP",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3520@macro@DISP_X_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DISP_X_MAX",
+    "location": {
+      "column": "9",
+      "line": "71",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DISP_X_MAX",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3586@macro@DISP_Y_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DISP_Y_MAX",
+    "location": {
+      "column": "9",
+      "line": "72",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DISP_Y_MAX",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3710@macro@LIGHT_ROT_DATA_LENGTH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LIGHT_ROT_DATA_LENGTH",
+    "location": {
+      "column": "9",
+      "line": "76",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "LIGHT_ROT_DATA_LENGTH",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3815@macro@LOGIN_USERNAME_X_POS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LOGIN_USERNAME_X_POS",
+    "location": {
+      "column": "9",
+      "line": "83",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "LOGIN_USERNAME_X_POS",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3852@macro@LOGIN_PASSWORD_X_POS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LOGIN_PASSWORD_X_POS",
+    "location": {
+      "column": "9",
+      "line": "84",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "LOGIN_PASSWORD_X_POS",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3889@macro@LOGIN_USERNAME_Y_POS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LOGIN_USERNAME_Y_POS",
+    "location": {
+      "column": "9",
+      "line": "85",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "LOGIN_USERNAME_Y_POS",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3926@macro@LOGIN_PASSWORD_Y_POS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LOGIN_PASSWORD_Y_POS",
+    "location": {
+      "column": "9",
+      "line": "86",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "LOGIN_PASSWORD_Y_POS",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@3963@macro@LOGIN_USERNAME_MAX_LEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LOGIN_USERNAME_MAX_LEN",
+    "location": {
+      "column": "9",
+      "line": "87",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "LOGIN_USERNAME_MAX_LEN",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4001@macro@LOGIN_PASSWORD_MAX_LEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LOGIN_PASSWORD_MAX_LEN",
+    "location": {
+      "column": "9",
+      "line": "88",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "LOGIN_PASSWORD_MAX_LEN",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4039@macro@HASHED_PASS_LEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HASHED_PASS_LEN",
+    "location": {
+      "column": "9",
+      "line": "89",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "HASHED_PASS_LEN",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4137@macro@MICRO_TO_SEC",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MICRO_TO_SEC",
+    "location": {
+      "column": "9",
+      "line": "94",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "MICRO_TO_SEC",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4177@macro@SEC_TO_MIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SEC_TO_MIN",
+    "location": {
+      "column": "9",
+      "line": "95",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "SEC_TO_MIN",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4212@macro@MIN_TO_HOUR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MIN_TO_HOUR",
+    "location": {
+      "column": "9",
+      "line": "96",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "MIN_TO_HOUR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4247@macro@HOUR_TO_DAY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HOUR_TO_DAY",
+    "location": {
+      "column": "9",
+      "line": "97",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "HOUR_TO_DAY",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4282@macro@YEAR_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "YEAR_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "98",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "YEAR_OFFSET",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4319@macro@MONTH_TO_YEAR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MONTH_TO_YEAR",
+    "location": {
+      "column": "9",
+      "line": "99",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "MONTH_TO_YEAR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4354@macro@LEAP_YEAR_CHECK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LEAP_YEAR_CHECK",
+    "location": {
+      "column": "9",
+      "line": "100",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "LEAP_YEAR_CHECK",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4432@macro@TIME_POS_X",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIME_POS_X",
+    "location": {
+      "column": "9",
+      "line": "102",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TIME_POS_X",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4480@macro@TIME_POS_Y",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIME_POS_Y",
+    "location": {
+      "column": "9",
+      "line": "103",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TIME_POS_Y",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4515@macro@TIME_LEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIME_LEN",
+    "location": {
+      "column": "9",
+      "line": "104",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TIME_LEN",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4552@macro@DATE_POS_X",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DATE_POS_X",
+    "location": {
+      "column": "9",
+      "line": "106",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DATE_POS_X",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4588@macro@DATE_POS_Y",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DATE_POS_Y",
+    "location": {
+      "column": "9",
+      "line": "107",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DATE_POS_Y",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4623@macro@DATE_LEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DATE_LEN",
+    "location": {
+      "column": "9",
+      "line": "108",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "DATE_LEN",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4661@macro@INT_TO_CHAR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "INT_TO_CHAR",
+    "location": {
+      "column": "9",
+      "line": "109",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "INT_TO_CHAR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4756@macro@TEMP_D_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TEMP_D_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "114",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TEMP_D_OFFSET",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Macros.c@4792@macro@TEMP_D_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TEMP_D_MAX",
+    "location": {
+      "column": "9",
+      "line": "115",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
+    },
+    "name": "TEMP_D_MAX",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@update_avg_min_max",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void update_avg_min_max(linked_node *, day_temp_data *)",
+    "location": {
+      "column": "6",
+      "line": "13",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "update_avg_min_max",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@update_statistics",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void update_statistics(linked_node *, day_temp_data *)",
+    "location": {
+      "column": "6",
+      "line": "14",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "update_statistics",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@calc_var",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void calc_var(day_temp_data *)",
+    "location": {
+      "column": "6",
+      "line": "15",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "calc_var",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@update_statistics",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void update_statistics(linked_node *, day_temp_data *)",
+    "location": {
+      "column": "6",
+      "line": "18",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "update_statistics",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@calc_statistics",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void calc_statistics(linked_node *, day_temp_data *)",
+    "location": {
+      "column": "6",
+      "line": "25",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "calc_statistics",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@update_avg_min_max",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void update_avg_min_max(linked_node *, day_temp_data *)",
+    "location": {
+      "column": "6",
+      "line": "34",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "update_avg_min_max",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TempStatistics.c@1060@F@update_avg_min_max@temp_node",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp_node",
+    "location": {
+      "column": "17",
+      "line": "36",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "temp_node",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TempStatistics.c@1140@F@update_avg_min_max@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "9",
+      "line": "39",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TempStatistics.c@1156@F@update_avg_min_max@temp_double",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp_double",
+    "location": {
+      "column": "12",
+      "line": "40",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "temp_double",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TempStatistics.c@1185@F@update_avg_min_max@tmin",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tmin",
+    "location": {
+      "column": "19",
+      "line": "41",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "tmin",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TempStatistics.c@1214@F@update_avg_min_max@tmax",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tmax",
+    "location": {
+      "column": "19",
+      "line": "42",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "tmax",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TempStatistics.c@1242@F@update_avg_min_max@min",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "min",
+    "location": {
+      "column": "12",
+      "line": "43",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "min",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TempStatistics.c@1293@F@update_avg_min_max@max",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "max",
+    "location": {
+      "column": "12",
+      "line": "44",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "max",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TempStatistics.c@1316@F@update_avg_min_max@avg",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "avg",
+    "location": {
+      "column": "12",
+      "line": "45",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "avg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@calc_avg",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void calc_avg(linked_node *)",
+    "location": {
+      "column": "6",
+      "line": "86",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "calc_avg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@calc_max",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void calc_max(linked_node *)",
+    "location": {
+      "column": "6",
+      "line": "91",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "calc_max",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@calc_min",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void calc_min(linked_node *)",
+    "location": {
+      "column": "6",
+      "line": "96",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "calc_min",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@calc_var",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void calc_var(day_temp_data *)",
+    "location": {
+      "column": "6",
+      "line": "100",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TempStatistics.c"
+    },
+    "name": "calc_var",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@timer_counter_setup",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void timer_counter_setup(void)",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "timer_counter_setup",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@timer_counter_setup",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void timer_counter_setup(void)",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "timer_counter_setup",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@start_pulse",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void start_pulse(void)",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "start_pulse",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@temp_setup",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void temp_setup(void)",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "temp_setup",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@get_temp",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "double get_temp(void)",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "get_temp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@temp_reset",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void temp_reset(void)",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "temp_reset",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@temperature_alarm",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int temperature_alarm(void)",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "temperature_alarm",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@temp_display_alarm",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void temp_display_alarm(void)",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "temp_display_alarm",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@timer_counter_setup",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void timer_counter_setup(void)",
+    "location": {
+      "column": "6",
+      "line": "24",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "timer_counter_setup",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@start_pulse",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void start_pulse(void)",
+    "location": {
+      "column": "6",
+      "line": "46",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "start_pulse",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TemperatureSensor.c@2123@F@start_pulse@interruptRead",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "interruptRead",
+    "location": {
+      "column": "18",
+      "line": "53",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "interruptRead",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@temp_reset",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void temp_reset(void)",
+    "location": {
+      "column": "6",
+      "line": "58",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "temp_reset",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@temp_setup",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void temp_setup(void)",
+    "location": {
+      "column": "6",
+      "line": "66",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "temp_setup",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@get_temp",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "double get_temp(void)",
+    "location": {
+      "column": "8",
+      "line": "73",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "get_temp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TemperatureSensor.c@2604@F@get_temp@reg_A",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "reg_A",
+    "location": {
+      "column": "9",
+      "line": "75",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "reg_A",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TemperatureSensor.c@2644@F@get_temp@reg_B",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "reg_B",
+    "location": {
+      "column": "9",
+      "line": "76",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "reg_B",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@temperature_alarm",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int temperature_alarm(void)",
+    "location": {
+      "column": "5",
+      "line": "83",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "temperature_alarm",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TemperatureSensor.c@3148@F@temperature_alarm@sc_temp_alarm",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sc_temp_alarm",
+    "location": {
+      "column": "25",
+      "line": "90",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "sc_temp_alarm",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TemperatureSensor.c@3676@F@temperature_alarm@f",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "f",
+    "location": {
+      "column": "13",
+      "line": "100",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "f",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TemperatureSensor.c@3695@F@temperature_alarm@d",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "d",
+    "location": {
+      "column": "16",
+      "line": "101",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "d",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TemperatureSensor.c@3725@F@temperature_alarm@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "19",
+      "line": "102",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@temp_display_alarm",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void temp_display_alarm(void)",
+    "location": {
+      "column": "6",
+      "line": "127",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "temp_display_alarm",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TemperatureSensor.c@4555@F@temp_display_alarm@temp_alarm_element",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp_alarm_element",
+    "location": {
+      "column": "20",
+      "line": "131",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
+    },
+    "name": "temp_alarm_element",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Include.h@29@macro@HEADER_FILE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HEADER_FILE",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Include.h"
+    },
+    "name": "HEADER_FILE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:DLib_Product_stdlib.h@251@macro@_DLIB_PRODUCTS_STDLIB_H_",
     "What": "MacroDef",
     "defdec": "Def",
@@ -121158,1784 +122880,6 @@
     },
     "name": "lldiv",
     "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@systick_setup",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void systick_setup(void)",
-    "location": {
-      "column": "6",
-      "line": "14",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "systick_setup",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delay_milis",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void delay_milis(int)",
-    "location": {
-      "column": "6",
-      "line": "15",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "delay_milis",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delay_micro",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void delay_micro(int)",
-    "location": {
-      "column": "6",
-      "line": "16",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "delay_micro",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@general_delay",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void general_delay(int)",
-    "location": {
-      "column": "6",
-      "line": "17",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "general_delay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@pmc_setup",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void pmc_setup(void)",
-    "location": {
-      "column": "6",
-      "line": "18",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "pmc_setup",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TC0_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void TC0_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "19",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "TC0_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SysTick_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SysTick_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "20",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "SysTick_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@systick_setup",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void systick_setup(void)",
-    "location": {
-      "column": "6",
-      "line": "28",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "systick_setup",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delay_milis",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void delay_milis(int)",
-    "location": {
-      "column": "6",
-      "line": "43",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "delay_milis",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delay_micro",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void delay_micro(int)",
-    "location": {
-      "column": "6",
-      "line": "58",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "delay_micro",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@general_delay",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void general_delay(int)",
-    "location": {
-      "column": "6",
-      "line": "74",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "general_delay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:ArduinoBaseInclude.c@2637@F@general_delay@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "9",
-      "line": "76",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TC0_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TC0_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "90",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "TC0_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SysTick_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SysTick_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "103",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "SysTick_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void ADC_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "126",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "ADC_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:ArduinoBaseInclude.c@4260@F@ADC_Handler@channel_number",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "channel_number",
-    "location": {
-      "column": "18",
-      "line": "128",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\ArduinoBaseInclude.c"
-    },
-    "name": "channel_number",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@get_keypad_key",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int get_keypad_key(void)",
-    "location": {
-      "column": "5",
-      "line": "12",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
-    },
-    "name": "get_keypad_key",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@keypad_setup",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void keypad_setup(void)",
-    "location": {
-      "column": "6",
-      "line": "13",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
-    },
-    "name": "keypad_setup",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@get_keypad_key",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int get_keypad_key(void)",
-    "location": {
-      "column": "5",
-      "line": "24",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
-    },
-    "name": "get_keypad_key",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.c@627@F@get_keypad_key@val",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "val",
-    "location": {
-      "column": "9",
-      "line": "26",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
-    },
-    "name": "val",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.c@680@F@get_keypad_key@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "14",
-      "line": "29",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.c@818@F@get_keypad_key@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "14",
-      "line": "35",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.c@905@F@get_keypad_key@j",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "j",
-    "location": {
-      "column": "18",
-      "line": "38",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
-    },
-    "name": "j",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.c@1105@F@get_keypad_key@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "14",
-      "line": "48",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.c@1141@F@get_keypad_key@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "14",
-      "line": "49",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@keypad_setup",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void keypad_setup(void)",
-    "location": {
-      "column": "6",
-      "line": "66",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\keypad.c"
-    },
-    "name": "keypad_setup",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@timer_counter_setup",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void timer_counter_setup(void)",
-    "location": {
-      "column": "9",
-      "line": "13",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "timer_counter_setup",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@timer_counter_setup",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void timer_counter_setup(void)",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "timer_counter_setup",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@start_pulse",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void start_pulse(void)",
-    "location": {
-      "column": "9",
-      "line": "15",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "start_pulse",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@temp_setup",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void temp_setup(void)",
-    "location": {
-      "column": "9",
-      "line": "16",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "temp_setup",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@get_temp",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "double get_temp(void)",
-    "location": {
-      "column": "9",
-      "line": "17",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "get_temp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@temp_reset",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void temp_reset(void)",
-    "location": {
-      "column": "9",
-      "line": "18",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "temp_reset",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@temperature_alarm",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int temperature_alarm(void)",
-    "location": {
-      "column": "9",
-      "line": "19",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "temperature_alarm",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@temp_display_alarm",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void temp_display_alarm(void)",
-    "location": {
-      "column": "9",
-      "line": "20",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "temp_display_alarm",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@temp_led_alarm",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void temp_led_alarm(void)",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "temp_led_alarm",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@timer_counter_setup",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void timer_counter_setup(void)",
-    "location": {
-      "column": "6",
-      "line": "25",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "timer_counter_setup",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@start_pulse",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void start_pulse(void)",
-    "location": {
-      "column": "6",
-      "line": "47",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "start_pulse",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:TemperatureSensor.c@2183@F@start_pulse@interruptRead",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "interruptRead",
-    "location": {
-      "column": "18",
-      "line": "54",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "interruptRead",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@temp_reset",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void temp_reset(void)",
-    "location": {
-      "column": "6",
-      "line": "59",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "temp_reset",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@temp_setup",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void temp_setup(void)",
-    "location": {
-      "column": "6",
-      "line": "67",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "temp_setup",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@get_temp",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "double get_temp(void)",
-    "location": {
-      "column": "8",
-      "line": "82",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "get_temp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:TemperatureSensor.c@2982@F@get_temp@reg_A",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "reg_A",
-    "location": {
-      "column": "9",
-      "line": "84",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "reg_A",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:TemperatureSensor.c@3022@F@get_temp@reg_B",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "reg_B",
-    "location": {
-      "column": "9",
-      "line": "85",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "reg_B",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@temperature_alarm",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int temperature_alarm(void)",
-    "location": {
-      "column": "5",
-      "line": "92",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "temperature_alarm",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:TemperatureSensor.c@3563@F@temperature_alarm@sc_temp_alarm",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "sc_temp_alarm",
-    "location": {
-      "column": "29",
-      "line": "101",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "sc_temp_alarm",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:TemperatureSensor.c@4238@F@temperature_alarm@f",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "f",
-    "location": {
-      "column": "13",
-      "line": "116",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "f",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:TemperatureSensor.c@4257@F@temperature_alarm@d",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "d",
-    "location": {
-      "column": "16",
-      "line": "117",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "d",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:TemperatureSensor.c@4287@F@temperature_alarm@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "19",
-      "line": "118",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@temp_display_alarm",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void temp_display_alarm(void)",
-    "location": {
-      "column": "6",
-      "line": "151",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "temp_display_alarm",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:TemperatureSensor.c@5212@F@temp_display_alarm@temp_alarm_element",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp_alarm_element",
-    "location": {
-      "column": "20",
-      "line": "155",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "temp_alarm_element",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@temp_led_alarm",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void temp_led_alarm(void)",
-    "location": {
-      "column": "6",
-      "line": "166",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\TemperatureSensor.c"
-    },
-    "name": "temp_led_alarm",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@200@macro@STR_DATE_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STR_DATE_SIZE",
-    "location": {
-      "column": "9",
-      "line": "13",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "STR_DATE_SIZE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@252@macro@STR_DOUBLE_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STR_DOUBLE_SIZE",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "STR_DOUBLE_SIZE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@312@macro@STR_TIME_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STR_TIME_SIZE",
-    "location": {
-      "column": "9",
-      "line": "15",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "STR_TIME_SIZE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@361@macro@STR_PADDING_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STR_PADDING_SIZE",
-    "location": {
-      "column": "9",
-      "line": "16",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "STR_PADDING_SIZE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@401@macro@DAY_TEMP_PADDING",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DAY_TEMP_PADDING",
-    "location": {
-      "column": "9",
-      "line": "17",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DAY_TEMP_PADDING",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@436@macro@DAY_TEMP_DATA_LENGTH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DAY_TEMP_DATA_LENGTH",
-    "location": {
-      "column": "9",
-      "line": "18",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DAY_TEMP_DATA_LENGTH",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@614@macro@SYSTICK_CONFIG_MICRO",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SYSTICK_CONFIG_MICRO",
-    "location": {
-      "column": "9",
-      "line": "23",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "SYSTICK_CONFIG_MICRO",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@791@macro@TEMP_ALARM_UPPER_VALUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_UPPER_VALUE",
-    "location": {
-      "column": "9",
-      "line": "27",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_UPPER_VALUE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@881@macro@TEMP_ALARM_LOWER_VALUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_LOWER_VALUE",
-    "location": {
-      "column": "9",
-      "line": "28",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_LOWER_VALUE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@972@macro@TEMP_ALARM_TYPE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_TYPE",
-    "location": {
-      "column": "9",
-      "line": "29",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_TYPE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@1101@macro@TEMP_ALARM_RECHECK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_RECHECK",
-    "location": {
-      "column": "9",
-      "line": "30",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_RECHECK",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@1278@macro@TEMP_ALARM_LED_PIO_PMC_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_LED_PIO_PMC_BIT",
-    "location": {
-      "column": "9",
-      "line": "33",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_LED_PIO_PMC_BIT",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@1365@macro@TEMP_ALARM_LED_PIO_ADRESS_ENABLE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_LED_PIO_ADRESS_ENABLE",
-    "location": {
-      "column": "9",
-      "line": "34",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_LED_PIO_ADRESS_ENABLE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@1449@macro@TEMP_ALARM_LED_PIO_ADRESS_OUTPUT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_LED_PIO_ADRESS_OUTPUT",
-    "location": {
-      "column": "9",
-      "line": "35",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_LED_PIO_ADRESS_OUTPUT",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@1533@macro@TEMP_ALARM_LED_PIO_ADRESS_SET",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_LED_PIO_ADRESS_SET",
-    "location": {
-      "column": "9",
-      "line": "36",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_LED_PIO_ADRESS_SET",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@1617@macro@TEMP_ALARM_LED_PIO_ADRESS_CLEAR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_LED_PIO_ADRESS_CLEAR",
-    "location": {
-      "column": "9",
-      "line": "37",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_LED_PIO_ADRESS_CLEAR",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@1701@macro@TEMP_ALARM_LED_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_LED_BIT",
-    "location": {
-      "column": "9",
-      "line": "38",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_LED_BIT",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@1790@macro@TEMP_ALARM_DISPLAY_MES_LOW",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_DISPLAY_MES_LOW",
-    "location": {
-      "column": "9",
-      "line": "40",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_DISPLAY_MES_LOW",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@1881@macro@TEMP_ALARM_DISPLAY_MES_HIGH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_DISPLAY_MES_HIGH",
-    "location": {
-      "column": "9",
-      "line": "41",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_DISPLAY_MES_HIGH",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@1972@macro@TEMP_ALARM_DISPLAY_LENGTH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_DISPLAY_LENGTH",
-    "location": {
-      "column": "9",
-      "line": "42",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_DISPLAY_LENGTH",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2062@macro@TEMP_ALARM_DISPLAY_X",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_DISPLAY_X",
-    "location": {
-      "column": "9",
-      "line": "43",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_DISPLAY_X",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2152@macro@TEMP_ALARM_DISPLAY_Y",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_ALARM_DISPLAY_Y",
-    "location": {
-      "column": "9",
-      "line": "44",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_ALARM_DISPLAY_Y",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2307@macro@ROWS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROWS",
-    "location": {
-      "column": "9",
-      "line": "48",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "ROWS",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2328@macro@COLS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COLS",
-    "location": {
-      "column": "9",
-      "line": "49",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "COLS",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2349@macro@OE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OE",
-    "location": {
-      "column": "9",
-      "line": "50",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "OE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2373@macro@COL0",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COL0",
-    "location": {
-      "column": "9",
-      "line": "51",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "COL0",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2397@macro@COL1",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COL1",
-    "location": {
-      "column": "9",
-      "line": "52",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "COL1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2421@macro@COL2",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COL2",
-    "location": {
-      "column": "9",
-      "line": "53",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "COL2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2445@macro@ROW0",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW0",
-    "location": {
-      "column": "9",
-      "line": "54",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "ROW0",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2469@macro@ROW1",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW1",
-    "location": {
-      "column": "9",
-      "line": "55",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "ROW1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2493@macro@ROW2",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW2",
-    "location": {
-      "column": "9",
-      "line": "56",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "ROW2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2517@macro@ROW3",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROW3",
-    "location": {
-      "column": "9",
-      "line": "57",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "ROW3",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2597@macro@DISPLAY_SET_CURSOR_CMD",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DISPLAY_SET_CURSOR_CMD",
-    "location": {
-      "column": "9",
-      "line": "61",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DISPLAY_SET_CURSOR_CMD",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2745@macro@DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD",
-    "location": {
-      "column": "9",
-      "line": "62",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@2893@macro@DISPLAY_DELAY_VALUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DISPLAY_DELAY_VALUE",
-    "location": {
-      "column": "9",
-      "line": "63",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DISPLAY_DELAY_VALUE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3037@macro@DISPLAY_SCREEN_HALF",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DISPLAY_SCREEN_HALF",
-    "location": {
-      "column": "9",
-      "line": "64",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DISPLAY_SCREEN_HALF",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3193@macro@RESET_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "RESET_DISP",
-    "location": {
-      "column": "9",
-      "line": "66",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "RESET_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3269@macro@B4_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "B4_DISP",
-    "location": {
-      "column": "9",
-      "line": "67",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "B4_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3340@macro@OE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OE",
-    "location": {
-      "column": "9",
-      "line": "68",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "OE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3405@macro@RV_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "RV_DISP",
-    "location": {
-      "column": "9",
-      "line": "69",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "RV_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3481@macro@FS_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "FS_DISP",
-    "location": {
-      "column": "9",
-      "line": "70",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "FS_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3557@macro@WR_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "WR_DISP",
-    "location": {
-      "column": "9",
-      "line": "71",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "WR_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3633@macro@RD_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "RD_DISP",
-    "location": {
-      "column": "9",
-      "line": "72",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "RD_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3709@macro@CE_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CE_DISP",
-    "location": {
-      "column": "9",
-      "line": "73",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "CE_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3785@macro@CD_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CD_DISP",
-    "location": {
-      "column": "9",
-      "line": "74",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "CD_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3861@macro@DIR_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIR_DISP",
-    "location": {
-      "column": "9",
-      "line": "75",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DIR_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@3937@macro@OE_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OE_DISP",
-    "location": {
-      "column": "9",
-      "line": "76",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "OE_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4013@macro@BUS_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BUS_DISP",
-    "location": {
-      "column": "9",
-      "line": "77",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "BUS_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4087@macro@CONFIG_DISP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CONFIG_DISP",
-    "location": {
-      "column": "9",
-      "line": "78",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "CONFIG_DISP",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4161@macro@DISP_X_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DISP_X_MAX",
-    "location": {
-      "column": "9",
-      "line": "79",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DISP_X_MAX",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4227@macro@DISP_Y_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DISP_Y_MAX",
-    "location": {
-      "column": "9",
-      "line": "80",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DISP_Y_MAX",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4351@macro@LIGHT_ROT_DATA_LENGTH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LIGHT_ROT_DATA_LENGTH",
-    "location": {
-      "column": "9",
-      "line": "84",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "LIGHT_ROT_DATA_LENGTH",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4456@macro@LOGIN_USERNAME_X_POS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LOGIN_USERNAME_X_POS",
-    "location": {
-      "column": "9",
-      "line": "91",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "LOGIN_USERNAME_X_POS",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4493@macro@LOGIN_PASSWORD_X_POS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LOGIN_PASSWORD_X_POS",
-    "location": {
-      "column": "9",
-      "line": "92",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "LOGIN_PASSWORD_X_POS",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4530@macro@LOGIN_USERNAME_Y_POS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LOGIN_USERNAME_Y_POS",
-    "location": {
-      "column": "9",
-      "line": "93",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "LOGIN_USERNAME_Y_POS",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4567@macro@LOGIN_PASSWORD_Y_POS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LOGIN_PASSWORD_Y_POS",
-    "location": {
-      "column": "9",
-      "line": "94",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "LOGIN_PASSWORD_Y_POS",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4604@macro@LOGIN_USERNAME_MAX_LEN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LOGIN_USERNAME_MAX_LEN",
-    "location": {
-      "column": "9",
-      "line": "95",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "LOGIN_USERNAME_MAX_LEN",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4642@macro@LOGIN_PASSWORD_MAX_LEN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LOGIN_PASSWORD_MAX_LEN",
-    "location": {
-      "column": "9",
-      "line": "96",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "LOGIN_PASSWORD_MAX_LEN",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4680@macro@HASHED_PASS_LEN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "HASHED_PASS_LEN",
-    "location": {
-      "column": "9",
-      "line": "97",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "HASHED_PASS_LEN",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4778@macro@MICRO_TO_SEC",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "MICRO_TO_SEC",
-    "location": {
-      "column": "9",
-      "line": "102",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "MICRO_TO_SEC",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4818@macro@SEC_TO_MIN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SEC_TO_MIN",
-    "location": {
-      "column": "9",
-      "line": "103",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "SEC_TO_MIN",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4853@macro@MIN_TO_HOUR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "MIN_TO_HOUR",
-    "location": {
-      "column": "9",
-      "line": "104",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "MIN_TO_HOUR",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4888@macro@HOUR_TO_DAY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "HOUR_TO_DAY",
-    "location": {
-      "column": "9",
-      "line": "105",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "HOUR_TO_DAY",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4923@macro@YEAR_OFFSET",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "YEAR_OFFSET",
-    "location": {
-      "column": "9",
-      "line": "106",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "YEAR_OFFSET",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4960@macro@MONTH_TO_YEAR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "MONTH_TO_YEAR",
-    "location": {
-      "column": "9",
-      "line": "107",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "MONTH_TO_YEAR",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@4995@macro@LEAP_YEAR_CHECK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LEAP_YEAR_CHECK",
-    "location": {
-      "column": "9",
-      "line": "108",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "LEAP_YEAR_CHECK",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@5073@macro@TIME_POS_X",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TIME_POS_X",
-    "location": {
-      "column": "9",
-      "line": "110",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TIME_POS_X",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@5121@macro@TIME_POS_Y",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TIME_POS_Y",
-    "location": {
-      "column": "9",
-      "line": "111",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TIME_POS_Y",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@5156@macro@TIME_LEN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TIME_LEN",
-    "location": {
-      "column": "9",
-      "line": "112",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TIME_LEN",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@5193@macro@DATE_POS_X",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DATE_POS_X",
-    "location": {
-      "column": "9",
-      "line": "114",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DATE_POS_X",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@5229@macro@DATE_POS_Y",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DATE_POS_Y",
-    "location": {
-      "column": "9",
-      "line": "115",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DATE_POS_Y",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@5264@macro@DATE_LEN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DATE_LEN",
-    "location": {
-      "column": "9",
-      "line": "116",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "DATE_LEN",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@5302@macro@INT_TO_CHAR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "INT_TO_CHAR",
-    "location": {
-      "column": "9",
-      "line": "117",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "INT_TO_CHAR",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@5397@macro@TEMP_D_OFFSET",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_D_OFFSET",
-    "location": {
-      "column": "9",
-      "line": "122",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_D_OFFSET",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Macros.c@5433@macro@TEMP_D_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TEMP_D_MAX",
-    "location": {
-      "column": "9",
-      "line": "123",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Macros.c"
-    },
-    "name": "TEMP_D_MAX",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:Include.h@29@macro@HEADER_FILE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "HEADER_FILE",
-    "location": {
-      "column": "9",
-      "line": "2",
-      "path": "C:\\Users\\Elias\\Documents\\IAR Embedded Workbench\\CSE_GR18_Project\\CFiles\\Include.h"
-    },
-    "name": "HEADER_FILE",
-    "origin": "user_include",
     "scope": null
   },
   {
@@ -123177,20 +123121,6 @@
     "scope": null
   },
   {
-    "ID": "c:DLib_Config_Normal.h@105@macro@_DLIB_CONFIG_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_CONFIG_H",
-    "location": {
-      "column": "9",
-      "line": "5",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Config_Normal.h"
-    },
-    "name": "_DLIB_CONFIG_H",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
     "ID": "c:ysizet.h@111@macro@_YSIZET_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -123271,6 +123201,20 @@
       "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\ysizet.h"
     },
     "name": "__data_size_t",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Config_Normal.h@105@macro@_DLIB_CONFIG_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_CONFIG_H",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c\\DLib_Config_Normal.h"
+    },
+    "name": "_DLIB_CONFIG_H",
     "origin": "system_include",
     "scope": null
   },
