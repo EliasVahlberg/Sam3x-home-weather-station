@@ -73,5 +73,13 @@ struct Linked_List{
 };
 
 
+typedef struct Linked_Element* linked_node;
+struct Linked_Element{
+    linked_node next;
+    unsigned char temp;
+    unsigned char hour;
+    unsigned char min;
+    
+};
 
 

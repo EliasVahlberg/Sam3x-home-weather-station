@@ -12,7 +12,7 @@ node create_node();
 node create_node_with_data(temp_d data);
 void append_node(node tail, node newnode);
 void delete_first_node(node head);
-unsigned char double_to_temp(double d);
+
 temp_d create_temp_time_data(unsigned char temp, Time time);
 double list_avg(node head);
 #pragma endregion functions
@@ -127,27 +127,9 @@ void delete_first_node(node head_l)
     free(temp);
 }
 
-/**
-* double_to_temp
-* \brief Converts a double temp value (between 10 and 35.5 degrees )
-* by multiplying it with 10 (to get 1 decimal precission), 
-* converting it to a int and then subtracting with the offset.
-* Example: [d = 21.5141, return = (char)(d*10-100) = 115 ]
-* @param d  temp to be converted
-* @param input2
-* @return value returned
-*/
-unsigned char double_to_temp(double d)
-{
-    int n = (int)(d*10) - TEMP_D_OFFSET;
-    n = (n>TEMP_D_MAX)?TEMP_D_MAX:n;
-    unsigned char temp = (unsigned char) n;
-    return temp;
-
-}
 
 /**
-* \brief Summary
+* \brief compresses the temp and time to a 3 long uchar array 
 * @param input1
 * @param input2
 * @return value returned
@@ -161,18 +143,7 @@ temp_d create_temp_time_data(unsigned char temp, Time_hm time)
     return dest;
 }
 
-/**
-* \brief Summary
-* @param input1
-* @param input2
-* @return value returned
-*/
-double temp_to_double(unsigned char uc)
-{
-    
-    double d = ((double)((int)uc + TEMP_D_OFFSET))/10; 
-    return d;
-}
+
 
 /*Temporary!*/
 double list_avg(node head)

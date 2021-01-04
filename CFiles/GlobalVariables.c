@@ -97,6 +97,28 @@ char date_str[DATE_LEN];
 #pragma endregion DateTime
 
 #pragma region LinkedList
-node head;
-node tail;
+linked_node* head;
+linked_node* tail;
+int list_size = 0;
+
 #pragma endregion LinkedList
+
+#pragma region TempStatistics
+day_temp_data* curr_day_data;
+double var_sum1 = 0.0;
+double var_sum2 = 0.0;
+int num_of_measurements = 0;
+int new_day_flag = 0;
+int measure_temp_flag = 0;
+int last_temp_mesure = 0;
+int new_minute_flag = 0;
+
+int measures_per_min = 1;
+int temp_minute_count = 0;
+double temp_minute_avg =0.0;
+
+
+char* curr_day_data_str;//TEMPORARY
+
+volatile int fast_mode_flag = 0;
+#pragma endregion TempStatistics

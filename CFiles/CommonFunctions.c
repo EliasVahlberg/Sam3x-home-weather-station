@@ -10,16 +10,18 @@
 */
 
 #pragma region Functions
-int     day_temp_data_to_string    (day_temp_data t_data,  char* t_data_str                        );
-int     date_to_string             (date d,                char* str                               );
-int     time_hm_to_string          (time_hm t,             char* str                               );
-void    reverse_str                (char* arr,             int len                                 );
-int     int_to_str                 (char* arr,             int zeroes,     int n                   );
-void    int_to_str_fixed_length    (char* arr,             int length,     int n                   );
-int     double_to_str              (char* arr,             double d,       int decimal_precision   );
-void    double_to_str_fixed_length (char* arr,             double d,       int length              );
-void    str_concat                 (char* dest,            char* src,      int length              );
-void    char_array_erase           (char* arr,             int length,     char erase_val          );
+int             day_temp_data_to_string    (day_temp_data t_data,  char* t_data_str                        );
+int             date_to_string             (date d,                char* str                               );
+int             time_hm_to_string          (time_hm t,             char* str                               );
+void            reverse_str                (char* arr,             int len                                 );
+int             int_to_str                 (char* arr,             int zeroes,     int n                   );
+void            int_to_str_fixed_length    (char* arr,             int length,     int n                   );
+int             double_to_str              (char* arr,             double d,       int decimal_precision   );
+void            double_to_str_fixed_length (char* arr,             double d,       int length              );
+void            str_concat                 (char* dest,            char* src,      int length              );
+void            char_array_erase           (char* arr,             int length,     char erase_val          );
+unsigned char   double_to_temp             (double d                                                       );
+double          temp_to_double             (unsigned char uc                                               );
 #pragma endregion Functions
 
 
@@ -276,5 +278,36 @@ void char_array_erase(char* arr,int length, char erase_val)
     
 }
 
+/**
+* double_to_temp
+* \brief Converts a double temp value (between 10 and 35.5 degrees )
+* by multiplying it with 10 (to get 1 decimal precission), 
+* converting it to a int and then subtracting with the offset.
+* Example: [d = 21.5141, return = (char)(d*10-100) = 115 ]
+* @param d  temp to be converted
+* @param input2
+* @return value returned
+*/
+unsigned char double_to_temp(double d)
+{
+    int n = (int)(d*10) - TEMP_D_OFFSET;
+    n = (n>TEMP_D_MAX)?TEMP_D_MAX:
+    (n<0)?0:
+    n;
+    unsigned char temp = (unsigned char)(n &0xff);
+    return temp;
+
+}
+/**
+* \brief The inverse function to double_to_temp
+* @param uc unsigned char temp value
+* @return temp as a double
+*/
+double temp_to_double(unsigned char uc)
+{
+    
+    double d = ((double)((int)uc + TEMP_D_OFFSET))/10; 
+    return d;
+}
 
 

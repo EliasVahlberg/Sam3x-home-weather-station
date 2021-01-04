@@ -17,14 +17,14 @@ double temperature      = 0.0   ;           //Temperature retrived from the temp
 
 #pragma region Functions
 void full_setup();
-void day_temp_data_test();
+void set_day_statistics();
+void add_temp_recording();
 #pragma endregion Functions
 
 void main(void)
 {
   
     full_setup();
-
     //login();
     //edit_user();
     //login();
@@ -32,18 +32,23 @@ void main(void)
     //day_temp_data_test();
     //config_time();
     //config_date();
-    current_time[0]= (unsigned char) 11;
-    head = create_node();
-    tail = create_node();
-    double avg = 0.0;
+    fast_mode_flag = 1;
+    measures_per_min = 10;
+    curr_day_data = calloc(1,sizeof(day_temp_data));
+    microseconds = 86390000000;
+    head= calloc(1,sizeof(linked_node));
+    tail= calloc(1,sizeof(linked_node));
+    curr_day_data_str = calloc(DAY_TEMP_DATA_LENGTH,sizeof(char));
   while(1)
   {
-    
-    start_pulse();
-    if(temp_rdy_flag)
-        temperature = get_temp();
+    if(measure_temp_flag!=last_temp_mesure)
+        add_temp_recording();
+    if(new_minute_flag!=0)
+        add_temp_recording();
+
     loopCount++;
     light_measure();
+    temperature = 0.0;
     if((loopCount%10)==0)
         {
             char str_message1[16] = "Temp: ";
@@ -76,11 +81,11 @@ void main(void)
         if(loopCount>15)
             temperature_alarm();
 
-            display_date_time();
-        expand_List(head, tail,temperature);
-        int k = get_keypad_key();
-        if(k == 10)
-            avg = list_avg(head);
+        display_date_time();
+        if(new_day_flag)
+        {
+            set_day_statistics();
+        }
   }
   
 }
@@ -104,40 +109,56 @@ void full_setup()
     login_init();
     init_date_time();
 }
+void add_temp_recording()
+{
+     
+    last_temp_mesure = measure_temp_flag;
+    if(new_minute_flag==1)
+    {
+        temp_minute_avg /= temp_minute_count;
+        (*tail)->temp = double_to_temp(temp_minute_avg);
+        temp_minute_avg = 0;
+        temp_minute_count = 0;
+        new_minute_flag = 0;
+        
+    }
+    if(temp_minute_count<measures_per_min)
+    {
+        
+        while(1)
+        {
+            start_pulse();
+            if(temp_rdy_flag)
+            {
+                temp_minute_avg =+ get_temp();
+                if(temp_minute_count==0)
+                {
+                set_timedate();
+                append_to_list(head, tail,temp_minute_avg);
+                }
+                temp_minute_count++;
+               break;
+            }       
+        }
+    }
 
 
-void day_temp_data_test()
+    char str_message1[16] = "Temp: ";
+    double_to_str_fixed_length(str_message1+6,curr_temp,10);
+    struct screen_element temp1 = create_screen_element(0,4,16,str_message1); 
+    display_write(temp1);
+}
+void set_day_statistics()
 {
     char* table = "Date    |min |tmin |avg |max |tmax |var ";
     int table_len = 40;
-    screen_element tel1 = create_screen_element(0,0,table_len,table);
+    screen_element tel1 = create_screen_element(0,7,table_len,table);
     display_write(tel1);
-    day_temp_data   dtd;
-    date            tdate;
-    time_hm         thm;
-    time_hm         thm2;
-    tdate.day   =   99;
-    tdate.month =   88;
-    tdate.year  =   77;
 
-    thm.hour    =   18;
-    thm.minute  =   1;
-
-    thm2.hour    =   19;
-    thm2.minute  =   2;
-
-    dtd.day     =   tdate;
-    dtd.min     =   22.11111;
-    dtd.tmin    =   thm;
-
-    dtd.avg     =   28.11111;
-    dtd.tmax    =   thm2;
-    dtd.max     =   38.11111;
-    dtd.vari    =   12.11;
-    char str_data[DAY_TEMP_DATA_LENGTH];
-    day_temp_data_to_string(dtd,str_data);
+    calc_statistics(head,curr_day_data);
     int l = DAY_TEMP_DATA_LENGTH;
-    screen_element sel1 = create_screen_element(0,2,l,str_data);
-    display_write(sel1);
-    }
-
+    day_temp_data_to_string(*curr_day_data,curr_day_data_str);
+    screen_element daydt = create_screen_element(0,9,l,curr_day_data_str);
+    display_write(daydt);
+    new_day_flag=0;
+}

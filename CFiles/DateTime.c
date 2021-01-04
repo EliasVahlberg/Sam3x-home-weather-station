@@ -38,6 +38,10 @@ void set_timedate()
     unsigned long long temp_seconds = (unsigned long long)microseconds / MICRO_TO_SEC;
     current_time[2] = (unsigned char)(temp_seconds % SEC_TO_MIN);
     temp_seconds = temp_seconds / SEC_TO_MIN;
+    if(current_time[1] != (unsigned char)(temp_seconds % MIN_TO_HOUR))
+    {
+        new_minute_flag =  1; 
+    }
     current_time[1] = (unsigned char)(temp_seconds % MIN_TO_HOUR);
     temp_seconds = temp_seconds / MIN_TO_HOUR;
     current_time[0] = (unsigned char)(temp_seconds % HOUR_TO_DAY);
@@ -55,9 +59,12 @@ void set_timedate()
             current_date[1] = (unsigned char)(current_date[1] + 1) % MONTH_TO_YEAR;
         }
         current_date[2] = (unsigned char)(current_date[2] + 1) % max_day;
+        new_day_flag = 1;
     }
     current_time_hm[0] = current_time[0];
     current_time_hm[1] = current_time[1];
+    if((((int)current_time[2])%((int)(60/measures_per_min)))==0)
+        measure_temp_flag=(int)(current_time[2]&0xff);
     time_config_flag = 0;
 }
 
