@@ -273,8 +273,7 @@ struct screen_cordinate convert_to_scord(int x, int y)
 {
     struct screen_cordinate sc;
     if(x + y*30 >DISPLAY_SCREEN_HALF*2)
-        return sc;
-
+        return sc; 
     sc.screen_half_val =(x+y*30>DISPLAY_SCREEN_HALF)? 1:0;
     sc.pos = (sc.screen_half_val==1)? (x+y*30-DISPLAY_SCREEN_HALF):x+y*30;
     return sc;

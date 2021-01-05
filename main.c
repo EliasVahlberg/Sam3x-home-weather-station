@@ -20,8 +20,7 @@ void full_setup();
 void set_day_statistics();
 void add_temp_recording();
 void get_num_mes_per_min();
-void day_temp_data_test();
-
+void day_temp_data_test(day_temp_data*   dtd,int i);
 
 //Menu
 void main_menu();
@@ -49,8 +48,10 @@ void main(void)
     head= calloc(1,sizeof(linked_node));
     tail= calloc(1,sizeof(linked_node));
     curr_day_data_str = calloc(DAY_TEMP_DATA_LENGTH,sizeof(char));
-    day_temp_data_test();
-    clear_day_data();
+    day_temp_data_test(&(saved_day_temp_data[0]),0);
+    day_temp_data_test(&(saved_day_temp_data[1]),1);
+    day_temp_data_test(&(saved_day_temp_data[2]),2);
+    day_temp_data_test(&(saved_day_temp_data[3]),3);
   while(1)
   {
     int keypad_input = get_keypad_key();
@@ -133,7 +134,7 @@ void main_menu()
     display_write_direct(0,2,14,"Recorded days:");
     if(num_saved_day_data!=0)
     {
-        int i =curr_day_data,n=3;
+        int i =(curr_day_data-1),n=3;
         do
         {
             char str[11];
@@ -141,10 +142,10 @@ void main_menu()
             str[1] = ':';
             str[2] = ' ';
             date_to_string(saved_day_temp_data[i].day,(char*)(str+3));
-            display_write_direct(0,3,11,str);
-            if(num_saved_day_data!=7&&i==(num_saved_day_data-1))
+            display_write_direct(0,n,11,str);
+            if(num_saved_day_data!=7&&i==0)
                 break;
-            i++;
+            i=(i==0)?7:i-1;
             n++;
         } while (i!=curr_day_data);
         char str2[17] ="Press 1-7 to view";
@@ -172,7 +173,14 @@ void clear_menu(int menu_t)
 
 void clear_main_menu()
 {
-
+    screen_cord scord;
+    for (int  i = 0; i < 15; i++)
+    {
+    scord = convert_to_scord(0,i);
+    set_cursor(scord.pos,scord.screen_half_val);
+    display_clear(20,scord.pos,scord.screen_half_val);
+    }
+    
 }
 
 void sidebar_menu()
@@ -212,7 +220,7 @@ void sidebar_menu()
     if(fast_mode_flag)
     {
     char str3[8] = "Fastmode";
-    struct screen_element mode = create_screen_element(20,8,8,str3); 
+    struct screen_element mode = create_screen_element(20,10,8,str3); 
     display_write(mode);
     }
     else
@@ -303,18 +311,18 @@ void voltage_print() //TEMPORARY
         }
 }
 
-void day_temp_data_test()//TEMPORARY
+void day_temp_data_test(day_temp_data* dtd,int n)//TEMPORARY
 {
     char* head = "Temp Statistics: ";
     int len = DAY_LINE0;
     screen_element tel1 = create_screen_element(0,0,len,head);
-    display_write(tel1);
+    //display_write(tel1);
 
-    day_temp_data   dtd;
+    
     date            tdate;
     time_hm         thm;
     time_hm         thm2;
-    tdate.day   =   99;
+    tdate.day   =   n;
     tdate.month =   88;
     tdate.year  =   77;
 
@@ -324,14 +332,15 @@ void day_temp_data_test()//TEMPORARY
     thm2.hour    =   19;
     thm2.minute  =   2;
 
-    dtd.day     =   tdate;
-    dtd.min     =   22.11111;
-    dtd.tmin    =   thm;
-
-    dtd.avg     =   28.11111;
-    dtd.tmax    =   thm2;
-    dtd.max     =   38.11111;
-    dtd.vari    =   12.11;
-    print_day_data(dtd);
+    dtd->day     =   tdate;
+    dtd->min     =   22.11111;
+    dtd->tmin    =   thm;
+    dtd->avg     =   28.11111;
+    dtd->tmax    =   thm2;
+    dtd->max     =   38.11111;
+    dtd->vari    =   12.11;
+    //print_day_data(dtd);
+    num_saved_day_data++;
+    curr_day_data++;
 
 }

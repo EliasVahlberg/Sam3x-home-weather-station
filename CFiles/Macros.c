@@ -19,7 +19,7 @@
 #define DAY_LINE0 17        //Date row    
 #define DAY_LINE1 14        //Date row    
 #define DAY_LINE2 18        //Min row
-#define DAY_LINE3 10         //Avg row
+#define DAY_LINE3 10        //Avg row
 #define DAY_LINE4 18        //Max row
 #define DAY_LINE5 10         //Var row
 
@@ -62,7 +62,7 @@
 #define DISPLAY_SET_CURSOR_CMD                 (0x24        ) //Sets the cursor on the display, position is given by the two prior WriteData calls
 #define DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD (0xc0        ) //Sets the cursor on the display, position is given by the two prior WriteData calls
 #define DISPLAY_DELAY_VALUE                    (100         ) //Used in the write data and write command function, value obtained from testing
-#define DISPLAY_SCREEN_HALF                    (240         ) //Used in the covert_to_scord function, defines the second input to the set cursor command
+#define DISPLAY_SCREEN_HALF                    (225         ) //Used in the covert_to_scord function, defines the second input to the set cursor command
 
 #define RESET_DISP                             (1           ) //DP 25 PIOD
 #define B4_DISP                                (1       <<6 ) //DP 38

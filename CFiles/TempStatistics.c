@@ -175,8 +175,8 @@ int day_temp_data_to_string(day_temp_data t_data,char* t_data_str)
     //*(t_data_str+i) = "Min: ";
     str_concat((char*)(t_data_str+i),"Min : ",6);
     i +=6;
-    i += double_to_str(t_data_str+i,t_data.min,1);
-
+    double_to_str(t_data_str+i,t_data.min,1);
+    i += STR_DOUBLE_SIZE;
     
     //Min time
     //*(t_data_str+i) = " - ";
@@ -188,13 +188,15 @@ int day_temp_data_to_string(day_temp_data t_data,char* t_data_str)
     //*(t_data_str+i) = "Avg: ";
     str_concat((char*)(t_data_str+i),"Avg : ",6);
     i +=6;
-    i += double_to_str(t_data_str+i,t_data.avg,1);
+    double_to_str(t_data_str+i,t_data.avg,1);
+    i += STR_DOUBLE_SIZE;
         
     //Max
     //*(t_data_str+i) = "Max: ";
     str_concat((char*)(t_data_str+i),"Max : ",6);
     i +=6;
-    i += double_to_str(t_data_str+i,t_data.max,1);
+    double_to_str(t_data_str+i,t_data.max,1);
+    i += STR_DOUBLE_SIZE;
         
     //Max time
     //*(t_data_str+i) = " - ";
@@ -206,7 +208,8 @@ int day_temp_data_to_string(day_temp_data t_data,char* t_data_str)
     //*(t_data_str+i) = "Var: ";
     str_concat((char*)(t_data_str+i),"Var : ",6);
     i +=6;
-    i += double_to_str(t_data_str+i,t_data.vari,1);
+    double_to_str(t_data_str+i,t_data.vari,1);
+    i += STR_DOUBLE_SIZE;
     
     return i;
     
