@@ -133,3 +133,10 @@ void ADC_Handler(void)
     if (light_sens_ch2_ready & light_sens_ch1_ready)
         *AT91C_ADCC_IDR = (1 << 24); //Interrupt disable on the ADC
 }
+void HardFault_Handler(void)
+{
+    while(1)
+    {
+        
+    }
+}

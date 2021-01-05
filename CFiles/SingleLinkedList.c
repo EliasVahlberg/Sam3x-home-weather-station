@@ -15,7 +15,7 @@
 #pragma region functions
 unsigned char double_to_temp(double d);
 double temp_to_double(unsigned char uc);
-linked_node create_node_with_data(unsigned char* temp, int len, linked_node* head);
+linked_node create_node_with_data(unsigned char* temp,linked_node* head,int len);
 
 void append_to_list(linked_node* head, linked_node* tail, unsigned char* temp, int len);
 void delete_first_node(linked_node* head_l);
@@ -60,7 +60,7 @@ linked_node create_node_with_data(unsigned char* temp,linked_node* head,int len)
     nod->min = current_time_hm[1];
     nod->temp = temp[0];
     if(len>1)
-        mem_write((unsigned char*)(nod + 8),(unsigned char*)(temp + 1),len-1);
+        mem_write(((unsigned char*)nod)+8,(unsigned char*)(temp + 1),len);
     nod->next = NULL;
 
     list_size++;

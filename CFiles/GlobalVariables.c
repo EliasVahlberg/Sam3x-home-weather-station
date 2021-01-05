@@ -110,6 +110,7 @@ int num_saved_day_data = 0;             //Number of days of recordings stored
 int curr_day_data = 0;                  //The index value of the current day in the list containing temp stats
 unsigned char* curr_min_temp_values;    //Stores all the temp values of the current min (so that they are added together in the list)
 unsigned char previous_minute =0;       //Stores the previous minute which is added to the temp data at every new minute
+unsigned char previous_hour =0;       //The hour stored at the same time as previous minute to safeguard any possible mixup
 
 double var_sum1 = 0.0;                  //Regular sum of all temp values of the current day
 double var_sum2 = 0.0;                  //Squared sum of all temp values of the current day

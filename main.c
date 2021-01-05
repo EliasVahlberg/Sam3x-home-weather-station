@@ -47,9 +47,9 @@ void main(void)
     saved_day_temp_data = calloc(7,sizeof(day_temp_data));
     head= calloc(1,sizeof(linked_node));
     tail= calloc(1,sizeof(linked_node));
-    curr_min_temp_values = (num_of_measurements==1)?
+    curr_min_temp_values = (measures_per_min==1)?
     calloc(1,sizeof(char)):
-    calloc(num_of_measurements+1,sizeof(char));
+    calloc(measures_per_min+1,sizeof(char));
     day_temp_data_test(&(saved_day_temp_data[0]),0);
     day_temp_data_test(&(saved_day_temp_data[1]),1);
     day_temp_data_test(&(saved_day_temp_data[2]),2);
@@ -192,6 +192,7 @@ void sidebar_menu()
     while(1)              //Records a new temp value and displays it
     {
         start_pulse();
+        delay_milis(15);
         if(temp_rdy_flag)
             break;       
     }
@@ -245,9 +246,11 @@ void add_temp_recording()
     last_temp_measure = measure_temp_flag;
     if(new_minute_flag==1)
     {
-        temp_minute_avg /= temp_minute_count;
+        temp_minute_avg /= (double)temp_minute_count;
+        curr_min_temp_values[temp_minute_count] = double_to_temp(temp_minute_avg);
         append_to_list(head,tail,curr_min_temp_values,measures_per_min);
-        (*tail)->temp = double_to_temp(temp_minute_avg);
+        (*tail)->min = previous_minute;
+        (*tail)->hour = previous_hour;
         temp_minute_avg = 0;
         temp_minute_count = 0;
         new_minute_flag = 0;
@@ -259,6 +262,7 @@ void add_temp_recording()
         while(1)
         {
             start_pulse();
+            delay_milis(15);
             if(temp_rdy_flag)
             {
                 temp_minute_avg += get_temp();
@@ -268,6 +272,7 @@ void add_temp_recording()
                 {
                 set_timedate();
                 previous_minute = (unsigned char) current_time_hm[1];
+                previous_hour = (unsigned char) current_time_hm[0];
                 }
                 temp_minute_count++;
                break;
