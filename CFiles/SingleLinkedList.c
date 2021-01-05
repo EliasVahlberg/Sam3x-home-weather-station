@@ -15,28 +15,32 @@
 #pragma region functions
 unsigned char double_to_temp(double d);
 double temp_to_double(unsigned char uc);
-linked_node create_node_with_data(double temp, linked_node* head);
+linked_node create_node_with_data(unsigned char* temp, int len, linked_node* head);
 
-void append_to_list(linked_node* head, linked_node* tail, double temp);
+void append_to_list(linked_node* head, linked_node* tail, unsigned char* temp, int len);
 void delete_first_node(linked_node* head_l);
+void mem_write(unsigned char* mem_adr, unsigned char* src, int len);
 
 #pragma endregion functions
 
 
-void append_to_list(linked_node* head, linked_node* tail, double temp)
+void append_to_list(linked_node* head, linked_node* tail, unsigned char* temp, int len)
 {
     if(*head==NULL)
         {
-            *head = create_node_with_data(temp,head);
+            *head = create_node_with_data(temp,head,len);
             *tail = *head;
             return;
         }
-    (*tail)->next = create_node_with_data(temp,head);
+    (*tail)->next = create_node_with_data(temp,head,len);
     (*tail) = (*tail)->next;
 }
-linked_node create_node_with_data(double temp,linked_node* head)
+linked_node create_node_with_data(unsigned char* temp,linked_node* head,int len)
 {
-    linked_node nod = calloc(1,sizeof(linked_node));
+    int i =(int) sizeof(struct Linked_Element);
+    linked_node nod = (len==1)?
+    calloc(1,sizeof(struct Linked_Element)):
+    calloc(1,sizeof(struct Linked_Element)+len);
     while(nod == NULL) //Excecutes when memory is full (malloc failure)
     {
         mem_full_flag = 1;
@@ -51,12 +55,16 @@ linked_node create_node_with_data(double temp,linked_node* head)
         
         nod = calloc(1,sizeof(linked_node));
     }
-    nod->temp = double_to_temp(temp);
+    
     nod->hour = current_time_hm[0];
     nod->min = current_time_hm[1];
+    nod->temp = temp[0];
+    if(len>1)
+        mem_write((unsigned char*)(nod + 8),(unsigned char*)(temp + 1),len-1);
     nod->next = NULL;
 
     list_size++;
+    i++;
     return nod;
 
 }
@@ -81,4 +89,13 @@ void delete_list(linked_node* head)
         delete_first_node(head);
         } while ((*head)->next!=NULL);
         delete_first_node(head);
+}
+
+
+void mem_write(unsigned char* mem_adr, unsigned char* src, int len)
+{
+    for (int i = 0; i < len; i++)
+    {
+        mem_adr[i] = src[i];
+    }
 }

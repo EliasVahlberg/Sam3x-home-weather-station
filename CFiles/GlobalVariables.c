@@ -39,7 +39,7 @@ double      adc_ch2_voltage            = 0.0    ; //
 
 #pragma region  TemperatureSensor
 int        temp_rdy_flag               = 0      ; // Indicates when ther is a temperature value ready to be read
-double     curr_temp                   = 0.0    ; //Stores the last read temperature, mainly used for debugging
+double     curr_temp                   = 0.0    ; //Stores the last read temperature.
 double     tcDelta                     = 0.0    ; //The differance between register A and B in the TC0
 #pragma endregion TemperatureSensor
 
@@ -105,25 +105,25 @@ int list_size = 0;
 #pragma endregion LinkedList
 
 #pragma region TempStatistics
-day_temp_data* saved_day_temp_data;
-int num_saved_day_data = 0;
-int curr_day_data = 0;
+day_temp_data* saved_day_temp_data;     //Container used to store statistics of the last 7 days
+int num_saved_day_data = 0;             //Number of days of recordings stored
+int curr_day_data = 0;                  //The index value of the current day in the list containing temp stats
+unsigned char* curr_min_temp_values;    //Stores all the temp values of the current min (so that they are added together in the list)
+unsigned char previous_minute =0;       //Stores the previous minute which is added to the temp data at every new minute
 
-double var_sum1 = 0.0;
-double var_sum2 = 0.0;
+double var_sum1 = 0.0;                  //Regular sum of all temp values of the current day
+double var_sum2 = 0.0;                  //Squared sum of all temp values of the current day
 
-int num_of_measurements = 0;
+int num_of_measurements = 0;            //The number of measurements recorded this day
 int new_day_flag = 0;
-int measure_temp_flag = 0;
-int last_temp_mesure = 0;
+int measure_temp_flag = 0;              //Is set after a fixed period determined (60/measures_per_min seconds)
+int last_temp_measure = 0;              //The second of the current minute that the temp was last recorded at (prevents it from saving multiple times per sec)
 int new_minute_flag = 0;
 
-int measures_per_min = 1;
-int temp_minute_count = 0;
-double temp_minute_avg =0.0;
+int measures_per_min = 1;               //The number of measurements recorded every minute
+int temp_minute_count = 0;              //A counter that keeps track of how many measurements has been taken this minute
+double temp_minute_avg =0.0;            //The avrage over one minute 
 
-
-char* curr_day_data_str;//TEMPORARY
 
 volatile int fast_mode_flag = 0;
 #pragma endregion TempStatistics

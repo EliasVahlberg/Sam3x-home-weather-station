@@ -43,11 +43,13 @@ void main(void)
     //config_date();
 
     fast_mode_flag = 1;
-    saved_day_temp_data = calloc(7,sizeof(day_temp_data));
     microseconds = 86390000000;
+    saved_day_temp_data = calloc(7,sizeof(day_temp_data));
     head= calloc(1,sizeof(linked_node));
     tail= calloc(1,sizeof(linked_node));
-    curr_day_data_str = calloc(DAY_TEMP_DATA_LENGTH,sizeof(char));
+    curr_min_temp_values = (num_of_measurements==1)?
+    calloc(1,sizeof(char)):
+    calloc(num_of_measurements+1,sizeof(char));
     day_temp_data_test(&(saved_day_temp_data[0]),0);
     day_temp_data_test(&(saved_day_temp_data[1]),1);
     day_temp_data_test(&(saved_day_temp_data[2]),2);
@@ -56,7 +58,7 @@ void main(void)
   {
     int keypad_input = get_keypad_key();
 
-    if(measure_temp_flag!=last_temp_mesure)
+    if(measure_temp_flag!=last_temp_measure)
         add_temp_recording();
     if(new_minute_flag!=0)
         add_temp_recording();
@@ -240,10 +242,11 @@ void clear_sidebar_menu()
 void add_temp_recording()
 {
      
-    last_temp_mesure = measure_temp_flag;
+    last_temp_measure = measure_temp_flag;
     if(new_minute_flag==1)
     {
         temp_minute_avg /= temp_minute_count;
+        append_to_list(head,tail,curr_min_temp_values,measures_per_min);
         (*tail)->temp = double_to_temp(temp_minute_avg);
         temp_minute_avg = 0;
         temp_minute_count = 0;
@@ -259,10 +262,12 @@ void add_temp_recording()
             if(temp_rdy_flag)
             {
                 temp_minute_avg += get_temp();
+                curr_min_temp_values[temp_minute_count] = double_to_temp(curr_temp);
+
                 if(temp_minute_count==0)
                 {
                 set_timedate();
-                append_to_list(head, tail,temp_minute_avg);
+                previous_minute = (unsigned char) current_time_hm[1];
                 }
                 temp_minute_count++;
                break;
