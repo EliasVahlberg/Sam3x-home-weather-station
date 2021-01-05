@@ -22,6 +22,8 @@ struct screen_cordinate convert_to_scord        (int x,                         
 struct screen_element   create_screen_element   (int x,                             int y,                  int l,                  char* text);
 int                     display_write           (struct screen_element screen_el                                                              );
 int                     write_string_to_display (char* message,                     int length                                                );
+int                     display_write_direct    (int x,                             int y,                  int l,                  char* text);
+
 #pragma endregion functions
 
 /**
@@ -363,4 +365,11 @@ int write_string_to_display(char* message,int length)
     }
     else
         return -3;
+}
+
+int display_write_direct(int x, int y, int l, char* text)
+{
+    screen_element sc_el = create_screen_element(x,y,l,text);
+    int i = display_write(sc_el);
+    return i;
 }

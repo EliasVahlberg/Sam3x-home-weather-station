@@ -37,10 +37,10 @@ void append_to_list(linked_node* head, linked_node* tail, double temp)
 linked_node create_node_with_data(double temp,linked_node* head)
 {
     linked_node nod = calloc(1,sizeof(linked_node));
-    while(nod == NULL)
+    while(nod == NULL) //Excecutes when memory is full (malloc failure)
     {
-        //CALC VAR MIN MAX AVG
-        update_statistics(head,curr_day_data);
+        mem_full_flag = 1;
+        update_statistics(head,saved_day_temp_data);
         if(head==NULL)
             return nod;
         do

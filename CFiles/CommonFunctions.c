@@ -10,7 +10,6 @@
 */
 
 #pragma region Functions
-int             day_temp_data_to_string    (day_temp_data t_data,  char* t_data_str                        );
 int             date_to_string             (date d,                char* str                               );
 int             time_hm_to_string          (time_hm t,             char* str                               );
 void            reverse_str                (char* arr,             int len                                 );
@@ -25,46 +24,6 @@ double          temp_to_double             (unsigned char uc                    
 #pragma endregion Functions
 
 
-/**
-* day_temp_data_to_string 
-* \brief Converts the struct day_temp_data which contains all the statistics for one day in to a string
-*         where each element is separated by the char literal DAY_TEMP_PADDING    
-* @param t_data source of the struct. 
-* @param t_data_str the destination of the resulting string.
-* @return The resulting length of the string with the following format:
-* day : [0][n], min : [1][n], tmin : [2][n], avg : [3][n], max : [4][n], tmax : [5][n], var : [6][n]
-*  date       , double      , time         , double      , double      , time         , double
-*/
-int day_temp_data_to_string(day_temp_data t_data,char* t_data_str)
-{
-    int i = 0;
-    char temp_double[STR_DOUBLE_SIZE];
-    
-    //Date + Padding
-    i += date_to_string(t_data.day, t_data_str);
-    t_data_str[i++] = DAY_TEMP_PADDING;
-    //Min + padding
-    i += double_to_str(t_data_str+i,t_data.min,1);
-    t_data_str[i++] = DAY_TEMP_PADDING;
-    //Min time + padding
-    i += time_hm_to_string(t_data.tmin,t_data_str+i);
-    t_data_str[i++] = DAY_TEMP_PADDING;
-    //Avg + padding
-    i += double_to_str(t_data_str+i,t_data.avg,1);
-    t_data_str[i++] = DAY_TEMP_PADDING;    
-    //Max + padding
-    i += double_to_str(t_data_str+i,t_data.max,1);
-    t_data_str[i++] = DAY_TEMP_PADDING;    
-    //Max time + padding
-    i += time_hm_to_string(t_data.tmax,t_data_str+i);
-    t_data_str[i++] = DAY_TEMP_PADDING;
-    //Max variance + padding
-    i += double_to_str(t_data_str+i,t_data.vari,1);
-
-    
-    return i;
-    
-}
 
 /**
 * date_to_string

@@ -15,13 +15,21 @@
 #define STR_TIME_SIZE       (5) // eg. "23:59" 
 #define STR_PADDING_SIZE    (1) // '|'
 #define DAY_TEMP_PADDING    ('|')
-#define DAY_TEMP_DATA_LENGTH (STR_DATE_SIZE+4*(STR_DOUBLE_SIZE)+2*(STR_TIME_SIZE)+6*STR_PADDING_SIZE)
+//Width of each line in the day_temp_data
+#define DAY_LINE0 17        //Date row    
+#define DAY_LINE1 14        //Date row    
+#define DAY_LINE2 18        //Min row
+#define DAY_LINE3 10         //Avg row
+#define DAY_LINE4 18        //Max row
+#define DAY_LINE5 10         //Var row
 
+#define DAY_TEMP_DATA_LENGTH (DAY_LINE1+DAY_LINE2+DAY_LINE3+DAY_LINE4+DAY_LINE5)
 #pragma endregion CommonFunctions
 
 #pragma  region ArduinoBaseInclude
 #define SYSTICK_CONFIG_MICRO    (84) //Systick calibration value for 1us period (MCKf / 1000000)
 #pragma endregion ArduinoBaseInclude
+
 #pragma region TemperatureSensor
      
 #define TEMP_ALARM_UPPER_VALUE           (30.0                                      ) //
@@ -36,6 +44,7 @@
 #define TEMP_ALARM_DISPLAY_Y             (5                                         ) // 
 
 #pragma endregion TemperatureSensor
+
 #pragma region keypad  
 #define ROWS    (4)
 #define COLS    (3)

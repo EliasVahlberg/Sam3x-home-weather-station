@@ -11,6 +11,7 @@
 #pragma region GlobalFlags
 int temp_alarm_flag             = 0;
 int display_write_disable_flag  = 0; //Disables the write acces to the display (used during alarm)
+int menu_type                   = 0; //When in main menu:0, temp day stat menu: 1,  graphics mode: -1, 
 #pragma endregion GlobalFlags
 
 #pragma region Servo 
@@ -104,9 +105,13 @@ int list_size = 0;
 #pragma endregion LinkedList
 
 #pragma region TempStatistics
-day_temp_data* curr_day_data;
+day_temp_data* saved_day_temp_data;
+int num_saved_day_data = 0;
+int curr_day_data = 0;
+
 double var_sum1 = 0.0;
 double var_sum2 = 0.0;
+
 int num_of_measurements = 0;
 int new_day_flag = 0;
 int measure_temp_flag = 0;
@@ -122,3 +127,8 @@ char* curr_day_data_str;//TEMPORARY
 
 volatile int fast_mode_flag = 0;
 #pragma endregion TempStatistics
+
+#pragma region Menu
+int mem_full_flag = 0;
+#pragma endregion Menu
+
