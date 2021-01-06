@@ -16,11 +16,15 @@ int temp_alarm_flag             = 0;
 int display_write_disable_flag  = 0; //Disables the write acces to the display (used during alarm)
 int menu_type                   = 0; //When in main menu:0, temp day stat menu: 1,  graphics mode: -1, 
 int fast_mode_flag              = 0;
+int startup_flag                = 3;
+int set_servo_flag              = 0;
 #pragma endregion GlobalFlags
 
 #pragma region Servo 
 double      servo_position             = 0.0    ; //
 int         prev_servo_call            = 0      ;
+
+int         last_servo_update          =0;
 #pragma endregion Servo
 
 #pragma region ArduinoBaseInclude 
@@ -106,6 +110,7 @@ char date_str[DATE_LEN];
 linked_node* head;
 linked_node* tail;
 int list_size = 0;
+linked_node circular_start;
 
 #pragma endregion LinkedList
 
@@ -130,7 +135,7 @@ int measures_per_min = 1;               //The number of measurements recorded ev
 int temp_minute_count = 0;              //A counter that keeps track of how many measurements has been taken this minute
 double temp_minute_avg =0.0;            //The avrage over one minute 
 
-
+int maximum_list_size = 0;              //The largest allowed list
 
 #pragma endregion TempStatistics
 

@@ -36,7 +36,7 @@ void calc_statistics(linked_node* head,day_temp_data* data)
 
 void update_avg_min_max(linked_node* head,day_temp_data* data)
 {
-    linked_node temp_node = *head;
+    linked_node temp_node = (mem_full_flag)?circular_start:*head;
     if(temp_node == NULL)
         return;
     int i = 1;
@@ -75,7 +75,7 @@ void update_avg_min_max(linked_node* head,day_temp_data* data)
                 tmax[1] =temp_node->min;
             }
         }
-        temp_double = temps[measures_per_min];
+        temp_double = temp_to_double(temps[measures_per_min]);
         avg += temp_double;
         var_sum1+=temp_double;
         var_sum2+=temp_double*temp_double;

@@ -45,8 +45,7 @@ void main(void)
     //day_temp_data_test();
     //config_time();
     //config_date();
-
-    microseconds = 86330000000; //86390000000
+    microseconds = 85730000000; //86390000000
     saved_day_temp_data = calloc(7,sizeof(day_temp_data));
     head= calloc(1,sizeof(linked_node));
     tail= calloc(1,sizeof(linked_node));
@@ -73,27 +72,34 @@ void main(void)
     //DEBUG
     set_timedate();
     int keypad_input = get_user_input();
-
-    if(measure_temp_flag!=last_temp_measure)
-        add_temp_recording();
-    if(new_minute_flag!=0)
-        add_temp_recording();
+    if(!startup_flag)
+    {
+        if(measure_temp_flag!=last_temp_measure)
+            add_temp_recording();
+        if(new_minute_flag!=0)
+            add_temp_recording();
+    }
     loop_time = (unsigned long)((microseconds-prevloop)/1000);
     if(loop_time>10)
         loop_time++;
     light_measure();
-    if(keypad_input==12)
+    if(0) //Remove before handin
     {
-        get_light_rotation_data();
-        set_to_max_light();
+        if(set_servo_flag&&set_servo_flag!=last_servo_update)
+        {
+            set_servo_flag=last_servo_update;
+            get_light_rotation_data();
+            set_to_max_light();
+            set_servo_flag = 0;
+        }
+        servo_position = ((double) servo_get_position()/43.7);
     }
-    servo_position = ((double) servo_get_position()/43.7);
 
 
     if(new_day_flag)
-        {
+    {
             set_day_statistics();
-        }
+    }
     
     if(menu_type == 0)
     {
@@ -149,6 +155,7 @@ void full_setup()
     login_init();
     init_date_time();
     get_num_mes_per_min();
+    startup_flag = 2;
 }
 
 
@@ -351,9 +358,9 @@ void voltage_print() //TEMPORARY
 
 void day_temp_data_test(day_temp_data* dtd,int n)//TEMPORARY
 {
-    char* head = "Temp Statistics: ";
+    char* menu_head = "Temp Statistics: ";
     int len = DAY_LINE0;
-    screen_element tel1 = create_screen_element(0,0,len,head);
+    screen_element tel1 = create_screen_element(0,0,len,menu_head);
     //display_write(tel1);
 
     

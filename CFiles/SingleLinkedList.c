@@ -15,9 +15,9 @@
 #pragma region functions
 unsigned char double_to_temp(double d);
 double temp_to_double(unsigned char uc);
-linked_node create_node_with_data(unsigned char* temp,linked_node* head,int len);
-
-void append_to_list(linked_node* head, linked_node* tail, unsigned char* temp, int len);
+void convert_to_circular_list(linked_node* head, linked_node* tail, int size);
+void circular_overwrite(linked_node* head, linked_node* tail, unsigned char* temp, int len);
+linked_node create_node_with_data(linked_node* head, linked_node* tail, unsigned char* temp, int len);
 void delete_first_node(linked_node* head_l);
 void mem_write(unsigned char* mem_adr, unsigned char* src, int len);
 void get_node_temps(linked_node l_node, unsigned char* dest);
@@ -28,18 +28,31 @@ void mem_read(unsigned char* mem_adr, unsigned char* dest, int len);
 
 void append_to_list(linked_node* head, linked_node* tail, unsigned char* temp, int len)
 {
+    if(mem_full_flag)
+    {
+        circular_overwrite(head,tail,temp,len);
+        return;
+    }
     if(*head==NULL)
         {
-            *head = create_node_with_data(temp,head,len);
+            linked_node nod = create_node_with_data(head,tail,temp,len);
+            if(nod==NULL)
+                return;
+            *head = nod;
             *tail = *head;
             return;
         }
-    (*tail)->next = create_node_with_data(temp,head,len);
-    (*tail) = (*tail)->next;
+    else
+    {
+        linked_node nod = create_node_with_data(head,tail,temp,len);
+        if(nod==NULL)
+                return;
+        (*tail)->next = nod;
+        (*tail) = (*tail)->next;
+    }
 }
-linked_node create_node_with_data(unsigned char* temp,linked_node* head,int len)
+linked_node create_node_with_data(linked_node* head, linked_node* tail, unsigned char* temp, int len)
 {
-    int i =(int) sizeof(struct Linked_Element);
     linked_node nod = (len==1)?
     calloc(1,sizeof(struct Linked_Element)):
     calloc(1,sizeof(struct Linked_Element)+len);
@@ -49,13 +62,9 @@ linked_node create_node_with_data(unsigned char* temp,linked_node* head,int len)
         update_statistics(head,saved_day_temp_data);
         if(head==NULL)
             return nod;
-        do
-        {
-        delete_first_node(head);
-        } while ((*head)->next!=NULL);
-        delete_first_node(head);
-        
-        nod = calloc(1,sizeof(linked_node));
+        convert_to_circular_list(head,tail,list_size);
+        circular_overwrite(head,tail,temp,len);
+        return nod;
     }
     
     nod->hour = current_time_hm[0];
@@ -66,9 +75,35 @@ linked_node create_node_with_data(unsigned char* temp,linked_node* head,int len)
     nod->next = NULL;
 
     list_size++;
-    i++;
     return nod;
 
+}
+
+void convert_to_circular_list(linked_node* head, linked_node* tail, int size)
+{
+    maximum_list_size = (int)(size*0.9);//Largest allowed list (0.9*list_size when heap is full to leave some overhead)
+    int size_delta = size-maximum_list_size;
+    for (int i = 0; i < size_delta; i++)
+    {
+     delete_first_node(head);
+    }
+    (*tail)->next = *head;
+    circular_start = *tail;
+    
+}
+
+void circular_overwrite(linked_node* head, linked_node* tail, unsigned char* temp, int len)
+{
+    if(*head==circular_start)
+        update_statistics(head,saved_day_temp_data);
+    *head = (*head)->next;
+    linked_node nod = (*tail)->next;
+    nod->hour = current_time_hm[0];
+    nod->min = current_time_hm[1];
+    nod->temp = temp[0];
+    if(len>1)
+        mem_write(((unsigned char*)nod)+8,(unsigned char*)(temp + 1),len);
+    *tail = nod;
 }
 /**
 * delete_first_node 
