@@ -61,7 +61,7 @@
 #pragma region  display
 #define DISPLAY_SET_CURSOR_CMD                 (0x24        ) //Sets the cursor on the display, position is given by the two prior WriteData calls
 #define DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD (0xc0        ) //Sets the cursor on the display, position is given by the two prior WriteData calls
-#define DISPLAY_DELAY_VALUE                    (100         ) //Used in the write data and write command function, value obtained from testing
+#define DISPLAY_DELAY_VALUE                    (25          ) //Used in the write data and write command function, value obtained from testing
 #define DISPLAY_SCREEN_HALF                    (225         ) //Used in the covert_to_scord function, defines the second input to the set cursor command
 
 #define RESET_DISP                             (1           ) //DP 25 PIOD

@@ -46,7 +46,7 @@ void main(void)
     //config_time();
     //config_date();
 
-    microseconds = 0;//86390000000;
+    microseconds = 86330000000; //86390000000
     saved_day_temp_data = calloc(7,sizeof(day_temp_data));
     head= calloc(1,sizeof(linked_node));
     tail= calloc(1,sizeof(linked_node));
@@ -70,7 +70,6 @@ void main(void)
         loop_time++;
     }
     prevloop = microseconds;
-    delays_per_loop = 0;
     //DEBUG
     set_timedate();
     int keypad_input = get_user_input();

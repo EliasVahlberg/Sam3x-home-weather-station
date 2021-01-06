@@ -9,7 +9,6 @@
 */
 
 
-    int delays_per_loop = 0;
 
 
 #pragma region GlobalFlags

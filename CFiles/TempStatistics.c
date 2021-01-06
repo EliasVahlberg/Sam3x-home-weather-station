@@ -43,6 +43,7 @@ void update_avg_min_max(linked_node* head,day_temp_data* data)
     double temp_double = 0;
     unsigned char tmin[2]; 
     unsigned char tmax[2];
+    unsigned char temps[11];
     double min = temp_to_double(temp_node->temp);
     double max = min;
     double avg = min;
@@ -52,26 +53,32 @@ void update_avg_min_max(linked_node* head,day_temp_data* data)
     tmax[1] = tmin[1];
     while(1)
     {
-        if(temp_node->next==NULL)
+        if(temp_node->next==NULL||temp_node->next==*head)
             break;
         temp_node = temp_node->next;
 
-        temp_double = temp_to_double(temp_node->temp);
+        get_node_temps(temp_node, temps);
+        for (int j = 0; j < measures_per_min; j++)
+        {
+            temp_double = temp_to_double(temps[i]);
+
+            if(temp_double<min)
+            {
+                min = temp_double;
+                tmin[0] =temp_node->hour;
+                tmin[1] =temp_node->min;
+            }
+            if(temp_double>max)
+            {
+                max = temp_double;
+                tmax[0] =temp_node->hour;
+                tmax[1] =temp_node->min;
+            }
+        }
+        temp_double = temps[measures_per_min];
         avg += temp_double;
         var_sum1+=temp_double;
         var_sum2+=temp_double*temp_double;
-        if(temp_double<min)
-        {
-            min = temp_double;
-            tmin[0] =temp_node->hour;
-            tmin[1] =temp_node->min;
-        }
-        if(temp_double>max)
-        {
-            max = temp_double;
-            tmax[0] =temp_node->hour;
-            tmax[1] =temp_node->min;
-        }
         i++;
     }
     num_of_measurements+=i;

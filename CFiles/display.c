@@ -216,7 +216,7 @@ int write_blank_to_display(int length)
             Write_Data_2_Display(0);
             Write_Command_2_Display(DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD);
         }
-        general_delay(1000);
+        general_delay(100); //previously 1000
         return 1;
     }
     else

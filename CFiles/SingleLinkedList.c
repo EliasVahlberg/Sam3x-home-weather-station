@@ -20,6 +20,8 @@ linked_node create_node_with_data(unsigned char* temp,linked_node* head,int len)
 void append_to_list(linked_node* head, linked_node* tail, unsigned char* temp, int len);
 void delete_first_node(linked_node* head_l);
 void mem_write(unsigned char* mem_adr, unsigned char* src, int len);
+void get_node_temps(linked_node l_node, unsigned char* dest);
+void mem_read(unsigned char* mem_adr, unsigned char* dest, int len);
 
 #pragma endregion functions
 
@@ -98,5 +100,21 @@ void mem_write(unsigned char* mem_adr, unsigned char* src, int len)
     for (int i = 0; i < len; i++)
     {
         mem_adr[i] = src[i];
+    }
+}
+void mem_read(unsigned char* mem_adr, unsigned char* dest, int len)
+{
+    for (int i = 0; i < len; i++)
+    {
+        dest[i] = mem_adr[i];
+    }
+}
+void get_node_temps(linked_node l_node, unsigned char* dest)
+{
+    unsigned char* t_data = ((unsigned char*)l_node)+8;
+    dest[0] = l_node->temp;
+    for (int i = 0; i < measures_per_min; i++)
+    {
+        dest[i+1] = t_data[i];
     }
 }
