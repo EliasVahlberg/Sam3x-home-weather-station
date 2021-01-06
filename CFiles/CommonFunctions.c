@@ -10,17 +10,20 @@
 */
 
 #pragma region Functions
-int             date_to_string             (date d,                char* str                               );
-int             time_hm_to_string          (time_hm t,             char* str                               );
-void            reverse_str                (char* arr,             int len                                 );
-int             int_to_str                 (char* arr,             int zeroes,     int n                   );
-void            int_to_str_fixed_length    (char* arr,             int length,     int n                   );
-int             double_to_str              (char* arr,             double d,       int decimal_precision   );
-void            double_to_str_fixed_length (char* arr,             double d,       int length              );
-void            str_concat                 (char* dest,            char* src,      int length              );
-void            char_array_erase           (char* arr,             int length,     char erase_val          );
-unsigned char   double_to_temp             (double d                                                       );
-double          temp_to_double             (unsigned char uc                                               );
+int             date_to_string             (date d,                char* str                                    );
+int             time_hm_to_string          (time_hm t,             char* str                                    );
+void            reverse_str                (char* arr,             int len                                      );
+int             int_to_str                 (char* arr,             int zeroes,          int n                   );
+void            int_to_str_fixed_length    (char* arr,             int length,          int n                   );
+int             double_to_str              (char* arr,             double d,            int decimal_precision   );
+void            double_to_str_fixed_length (char* arr,             double d,            int length              );
+void            str_concat                 (char* dest,            char* src,           int length              );
+void            char_array_erase           (char* arr,             int length,          char erase_val          );
+unsigned char   double_to_temp             (double d                                                            );
+double          temp_to_double             (unsigned char uc                                                    );
+void            mem_write                  (unsigned char* mem_adr,unsigned char* src,  int len                 );
+void            mem_read                   (unsigned char* mem_adr,unsigned char* dest, int len                 );
+void            get_node_temps             (linked_node l_node,    unsigned char* dest                          );
 #pragma endregion Functions
 
 
@@ -270,3 +273,29 @@ double temp_to_double(unsigned char uc)
 }
 
 
+
+void mem_write(unsigned char* mem_adr, unsigned char* src, int len)
+{
+    for (int i = 0; i < len; i++)
+    {
+        mem_adr[i] = src[i];
+    }
+}
+
+void mem_read(unsigned char* mem_adr, unsigned char* dest, int len)
+{
+    for (int i = 0; i < len; i++)
+    {
+        dest[i] = mem_adr[i];
+    }
+}
+
+void get_node_temps(linked_node l_node, unsigned char* dest)
+{
+    unsigned char* t_data = ((unsigned char*)l_node)+8;
+    dest[0] = l_node->temp;
+    for (int i = 0; i < measures_per_min; i++)
+    {
+        dest[i+1] = t_data[i];
+    }
+}

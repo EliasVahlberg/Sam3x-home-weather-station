@@ -94,27 +94,3 @@ void delete_list(linked_node* head)
         delete_first_node(head);
 }
 
-
-void mem_write(unsigned char* mem_adr, unsigned char* src, int len)
-{
-    for (int i = 0; i < len; i++)
-    {
-        mem_adr[i] = src[i];
-    }
-}
-void mem_read(unsigned char* mem_adr, unsigned char* dest, int len)
-{
-    for (int i = 0; i < len; i++)
-    {
-        dest[i] = mem_adr[i];
-    }
-}
-void get_node_temps(linked_node l_node, unsigned char* dest)
-{
-    unsigned char* t_data = ((unsigned char*)l_node)+8;
-    dest[0] = l_node->temp;
-    for (int i = 0; i < measures_per_min; i++)
-    {
-        dest[i+1] = t_data[i];
-    }
-}
