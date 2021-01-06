@@ -35,7 +35,9 @@ void init_date_time()
 void set_timedate()
 {
     time_config_flag = 1;
-    unsigned long long temp_seconds = (unsigned long long)microseconds / MICRO_TO_SEC;
+    unsigned long long temp_seconds = (fast_mode_flag)? 
+    (unsigned long long)microseconds / MICRO_TO_SEC_FAST:
+    (unsigned long long)microseconds / MICRO_TO_SEC;
     current_time[2] = (unsigned char)(temp_seconds % SEC_TO_MIN);
     temp_seconds = temp_seconds / SEC_TO_MIN;
     if(current_time[1] != (unsigned char)(temp_seconds % MIN_TO_HOUR))
@@ -63,7 +65,7 @@ void set_timedate()
     }
     current_time_hm[0] = current_time[0];
     current_time_hm[1] = current_time[1];
-    if((((int)current_time[2])%((int)(60/measures_per_min)))==0)
+    if((((int)current_time[2])%((int)(60/measures_per_min)))==0||((int)current_time[2])-last_temp_measure>=((int)(60/measures_per_min)))
         measure_temp_flag=(int)(current_time[2]&0xff);
     time_config_flag = 0;
 }
@@ -276,3 +278,8 @@ void date_to_str(Date date, char *str)
     return;
 }
 
+void toggle_fastmode()
+{
+    fast_mode_flag = (fast_mode_flag)?0:1;                              //Inverts the fast_fast_mode_flag
+    microseconds = (fast_mode_flag)?microseconds/60:microseconds*60;    //Divide or multiply microsec to preserve the current time 
+}

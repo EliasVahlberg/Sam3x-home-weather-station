@@ -23,6 +23,7 @@ struct screen_element   create_screen_element   (int x,                         
 int                     display_write           (struct screen_element screen_el                                                              );
 int                     write_string_to_display (char* message,                     int length                                                );
 int                     display_write_direct    (int x,                             int y,                  int l,                  char* text);
+int                     clear_display_direct    (int x,                             int y,                  int l                             );
 
 #pragma endregion functions
 
@@ -275,7 +276,7 @@ struct screen_cordinate convert_to_scord(int x, int y)
     if(x + y*30 >DISPLAY_SCREEN_HALF*2)
         return sc; 
     sc.screen_half_val =(x+y*30>DISPLAY_SCREEN_HALF)? 1:0;
-    sc.pos = (sc.screen_half_val==1)? (x+y*30-DISPLAY_SCREEN_HALF):x+y*30;
+    sc.pos = (sc.screen_half_val==1)? (x+y*30-DISPLAY_SCREEN_HALF-1):x+y*30;
     return sc;
 
 }
@@ -371,4 +372,9 @@ int display_write_direct(int x, int y, int l, char* text)
     screen_element sc_el = create_screen_element(x,y,l,text);
     int i = display_write(sc_el);
     return i;
+}
+int clear_display_direct (int x, int y, int l )
+{
+    screen_cord sc = convert_to_scord(x,y);
+    display_clear(l,sc.pos,sc.screen_half_val);
 }

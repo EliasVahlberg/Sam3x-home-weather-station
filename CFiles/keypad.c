@@ -57,6 +57,22 @@ int get_keypad_key()
 
 }
 
+int get_user_input()
+{
+    int key = get_keypad_key();
+    if(prev_keypad_key==0&&key==0) //Delayed recheck
+    {
+        delay_micro(100);
+        key = get_keypad_key();
+    }
+    if(prev_keypad_key==0||key==0)
+    {
+        prev_keypad_key = key;
+        return key;
+    }
+    else
+        return 0;
+}
 /**
 * keypad_setup
 * \brief Init for the keypad,

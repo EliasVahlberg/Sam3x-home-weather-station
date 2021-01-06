@@ -8,10 +8,15 @@
 *     ...
 */
 
+
+    int delays_per_loop = 0;
+
+
 #pragma region GlobalFlags
 int temp_alarm_flag             = 0;
 int display_write_disable_flag  = 0; //Disables the write acces to the display (used during alarm)
 int menu_type                   = 0; //When in main menu:0, temp day stat menu: 1,  graphics mode: -1, 
+int fast_mode_flag              = 0;
 #pragma endregion GlobalFlags
 
 #pragma region Servo 
@@ -46,6 +51,7 @@ double     tcDelta                     = 0.0    ; //The differance between regis
 #pragma region  keypad
 unsigned short int rowsArr[] = {ROW0, ROW1, ROW2, ROW3};
 unsigned short int colsArr[] = {COL2, COL1, COL0};
+int prev_keypad_key = 0;
 #pragma endregion keypad
 
 #pragma region LoginSystem
@@ -126,7 +132,7 @@ int temp_minute_count = 0;              //A counter that keeps track of how many
 double temp_minute_avg =0.0;            //The avrage over one minute 
 
 
-volatile int fast_mode_flag = 0;
+
 #pragma endregion TempStatistics
 
 #pragma region Menu

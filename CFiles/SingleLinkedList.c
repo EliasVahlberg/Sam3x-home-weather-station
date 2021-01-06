@@ -75,6 +75,7 @@ linked_node create_node_with_data(unsigned char* temp,linked_node* head,int len)
 */
 void delete_first_node(linked_node* head_l)
 {
+    list_size--;
     linked_node temp = *head_l;
     (*head_l) = (*head_l)->next;
     free(temp);

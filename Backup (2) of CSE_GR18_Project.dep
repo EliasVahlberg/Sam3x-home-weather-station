@@ -5,28 +5,28 @@
     <configuration>
         <name>Debug</name>
         <outputs>
+            <file>$PROJ_DIR$\system_sam3x.c</file>
+            <file>$PROJ_DIR$\main.c</file>
             <file>$PROJ_DIR$\Debug\Obj\cstartup.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_sam3x.o</file>
             <file>$PROJ_DIR$\Debug\Exe\Backup (2) of CSE_GR18_Project.out</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$PROJ_DIR$\system_sam3x.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.__cstat.et</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\exceptions.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.o</file>
-            <file>$PROJ_DIR$\exceptions.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\exceptions.o</file>
-            <file>$PROJ_DIR$\startup_sam3x.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_sam3x.__cstat.et</file>
             <file>$PROJ_DIR$\cstartup.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_sam3x.__cstat.et</file>
+            <file>$PROJ_DIR$\exceptions.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\exceptions.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\exceptions.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_sam3x.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.o</file>
+            <file>$PROJ_DIR$\startup_sam3x.c</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 2</file>
+                    <file> 3</file>
                 </tool>
             </outputs>
         </file>
@@ -35,7 +35,7 @@
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 13</file>
+                    <file> 7</file>
                 </tool>
             </outputs>
         </file>
@@ -44,25 +44,7 @@
             <outputs>
                 <tool>
                     <name>__cstat</name>
-                    <file> 10</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\exceptions.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 7</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\startup_sam3x.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 5</file>
+                    <file> 12</file>
                 </tool>
             </outputs>
         </file>
@@ -71,7 +53,25 @@
             <outputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 0</file>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\exceptions.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\startup_sam3x.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 6</file>
                 </tool>
             </outputs>
         </file>

@@ -48,6 +48,11 @@ void delay_milis(int milliseconds)
     {
         asm("nop");
     }
+    delays_per_loop++;
+    if(delays_per_loop>10)
+    {
+        int i = 2;
+    }
 }
 /**
 * delay_micro

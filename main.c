@@ -30,6 +30,10 @@ void sidebar_menu();
 void clear_sidebar_menu();
 #pragma endregion Functions
 
+//DEBUG
+    unsigned long loop_time = 0;
+//DEBUG
+
 void main(void)
 {
   
@@ -42,8 +46,7 @@ void main(void)
     //config_time();
     //config_date();
 
-    fast_mode_flag = 1;
-    microseconds = 86390000000;
+    microseconds = 0;//86390000000;
     saved_day_temp_data = calloc(7,sizeof(day_temp_data));
     head= calloc(1,sizeof(linked_node));
     tail= calloc(1,sizeof(linked_node));
@@ -54,15 +57,31 @@ void main(void)
     day_temp_data_test(&(saved_day_temp_data[1]),1);
     day_temp_data_test(&(saved_day_temp_data[2]),2);
     day_temp_data_test(&(saved_day_temp_data[3]),3);
+    //DEBUG
+    unsigned long long prevloop = 0;
+    //DEBUG
   while(1)
   {
-    int keypad_input = get_keypad_key();
+    //DEBUG
+    
+    loop_time = (unsigned long)((microseconds-prevloop)/1000);
+    if(loop_time>150)
+    {
+        loop_time++;
+    }
+    prevloop = microseconds;
+    delays_per_loop = 0;
+    //DEBUG
+    set_timedate();
+    int keypad_input = get_user_input();
 
     if(measure_temp_flag!=last_temp_measure)
         add_temp_recording();
     if(new_minute_flag!=0)
         add_temp_recording();
-
+    loop_time = (unsigned long)((microseconds-prevloop)/1000);
+    if(loop_time>10)
+        loop_time++;
     light_measure();
     if(keypad_input==12)
     {
@@ -87,9 +106,13 @@ void main(void)
                 menu_type = 1;
                 print_day_data(saved_day_temp_data[(keypad_input-1)]);
             }    
-        }   
+        }
         else
             main_menu();
+        if(keypad_input==10)
+        {
+            toggle_fastmode();
+        }   
     }
     if(menu_type == 1)
     {
@@ -128,6 +151,7 @@ void full_setup()
     init_date_time();
     get_num_mes_per_min();
 }
+
 
 
 void main_menu()
@@ -188,13 +212,15 @@ void clear_main_menu()
 void sidebar_menu()
 {
     display_date_time();  //Displays the date and time
-
-    while(1)              //Records a new temp value and displays it
+    if(!fast_mode_flag && fast_mode_flag)
     {
-        start_pulse();
-        delay_milis(15);
-        if(temp_rdy_flag)
-            break;       
+        while(1)              //Records a new temp value and displays it
+        {
+            start_pulse();
+            if(temp_rdy_flag)
+                break;       
+            temp_reset();
+        }
     }
     temperature_alarm(); //Checks if a temperature alarm should be set before writing
     if(temp_alarm_flag!=0)
@@ -203,6 +229,7 @@ void sidebar_menu()
     double_to_str_fixed_length(str_message1+6,curr_temp,4);
     screen_element temp1 = create_screen_element(20,3,10,str_message1); 
     display_write(temp1);
+
 
     if(current_user!=NULL)
     {
@@ -220,6 +247,8 @@ void sidebar_menu()
     display_write(memfull);
 
     }
+    
+    clear_display_direct(20,10,10);
     if(fast_mode_flag)
     {
     char str3[8] = "Fastmode";
@@ -262,7 +291,6 @@ void add_temp_recording()
         while(1)
         {
             start_pulse();
-            delay_milis(15);
             if(temp_rdy_flag)
             {
                 temp_minute_avg += get_temp();
@@ -276,7 +304,8 @@ void add_temp_recording()
                 }
                 temp_minute_count++;
                break;
-            }       
+            }
+            temp_reset();       
         }
     }
 }
@@ -297,7 +326,7 @@ void get_num_mes_per_min()
     int k = 0;
     while(!k)
     {
-        k = get_keypad_key();
+        k = get_user_input();
     }
     measures_per_min = (k>10)?10:k;
     display_clear(29,sc.screen_cord.pos,sc.screen_cord.screen_half_val);

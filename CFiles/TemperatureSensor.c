@@ -52,7 +52,7 @@ void start_pulse()
     *AT91C_TC0_CCR = 4;                           //sw_reset
     unsigned int interruptRead = *AT91C_TC0_SR;
     *AT91C_TC0_IER = (0x1<<6);                              //Enable interrupt for LDRBS 
-    delay_milis(15);
+    delay_milis(4);                                        //Awaits an tc0 interrupt (changed from 15 to 4 after testing)
 }
 
 void temp_reset()
@@ -109,6 +109,7 @@ int temperature_alarm()
                         d = get_temp();
                         break;
                     }
+                delay_milis(4);
             }
             f = (d>= TEMP_ALARM_UPPER_VALUE)?2:
             ((d<=TEMP_ALARM_LOWER_VALUE)?1:0);

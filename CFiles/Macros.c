@@ -101,6 +101,7 @@
 
 #pragma region DateTime
 #define MICRO_TO_SEC         (1000000)
+#define MICRO_TO_SEC_FAST    (16666) //Approx 10^6/60
 #define SEC_TO_MIN           (60)
 #define MIN_TO_HOUR          (60)
 #define HOUR_TO_DAY          (24)
