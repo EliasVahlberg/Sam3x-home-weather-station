@@ -94,7 +94,6 @@
 
 #pragma region  LightSensor
 #define LIGHT_ROT_DATA_LENGTH  (36)
-#define SERVO_UPDATE_PERIOD    (10) //How often the servo should update the position
 #pragma endregion  LightSensor
 
 #pragma region LoginSystem

@@ -45,6 +45,8 @@ void set_timedate()
         new_minute_flag =(startup_flag)?0: 1;
 
         startup_flag = (startup_flag)? startup_flag-1:0;
+        if(!fast_mode_flag)
+            set_servo_flag =current_time[1]; 
     }
     current_time[1] = (unsigned char)(temp_seconds % MIN_TO_HOUR);
     temp_seconds = temp_seconds / MIN_TO_HOUR;
@@ -69,8 +71,6 @@ void set_timedate()
     current_time_hm[1] = current_time[1];
     if((((int)current_time[2])%((int)(60/measures_per_min)))==0||((int)current_time[2])-last_temp_measure>=((int)(60/measures_per_min)))
         measure_temp_flag=(int)(current_time[2]&0xff);
-    if(((int)current_time[2])%SERVO_UPDATE_PERIOD==0&& fast_mode_flag==0)
-        set_servo_flag = ((int)current_time[2]);
     time_config_flag = 0;
 }
 

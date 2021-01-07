@@ -47,30 +47,15 @@ void main(void)
     //day_temp_data_test();
     //microseconds = 85730000000; //86390000000
     saved_day_temp_data = calloc(7,sizeof(day_temp_data));
-    test_day_temp_data = calloc(7,sizeof(day_temp_data));
+
     head= calloc(1,sizeof(linked_node));
     tail= calloc(1,sizeof(linked_node));
     curr_min_temp_values = (measures_per_min==1)?
     calloc(1,sizeof(char)):
     calloc(measures_per_min+1,sizeof(char));
-    for (int ii = 0; ii < 7; ii++)
-    {
-    day_temp_data_test(&(test_day_temp_data[ii]),ii);
-    }
-    //DEBUG
-    unsigned long long prevloop = 0;
-    //DEBUG
+    
   while(1)
   {
-    //DEBUG
-    
-    loop_time = (unsigned long)((microseconds-prevloop)/1000);
-    if(loop_time>150)
-    {
-        loop_time++;
-    }
-    prevloop = microseconds;
-    //DEBUG
     set_timedate();
     int keypad_input = get_user_input();
     if(!startup_flag)
@@ -80,10 +65,6 @@ void main(void)
         if(new_minute_flag!=0)
             add_temp_recording();
     }
-    loop_time = (unsigned long)((microseconds-prevloop)/1000);
-    if(loop_time>10)
-        loop_time++;
-    light_measure();
     if(0) //Remove before handin
     {
         if(set_servo_flag&&set_servo_flag!=last_servo_update)
@@ -174,55 +155,3 @@ void full_setup()
 }
 
 
-
-void voltage_print() //TEMPORARY
-{
-        
-    if((loopCount%20)==0)
-        {
-            char str_message2[21] = "Voltage 1: ";
-            double_to_str_fixed_length(str_message2+11,adc_ch1_voltage,10);
-
-            struct screen_element sensor1 = create_screen_element(0,5,21,str_message2); 
-            display_write(sensor1);
-
-            char str_message3[21] = "Voltage 2: ";
-            double_to_str_fixed_length(str_message3+11,adc_ch2_voltage,10);
-            struct screen_element sensor2 = create_screen_element(0,6,21,str_message3); 
-            display_write(sensor2);
-        }
-}
-
-void day_temp_data_test(day_temp_data* dtd,int n)//TEMPORARY
-{
-    char* menu_head = "Temp Statistics: ";
-    int len = DAY_LINE0;
-    screen_element tel1 = create_screen_element(0,0,len,menu_head);
-    //display_write(tel1);
-
-    
-    date            tdate;
-    time_hm         thm;
-    time_hm         thm2;
-    tdate.day   =   n;
-    tdate.month =   88;
-    tdate.year  =   77;
-
-    thm.hour    =   18;
-    thm.minute  =   1;
-
-    thm2.hour    =   19;
-    thm2.minute  =   2;
-
-    dtd->day     =   tdate;
-    dtd->min     =   25.1-2*n;
-    dtd->tmin    =   thm;
-    dtd->avg     =   25.1+n%3;
-    dtd->tmax    =   thm2;
-    dtd->max     =   25.1+n;
-    dtd->vari    =   15.1+n%4;
-    //print_day_data(dtd);
-    num_saved_day_data++;
-    curr_day_data++;
-
-}
