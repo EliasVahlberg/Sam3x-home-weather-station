@@ -242,7 +242,11 @@ int edit_user(user* usr)
         if (username_len != 0)
         {
             (*usr).u_len = username_len;
-            (*usr).username = username;
+            free((*usr).username);
+            (*usr).username = calloc(username_len,sizeof(char));
+            for (int i = 0; i < username_len; i++)
+                (*usr).username[i]=username[i];
+            
         }
         if (pass_len != 0)
         {
@@ -252,7 +256,9 @@ int edit_user(user* usr)
                 password[0]='\0';
 
             (*usr).p_len = HASHED_PASS_LEN;
-            (*usr).password = hashed_password;
+            for (int i = 0; i < HASHED_PASS_LEN; i++)
+                (*usr).password[i] = hashed_password[i];
+            
         }
 
         screen_post_login();

@@ -17,76 +17,65 @@ double temperature      = 0.0   ;           //Temperature retrived from the temp
 
 #pragma region Functions
 void full_setup();
+void startup_alloc();
 void set_day_statistics();
 void add_temp_recording();
-void get_num_mes_per_min();
-void day_temp_data_test(day_temp_data*   dtd,int i);
-
-//Menu
-void main_menu();
-void clear_menu(int menu_t);
-void clear_main_menu();
-void sidebar_menu();
-void clear_sidebar_menu();
 #pragma endregion Functions
 
-//DEBUG
-    unsigned long loop_time = 0;
-//DEBUG
 
 void main(void)
 {
-  
+
     full_setup();
-    login();
-    get_num_mes_per_min();
-    config_time();
-    config_date();
-    edit_user(current_user);
+    startup_alloc();
+    int keypad_input = 0;
 
-    //day_temp_data_test();
-    //microseconds = 85730000000; //86390000000
-    saved_day_temp_data = calloc(7,sizeof(day_temp_data));
-
-    head= calloc(1,sizeof(linked_node));
-    tail= calloc(1,sizeof(linked_node));
-    curr_min_temp_values = (measures_per_min==1)?
-    calloc(1,sizeof(char)):
-    calloc(measures_per_min+1,sizeof(char));
-    
   while(1)
   {
     set_timedate();
-    int keypad_input = get_user_input();
+    keypad_input = get_user_input();
+    //Temperature sensor 
     if(!startup_flag)
     {
         if(measure_temp_flag!=last_temp_measure)
             add_temp_recording();
         if(new_minute_flag!=0)
             add_temp_recording();
-    }
-    if(0) //Remove before handin
-    {
-        if(set_servo_flag&&set_servo_flag!=last_servo_update)
+
+        if(new_day_flag)
         {
-            set_servo_flag=last_servo_update;
-            get_light_rotation_data();
-            set_to_max_light();
-            set_servo_flag = 0;
+                set_day_statistics();
         }
+    }
+    //END Temperature sensor
+
+    //Servo/lightsensor
+    if(set_servo_flag&&set_servo_flag!=last_servo_update&&menu_type!=2)
+    {
+        set_servo_flag=last_servo_update;
+        get_light_rotation_data();
+        set_to_max_light();
+        set_servo_flag = 0;
         servo_position = ((double) servo_get_position()/43.7);
     }
+    //END Servo/lightsensor
 
-    if(keypad_input == 11)
+    //Graph mode
+    if(keypad_input == 11&&menu_type==0)
     {
         toggle_graphics_mode();
+        display_staple_plot(saved_day_temp_data,1,num_saved_day_data);
     }
-    
-    if(new_day_flag)
+    else if(menu_type==-1)
     {
-            set_day_statistics();
+        if(keypad_input==11)
+            toggle_graphics_mode();
+        if(current_graph_type!=keypad_input&&keypad_input<=7&&keypad_input>0)
+            display_staple_plot(saved_day_temp_data,keypad_input,num_saved_day_data);
     }
-    
+    //END Graph mode
+
+    //Menu system
     if(menu_type == 0)
     {
         if((keypad_input-1) >=0 &&(keypad_input-1) <=7 )
@@ -103,7 +92,13 @@ void main(void)
         if(keypad_input==10)
         {
             toggle_fastmode();
+        }
+        if(keypad_input==12)
+        {
+            clear();
+            login();
         }   
+
     }
     if(menu_type == 1)
     {
@@ -114,17 +109,59 @@ void main(void)
             main_menu();
         }
     }
-    if(menu_type!=-1)
+    if(menu_type==1||menu_type==0)
         sidebar_menu();
-    if(menu_type==-1)
+    //END Menu system
+
+    //Test mode
+    if(keypad_input==9&&!fast_mode_flag&&menu_type!=-1&&menu_type!=2)
     {
-        if(current_graph_type!=keypad_input&&keypad_input<=7&&keypad_input>0)
-            display_staple_plot(test_day_temp_data,keypad_input,7);//Change seven if we are using real data
+        menu_type = 2;
+        clear_sidebar_menu();
+        clear_main_menu();
+    } 
+    if(menu_type ==2)
+    {
+        switch (keypad_input)
+        {
+        case 1:
+            graph_data_test();
+            break;
+        case 2:
+            temperature_sensor_test();
+            break;
+        case 3:
+            servo_motor_test();
+            break;
+        case 4:
+            display_test();
+            break;
+        case 5:
+            hash_test();
+            break;
+        case 6:
+            keypad_test();
+            break;
+        case 7:
+            light_sensor_test();
+            break;
+        case 12:
+            menu_type = 0;
+            clear();
+            break;
+        
+        default:
+        testmode_menu();
+            break;
+        }   
+
     }
+    //END Test mode
     loopCount++;
   }
   
 }
+
 
 void full_setup()
 {
@@ -134,11 +171,13 @@ void full_setup()
     temp_setup();
     adc_setup();
     pwm_setup();
-    //Used as an notification ##Remove before project is done
+    
+    //Indicates that the system is starting
     delay_milis(100);
     servo_set_position(9);
     delay_milis(100);
-    //
+    //Indicates that the system is starting
+
     keypad_setup();
     display_setup();
     Init_Display();
@@ -152,6 +191,71 @@ void full_setup()
     init_date_time();
     
     startup_flag = 2;
+
+    login();
+    get_num_mes_per_min();
+    config_time();
+    config_date();
+    edit_user(current_user);
 }
 
+void startup_alloc()
+{
+    saved_day_temp_data = calloc(7,sizeof(day_temp_data));
+
+    head= calloc(1,sizeof(linked_node));
+    tail= calloc(1,sizeof(linked_node));
+    curr_min_temp_values = (measures_per_min==1)?
+    calloc(1,sizeof(char)):
+    calloc(measures_per_min+1,sizeof(char));
+    
+}
+void add_temp_recording()
+{
+     
+    last_temp_measure = measure_temp_flag;
+    if(new_minute_flag==1)
+    {
+        temp_minute_avg /= (double)temp_minute_count;
+        curr_min_temp_values[temp_minute_count] = double_to_temp(temp_minute_avg);
+        append_to_list(head,tail,curr_min_temp_values,measures_per_min);
+        (*tail)->min = previous_minute;
+        (*tail)->hour = previous_hour;
+        temp_minute_avg = 0;
+        temp_minute_count = 0;
+        new_minute_flag = 0;
+        
+    }
+    if(temp_minute_count<measures_per_min)
+    {
+        
+        while(1)
+        {
+            start_pulse();
+            if(temp_rdy_flag)
+            {
+                temp_minute_avg += get_temp();
+                curr_min_temp_values[temp_minute_count] = double_to_temp(curr_temp);
+
+                if(temp_minute_count==0)
+                {
+                set_timedate();
+                previous_minute = (unsigned char) current_time_hm[1];
+                previous_hour = (unsigned char) current_time_hm[0];
+                }
+                temp_minute_count++;
+               break;
+            }
+            temp_reset();       
+        }
+    }
+}
+
+void set_day_statistics()
+{
+    calc_statistics(head,&(saved_day_temp_data[curr_day_data]));
+    curr_day_data= (curr_day_data+1)%7;
+    num_saved_day_data = (num_saved_day_data==7)?num_saved_day_data:num_saved_day_data+1;
+    new_day_flag=0;
+}
 

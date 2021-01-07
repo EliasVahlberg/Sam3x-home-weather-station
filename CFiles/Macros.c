@@ -107,7 +107,7 @@
 #define LOGIN_USERNAME_MAX_LEN  (21)
 #define LOGIN_PASSWORD_MAX_LEN  (21)
 #define HASHED_PASS_LEN         (16)
-#define HASH_N_ITTERATIONS      (10)
+#define HASH_N_ITTERATIONS      (1000)
 
 #pragma endregion LoginSystem
 

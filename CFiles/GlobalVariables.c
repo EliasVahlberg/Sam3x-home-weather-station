@@ -14,7 +14,7 @@
 #pragma region GlobalFlags
 int temp_alarm_flag             = 0;
 int display_write_disable_flag  = 0; //Disables the write acces to the display (used during alarm)
-int menu_type                   = 0; //When in main menu:0, temp day stat menu: 1,  graphics mode: -1, 
+int menu_type                   = 0; //When in main menu:0, temp day stat menu: 1, testmode:2,  graphics mode: -1, 
 int fast_mode_flag              = 0;
 int startup_flag                = 3;
 int set_servo_flag              = 0;
@@ -120,7 +120,6 @@ linked_node circular_start;
 day_temp_data* saved_day_temp_data;     //Container used to store statistics of the last 7 days
 day_temp_data* test_day_temp_data;     //Container used to store statistics of the test mode days
 int num_saved_day_data = 0;             //Number of days of recordings stored
-int num_saved_day__test_data = 0;             //Number of days of recordings stored
 int curr_day_data = 0;                  //The index value of the current day in the list containing temp stats
 unsigned char* curr_min_temp_values;    //Stores all the temp values of the current min (so that they are added together in the list)
 unsigned char previous_minute =0;       //Stores the previous minute which is added to the temp data at every new minute

@@ -32,9 +32,7 @@ void toggle_graphics_mode()
         {
             clear();
             clear_graphics();
-            
             Write_Command_2_Display(DISPLAY_SET_GRAPHTEXT_MODE);
-            display_staple_plot(test_day_temp_data,1,7);
         }
     menu_type=(menu_type==-1)?0:-1;
 }

@@ -13,6 +13,7 @@ void clear_menu(int menu_t);
 void clear_main_menu();
 void sidebar_menu();
 void clear_sidebar_menu();
+void testmode_menu();
 #pragma endregion Functions
 
 void main_menu()
@@ -38,9 +39,11 @@ void main_menu()
         char str2[17] ="Press 1-7 to view";
         display_write_direct(0,n+1,17,str2);
     }
+    display_write_direct(0,12,11,"9: Testmode");
+    display_write_direct(0,13,11,"*: Fastmode");
+    display_write_direct(0,14,20,"0: Graphmode, #:Exit");
 
 }
-
 
 void clear_menu(int menu_t)
 {
@@ -52,7 +55,6 @@ void clear_menu(int menu_t)
     case 1:
     clear_day_data();   
         break;
-    
     default:
         break;
     }
@@ -60,12 +62,9 @@ void clear_menu(int menu_t)
 
 void clear_main_menu()
 {
-    screen_cord scord;
     for (int  i = 0; i < 15; i++)
     {
-    scord = convert_to_scord(0,i);
-    set_cursor(scord.pos,scord.screen_half_val);
-    display_clear(20,scord.pos,scord.screen_half_val);
+        clear_display_direct(0,i,20);
     }
     
 }
@@ -127,56 +126,11 @@ void sidebar_menu()
 
 void clear_sidebar_menu()
 {
-
-}
-
-void add_temp_recording()
-{
-     
-    last_temp_measure = measure_temp_flag;
-    if(new_minute_flag==1)
+    for (int i = 0; i < 15; i++)
     {
-        temp_minute_avg /= (double)temp_minute_count;
-        curr_min_temp_values[temp_minute_count] = double_to_temp(temp_minute_avg);
-        append_to_list(head,tail,curr_min_temp_values,measures_per_min);
-        (*tail)->min = previous_minute;
-        (*tail)->hour = previous_hour;
-        temp_minute_avg = 0;
-        temp_minute_count = 0;
-        new_minute_flag = 0;
-        
+        clear_display_direct(20,i,10);
     }
-    if(temp_minute_count<measures_per_min)
-    {
-        
-        while(1)
-        {
-            start_pulse();
-            if(temp_rdy_flag)
-            {
-                temp_minute_avg += get_temp();
-                curr_min_temp_values[temp_minute_count] = double_to_temp(curr_temp);
-
-                if(temp_minute_count==0)
-                {
-                set_timedate();
-                previous_minute = (unsigned char) current_time_hm[1];
-                previous_hour = (unsigned char) current_time_hm[0];
-                }
-                temp_minute_count++;
-               break;
-            }
-            temp_reset();       
-        }
-    }
-}
-
-void set_day_statistics()
-{
-    calc_statistics(head,&(saved_day_temp_data[curr_day_data]));
-    curr_day_data= (curr_day_data+1)%7;
-    num_saved_day_data = (num_saved_day_data==7)?num_saved_day_data:num_saved_day_data+1;
-    new_day_flag=0;
+    
 }
 
 void get_num_mes_per_min()
@@ -191,4 +145,17 @@ void get_num_mes_per_min()
     }
     measures_per_min = (k>10)?10:k;
     display_clear(29,sc.screen_cord.pos,sc.screen_cord.screen_half_val);
+}
+
+void testmode_menu()
+{
+   display_write_direct(0,0,17,"Test mode, press:");
+   display_write_direct(0,1,13,"1: Graph test");
+   display_write_direct(0,2,26,"2: Temperature sensor test");
+   display_write_direct(0,4,19,"3: Servo motor test");
+   display_write_direct(0,5,15,"4: Display test");
+   display_write_direct(0,6,12,"5: hash test");
+   display_write_direct(0,7,14,"6: Keypad test");
+   display_write_direct(0,8,20,"7: Light sensor test");
+   display_write_direct(0,10,13,"#: Return");
 }
