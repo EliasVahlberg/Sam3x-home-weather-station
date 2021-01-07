@@ -65,6 +65,7 @@
             <file>$PROJ_DIR$\CFiles\TempStatistics.c</file>
             <file>$PROJ_DIR$\CFiles\MD5.c</file>
             <file>$PROJ_DIR$\CFiles\DisplayGraphics.c</file>
+            <file>$PROJ_DIR$\CFiles\MenuSystem.c</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
@@ -94,10 +95,6 @@
             <name>$PROJ_DIR$\main.c</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 1</file>
-                </tool>
-                <tool>
                     <name>__cstat</name>
                     <file> 35</file>
                 </tool>
@@ -109,7 +106,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 24 2 8 21 6 51 55 44 47 17 9 41 19 26 30 5 22 11 28 29 27 10 3 59 0 20 57 18 43 46 50 58 49</file>
+                    <file> 24 2 8 21 6 51 55 44 47 17 9 41 19 26 30 5 22 11 28 29 27 10 3 59 0 20 57 18 43 46 50 58 49 60</file>
                 </tool>
             </inputs>
         </file>

@@ -20,6 +20,8 @@
 #include "Servo.c"
 #include "MD5.c"
 #include "LoginSystem.c"
+#include "MenuSystem.c"
+#include "TestMode.c"
 
 
 #endif

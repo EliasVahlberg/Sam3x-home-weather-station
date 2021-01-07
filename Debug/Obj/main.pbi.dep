@@ -1,4 +1,5 @@
 main.pbi: \
+  C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project\CFiles\MenuSystem.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project\CFiles\LoginSystem.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project\CFiles\MD5.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project\CFiles\Servo.c \
