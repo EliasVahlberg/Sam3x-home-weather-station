@@ -75,7 +75,7 @@ double get_temp()
     int reg_A       =   *AT91C_TC0_RA;
     int reg_B       =   *AT91C_TC0_RB;
     tcDelta         =   (double)(reg_B-reg_A);
-    curr_temp       =   (tcDelta/210.0) -273.15;//210 = 5*(40+2), (5*40 from the datasheet) +2 for accuracy
+    curr_temp       =   (tcDelta/210.0) -273.15;//210 = 5*(42), (5*42 from the datasheet) (42 : mck/2) for accuracy
     temp_rdy_flag   =   0;
     return curr_temp;
 }

@@ -64,6 +64,16 @@
 #define DISPLAY_WRITE_AND_INCREMENT_CURSOR_CMD (0xc0        ) //Sets the cursor on the display, position is given by the two prior WriteData calls
 #define DISPLAY_DELAY_VALUE                    (25          ) //Used in the write data and write command function, value obtained from testing
 #define DISPLAY_SCREEN_HALF                    (225         ) //Used in the covert_to_scord function, defines the second input to the set cursor command
+#define DISPLAY_HIGH_ADRESS                    (255         ) //Same as the one above
+
+
+
+#define DISPLAY_NUM_PIXEL_BLOCKS               (3840        ) //16*8 rows and 30 columns (pixel blocks = (16*8)*30 =3840   )
+#define DISPLAY_NUM_PIXELS_Y                   (120        )  //15*8 rows and 30 columns (pixels_y = (15*8)=120   )
+#define DISPLAY_SET_TEXT_MODE                  (0x94        ) //Sets the displaymode to : text
+#define DISPLAY_SET_GRAPHTEXT_MODE             (0x9c        ) //Sets the displaymode to : graphics and text
+#define DISPLAY_GRAPH_OFFSET_L                 (0x00        )   
+#define DISPLAY_GRAPH_OFFSET_H                 (0x40)
 
 #define RESET_DISP                             (1           ) //DP 25 PIOD
 #define B4_DISP                                (1       <<6 ) //DP 38
@@ -97,7 +107,8 @@
 #define LOGIN_PASSWORD_Y_POS    (5)
 #define LOGIN_USERNAME_MAX_LEN  (21)
 #define LOGIN_PASSWORD_MAX_LEN  (21)
-#define HASHED_PASS_LEN         (32)
+#define HASHED_PASS_LEN         (16)
+#define HASH_N_ITTERATIONS      (10)
 
 #pragma endregion LoginSystem
 

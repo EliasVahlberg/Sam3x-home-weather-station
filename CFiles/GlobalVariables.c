@@ -18,6 +18,7 @@ int menu_type                   = 0; //When in main menu:0, temp day stat menu: 
 int fast_mode_flag              = 0;
 int startup_flag                = 3;
 int set_servo_flag              = 0;
+int current_graph_type          = -1;
 #pragma endregion GlobalFlags
 
 #pragma region Servo 
@@ -75,6 +76,7 @@ int def_pass_len                = 4;
 user *default_user;
 user_list* users;
 user* current_user = NULL;
+long long hash_len_append = 0;
 
 char edit_user_text[]           =   "Enter new Username and Password";
 int edit_user_text_length       =   31;
@@ -116,6 +118,7 @@ linked_node circular_start;
 
 #pragma region TempStatistics
 day_temp_data* saved_day_temp_data;     //Container used to store statistics of the last 7 days
+day_temp_data* test_day_temp_data;     //Container used to store statistics of the test mode days
 int num_saved_day_data = 0;             //Number of days of recordings stored
 int curr_day_data = 0;                  //The index value of the current day in the list containing temp stats
 unsigned char* curr_min_temp_values;    //Stores all the temp values of the current min (so that they are added together in the list)

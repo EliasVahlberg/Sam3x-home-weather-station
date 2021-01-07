@@ -38,24 +38,25 @@ void main(void)
 {
   
     full_setup();
-    //login();
-    //edit_user();
-    //login();
+    login();
+    get_num_mes_per_min();
+    config_time();
+    config_date();
+    edit_user(current_user);
 
     //day_temp_data_test();
-    //config_time();
-    //config_date();
-    microseconds = 85730000000; //86390000000
+    //microseconds = 85730000000; //86390000000
     saved_day_temp_data = calloc(7,sizeof(day_temp_data));
+    test_day_temp_data = calloc(7,sizeof(day_temp_data));
     head= calloc(1,sizeof(linked_node));
     tail= calloc(1,sizeof(linked_node));
     curr_min_temp_values = (measures_per_min==1)?
     calloc(1,sizeof(char)):
     calloc(measures_per_min+1,sizeof(char));
-    day_temp_data_test(&(saved_day_temp_data[0]),0);
-    day_temp_data_test(&(saved_day_temp_data[1]),1);
-    day_temp_data_test(&(saved_day_temp_data[2]),2);
-    day_temp_data_test(&(saved_day_temp_data[3]),3);
+    for (int ii = 0; ii < 7; ii++)
+    {
+    day_temp_data_test(&(test_day_temp_data[ii]),ii);
+    }
     //DEBUG
     unsigned long long prevloop = 0;
     //DEBUG
@@ -95,7 +96,11 @@ void main(void)
         servo_position = ((double) servo_get_position()/43.7);
     }
 
-
+    if(keypad_input == 11)
+    {
+        toggle_graphics_mode();
+    }
+    
     if(new_day_flag)
     {
             set_day_statistics();
@@ -130,6 +135,11 @@ void main(void)
     }
     if(menu_type!=-1)
         sidebar_menu();
+    if(menu_type==-1)
+    {
+        if(current_graph_type!=keypad_input&&keypad_input<=7&&keypad_input>0)
+            display_staple_plot(test_day_temp_data,keypad_input,7);//Change seven if we are using real data
+    }
     loopCount++;
   }
   
@@ -153,8 +163,13 @@ void full_setup()
     Init_Display();
     clear();
     login_init();
+
+    toggle_graphics_mode();
+    clear_graphics();
+    toggle_graphics_mode();
+    
     init_date_time();
-    get_num_mes_per_min();
+    
     startup_flag = 2;
 }
 
@@ -378,12 +393,12 @@ void day_temp_data_test(day_temp_data* dtd,int n)//TEMPORARY
     thm2.minute  =   2;
 
     dtd->day     =   tdate;
-    dtd->min     =   22.11111;
+    dtd->min     =   25.1-2*n;
     dtd->tmin    =   thm;
-    dtd->avg     =   28.11111;
+    dtd->avg     =   25.1+n%3;
     dtd->tmax    =   thm2;
-    dtd->max     =   38.11111;
-    dtd->vari    =   12.11;
+    dtd->max     =   25.1+n;
+    dtd->vari    =   15.1+n%4;
     //print_day_data(dtd);
     num_saved_day_data++;
     curr_day_data++;

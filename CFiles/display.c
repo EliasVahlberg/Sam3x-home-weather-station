@@ -81,8 +81,8 @@ void Init_Display()
     Write_Data_2_Display(0x00);
     Write_Data_2_Display(0x00);
     Write_Command_2_Display(0x40);//Set text home address
-    Write_Data_2_Display(0x00);
-    Write_Data_2_Display(0x40);
+    Write_Data_2_Display(DISPLAY_GRAPH_OFFSET_L);
+    Write_Data_2_Display(DISPLAY_GRAPH_OFFSET_H);
     Write_Command_2_Display(0x42); //Set graphic home address
     Write_Data_2_Display(0x1e);
     Write_Data_2_Display(0x00);
@@ -91,7 +91,7 @@ void Init_Display()
     Write_Data_2_Display(0x00);
     Write_Command_2_Display(0x43); // Set graphic area
     Write_Command_2_Display(0x80); // text mode
-    Write_Command_2_Display(0x94); // Text on graphic off 
+    Write_Command_2_Display(DISPLAY_SET_TEXT_MODE); // Text on graphic off 
     *AT91C_PIOC_CODR    =   OE;    //Disable output (74chip)
 }
 
@@ -373,6 +373,7 @@ int display_write_direct(int x, int y, int l, char* text)
     int i = display_write(sc_el);
     return i;
 }
+
 int clear_display_direct (int x, int y, int l )
 {
     screen_cord sc = convert_to_scord(x,y);
