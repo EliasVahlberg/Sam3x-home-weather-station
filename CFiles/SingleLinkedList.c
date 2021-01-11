@@ -51,6 +51,7 @@ void append_to_list(linked_node* head, linked_node* tail, unsigned char* temp, i
         (*tail) = (*tail)->next;
     }
 }
+
 linked_node create_node_with_data(linked_node* head, linked_node* tail, unsigned char* temp, int len)
 {
     linked_node nod = (len==1)?
@@ -117,8 +118,6 @@ void delete_first_node(linked_node* head_l)
     (*head_l) = (*head_l)->next;
     free(temp);
 }
-
-
 
 void delete_list(linked_node* head)
 {

@@ -212,10 +212,6 @@ int validate_login(char *new_username, int new_username_len, char *new_password,
     return 0;
 }
 
-int create_user()
-{
-}
-
 int admin_edit_user(user* usr)
 {
     if(current_user==NULL)

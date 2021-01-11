@@ -131,18 +131,12 @@ void main(void)
             temperature_sensor_test();
             break;
         case 3:
-            servo_motor_test();
-            break;
-        case 4:
-            display_test();
-            break;
-        case 5:
             hash_test();
             break;
-        case 6:
+        case 4:
             keypad_test();
             break;
-        case 7:
+        case 5:
             light_sensor_test();
             break;
         case 12:
@@ -210,6 +204,7 @@ void startup_alloc()
     calloc(measures_per_min+1,sizeof(char));
     
 }
+
 void add_temp_recording()
 {
      

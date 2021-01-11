@@ -13,13 +13,13 @@
         <PcSampPOSTCNT>15</PcSampPOSTCNT>
         <PcSampIndex>0</PcSampIndex>
         <DataLogMode>0</DataLogMode>
-        <ITMportsEnable>0</ITMportsEnable>
+        <ITMportsEnable>62</ITMportsEnable>
         <ITMportsTermIO>0</ITMportsTermIO>
         <ITMportsLogFile>0</ITMportsLogFile>
         <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
     </SWOTraceHWSettings>
     <DebugChecksum>
-        <Checksum>1915228573</Checksum>
+        <Checksum>3989709198</Checksum>
     </DebugChecksum>
     <Trace1>
         <Enabled>0</Enabled>
@@ -42,8 +42,8 @@
         <HideCovered>0</HideCovered>
     </CodeCoverage>
     <Disassembly>
-        <MixedMode>1</MixedMode>
         <InstrCount>0</InstrCount>
+        <MixedMode>1</MixedMode>
     </Disassembly>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -103,7 +103,7 @@
         <Symbol_2>0 0 1</Symbol_2>
         <Title_3>Ch0</Title_3>
         <Symbol_3>0 0 1</Symbol_3>
-        <LogEnabled>0</LogEnabled>
+        <LogEnabled>1</LogEnabled>
         <GraphEnabled>0</GraphEnabled>
         <ShowTimeLog>1</ShowTimeLog>
         <SumEnabled>0</SumEnabled>
@@ -115,7 +115,8 @@
     </DisassembleMode>
     <Breakpoints2>
         <Bp0>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\SingleLinkedList.c}.98.9" 0 0 1 "" 0 "" 0</Bp0>
-        <Count>1</Count>
+        <Bp1>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\SingleLinkedList.c}.62.9" 0 0 1 "" 0 "" 0</Bp1>
+        <Count>2</Count>
     </Breakpoints2>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>

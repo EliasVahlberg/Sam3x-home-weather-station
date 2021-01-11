@@ -25,6 +25,7 @@ void update_statistics(linked_node* head,day_temp_data* data)
     data->day.month =(int) current_date[1];
     data->day.day =(int) current_date[2];
 }
+
 void calc_statistics(linked_node* head,day_temp_data* data)
 {
     update_avg_min_max(head,data);
@@ -107,10 +108,12 @@ void calc_min(linked_node* head)
 {
     
 }
+
 void calc_var(day_temp_data* data)
 {
     
 }
+
 void clear_day_data()
 {
     screen_cord scord = convert_to_scord(0,0);
@@ -133,6 +136,7 @@ void clear_day_data()
     set_cursor(scord.pos,scord.screen_half_val);
     display_clear(DAY_LINE5,scord.pos,scord.screen_half_val);
 }
+
 void print_day_data(day_temp_data t_data)
 {
     char str[DAY_TEMP_DATA_LENGTH];

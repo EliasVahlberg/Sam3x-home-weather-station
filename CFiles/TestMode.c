@@ -68,35 +68,44 @@ void graph_data_test()
 void temperature_sensor_test()
 {
     clear();
-    display_write_direct(0,0,8,"NOT DONE");
+    display_write_direct(0,0,23,"Temperature timing test");
+    display_write_direct(0,3,13,"Temperature: ");
+    display_write_direct(0,4,14,"Time Delta ms: ");
     display_write_direct(0,2,17,"Press # to return");
+    unsigned long long t1 = 0;
+    unsigned int  t2 = 0;
+    double test_temp = 0;
+    char *temp = calloc(6,sizeof(char));
+    char *delta_time = calloc(5,sizeof(char));
+    if(temp ==NULL || delta_time == NULL )
+        return;
     while(get_user_input()!=12)
     {
+        t1 = microseconds;
+        while(1)              //Records a new temp value and displays it
+        {
+            start_pulse();
+            if(temp_rdy_flag)
+            {
+                get_temp();
+                 break;
+            }
+            temp_reset();
+        }
+        t2= (int)((double)(microseconds -t1)/1000);
+        double_to_str_fixed_length(temp,curr_temp,6);
+        int_to_str_fixed_length(delta_time,t2,5);
+        
+        display_write_direct(13,3,6,temp);      
+        if(t2==0)
+            display_write_direct(14,4,5,"<1ms  ");  
+        else 
+            display_write_direct(14,4,5,delta_time);
 
     }
-}
-
-void servo_motor_test()
-{
+    free(temp);
+    free(delta_time);
     
-    clear();
-    display_write_direct(0,0,8,"NOT DONE");
-    display_write_direct(0,2,17,"Press # to return");
-    while(get_user_input()!=12)
-    {
-
-    }
-}
-
-void display_test()
-{
-    clear();
-    display_write_direct(0,0,8,"NOT DONE");
-    display_write_direct(0,2,17,"Press # to return");
-    while(get_user_input()!=12)
-    {
-
-    }
 }
 
 void hash_test()

@@ -152,10 +152,8 @@ void testmode_menu()
    display_write_direct(0,0,17,"Test mode, press:");
    display_write_direct(0,1,13,"1: Graph test");
    display_write_direct(0,2,26,"2: Temperature sensor test");
-   display_write_direct(0,4,19,"3: Servo motor test");
-   display_write_direct(0,5,15,"4: Display test");
-   display_write_direct(0,6,12,"5: hash test");
-   display_write_direct(0,7,14,"6: Keypad test");
-   display_write_direct(0,8,20,"7: Light sensor test");
+   display_write_direct(0,3,12,"3: hash test");
+   display_write_direct(0,4,14,"4: Keypad test");
+   display_write_direct(0,5,20,"5: Light sensor test");
    display_write_direct(0,10,13,"#: Return");
 }

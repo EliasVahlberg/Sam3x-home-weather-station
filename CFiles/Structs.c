@@ -38,12 +38,12 @@ typedef struct timestamp_second{
 }time_hms;
 
 typedef struct day_temp_data{
-    date        day;        //the date of the data represented 
+    date        day;        //The date of the data represented 
     double      min;        //Minimum temperature during the day
-    time_hm     tmin;       //Timestamp where the minimum valuse was recorded;
-    double      avg;        //Avrage temperature during the day
+    time_hm     tmin;       //Timestamp where the minimum value was recorded
+    double      avg;        //Average temperature during the day
     double      max;        //Maximum temperature during the day
-    time_hm     tmax;       //Timestamp where the maximum valuse was recorded; 
+    time_hm     tmax;       //Timestamp where the maximum value was recorded 
     double      vari;       //Temperature variance during the day 
 }day_temp_data;
 
