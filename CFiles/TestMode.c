@@ -62,6 +62,7 @@ void graph_data_test()
     toggle_graphics_mode();
     menu_type = 2;
     free(test_day_temp_data);
+    clear();
 
 }
 
@@ -103,6 +104,7 @@ void temperature_sensor_test()
             display_write_direct(14,4,5,delta_time);
 
     }
+    clear();
     free(temp);
     free(delta_time);
     
@@ -212,6 +214,7 @@ void hash_test()
     {
 
     }
+    clear();
     
     free(test_screen_username);
     free(test_screen_password);
@@ -311,4 +314,40 @@ void light_sensor_test()
         struct screen_element sensor2 = create_screen_element(0,6,21,str_message3); 
         display_write(sensor2);
     }
+    clear();
+}
+
+void view_memory_usage()
+{
+    clear();
+    display_write_direct(0,0,17,"Heap Memory info:");
+    char str[4];
+    struct mallinfo m;
+    m = __iar_dlmallinfo();
+    int x = (int)m.fordblks;
+    int_to_str_fixed_length(str,4,x);
+    display_write_direct(0,1,13,"Free space =:");
+    display_write_direct(14,1,4,str);
+    
+     x = (int)m.uordblks;
+    int_to_str_fixed_length(str,4,x);
+    display_write_direct(0,2,12,"Allocated =:");
+    display_write_direct(14,2,4,str);
+    
+     x = (int)m.usmblks;
+    int_to_str_fixed_length(str,4,x);
+    display_write_direct(0,3,12,"Max space =:");
+    display_write_direct(14,3,4,str);
+    x = (int)m.keepcost;
+    int_to_str_fixed_length(str,4,x);
+    display_write_direct(0,4,13,"Releasable =:");
+    display_write_direct(14,4,4,str);
+
+
+    display_write_direct(0,10,17,"Press # to return");
+    while(get_user_input()!=12)
+    {
+
+    }
+        
 }

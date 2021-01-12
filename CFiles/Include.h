@@ -21,6 +21,10 @@
 #include "MD5.c"
 #include "LoginSystem.c"
 #include "MenuSystem.c"
+//For viewing memory
+#include "mallocstats.h"
+//#include <stdio.h>
+//For viewing memory
 #include "TestMode.c"
 
 

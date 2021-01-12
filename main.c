@@ -25,7 +25,7 @@ void add_temp_recording();
 
 void main(void)
 {
-
+    
     full_setup();
     startup_alloc();
     int keypad_input = 0;
@@ -139,6 +139,9 @@ void main(void)
         case 5:
             light_sensor_test();
             break;
+        case 6: 
+            view_memory_usage();
+            break;
         case 12:
             menu_type = 0;
             clear();
@@ -151,6 +154,16 @@ void main(void)
 
     }
     //END Test mode
+
+    //Check memory
+    if(keypad_input==8)
+    {
+        struct mallinfo m;
+        m = __iar_dlmallinfo();
+        //printf("total free space = %u\n", m.fordblks);
+        //__iar_dlmalloc_stats(); 
+        
+    }
     loopCount++;
   }
   
@@ -220,6 +233,7 @@ void add_temp_recording()
         temp_minute_count = 0;
         new_minute_flag = 0;
         
+        
     }
     if(temp_minute_count<measures_per_min)
     {
@@ -248,6 +262,8 @@ void add_temp_recording()
 
 void set_day_statistics()
 {
+    if(menu_type==0)
+        clear_main_menu();
     calc_statistics(head,&(saved_day_temp_data[curr_day_data]));
     curr_day_data= (curr_day_data+1)%7;
     num_saved_day_data = (num_saved_day_data==7)?num_saved_day_data:num_saved_day_data+1;

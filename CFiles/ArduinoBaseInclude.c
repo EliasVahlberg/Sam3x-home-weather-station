@@ -99,7 +99,7 @@ void TC0_Handler(void)
 * SysTick_Handler
 * \brief The systick handler is branched to every 84 clock cycles and if the delay_trigger is active the delay val is decremented untill it 
 *  reaches zero after which the delay_trigger flag is cleared.
-*  Then checks if the time config flag is set otherwise just increment the microseconds global variable which keeps track of the day time in milliseconds.
+*  Then checks if the time config flag is set otherwise just increment the microseconds global variable which keeps track of the day time in microseconds.
 */
 void SysTick_Handler(void)
 {
@@ -136,6 +136,11 @@ void ADC_Handler(void)
 }
 void HardFault_Handler(void)
 {
+    //clear();
+     //struct mallinfo m;
+    //m = __iar_dlmallinfo();
+    //printf("total free space = %u\n", m.fordblks);
+    //__iar_dlmalloc_stats();
     while(1)
     {
         

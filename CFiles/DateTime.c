@@ -55,6 +55,9 @@ void set_timedate()
     if (temp_seconds>0)
     {
         microseconds = 0;
+        previous_day = current_date[2];
+        previous_month = current_date[1];
+        previous_year = current_date[0];
         int max_day = (current_date[1] != 2 || LEAP_YEAR_CHECK(current_date[0]) != 1) ? month_days[current_date[1]] : leap_feb;
         if ((current_date[2] + 1) % max_day == 0)
         {
@@ -69,8 +72,8 @@ void set_timedate()
     }
     current_time_hm[0] = current_time[0];
     current_time_hm[1] = current_time[1];
-    if((((int)current_time[2])%((int)(60/measures_per_min)))==0||((int)current_time[2])-last_temp_measure>=((int)(60/measures_per_min)))
-        measure_temp_flag=(int)(current_time[2]&0xff);
+    if((((int)current_time[2])%((int)(60/measures_per_min)))==0 || ((int)current_time[2])-last_temp_measure>=((int)(60/measures_per_min))) //(int)(60/measures_per_min) = measure period, if measure time delta > measure period 
+        measure_temp_flag=(int)(current_time[2]&0xff); //unsigned char to int
     time_config_flag = 0;
 }
 

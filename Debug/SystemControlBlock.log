@@ -1,0 +1,51 @@
+Name	Value	Access	
+AFSR	0x00000000	ReadWrite	
+AIRCR	0xfa050000	ReadWrite	
+BFAR	0x1fffffc0	ReadWrite	
+CCR	0x00000200	ReadWrite	
+CFSR	0x00008200	ReadWrite	
+     DIVBYZERO	0	ReadWrite	
+     UNALIGNED	0	ReadWrite	
+     NOCP	0	ReadWrite	
+     INVPC	0	ReadWrite	
+     INVSTATE	0	ReadWrite	
+     UNDEFINSTR	0	ReadWrite	
+     BFARVALID	1	ReadWrite	
+     LSPERR	0	ReadWrite	
+     STKERR	0	ReadWrite	
+     UNSTKERR	0	ReadWrite	
+     IMPRECISERR	0	ReadWrite	
+     PRECISERR	1	ReadWrite	
+     IBUSERR	0	ReadWrite	
+     MMARVALID	0	ReadWrite	
+     MLSPERR	0	ReadWrite	
+     MSTKERR	0	ReadWrite	
+     MUNSTKERR	0	ReadWrite	
+     DACCVIOL	0	ReadWrite	
+     IACCVIOL	0	ReadWrite	
+CPACR	0x00000000	ReadWrite	
+DFSR	0x00000001	ReadWrite	
+HFSR	0x40000000	ReadWrite	
+ICSR	0x0440f803	ReadWrite	
+CPUID	0x412fc230	ReadOnly	
+ID_PFR0	0x00000030	ReadOnly	
+ID_PFR1	0x00000200	ReadOnly	
+ID_DFR0	0x00100000	ReadOnly	
+ID_AFR0	0x00000000	ReadOnly	
+ID_MMFR0	0x00000030	ReadOnly	
+ID_MMFR1	0x00000000	ReadOnly	
+ID_MMFR2	0x00000000	ReadOnly	
+ID_MMFR3	0x00000000	ReadOnly	
+ID_ISAR0	0x01141110	ReadOnly	
+ID_ISAR1	0x02111000	ReadOnly	
+ID_ISAR2	0x21112231	ReadOnly	
+ID_ISAR3	0x01111110	ReadOnly	
+ID_ISAR4	0x01310102	ReadOnly	
+ID_ISAR5	0x00000000	ReadOnly	
+MMFAR	0x1fffffc0	ReadWrite	
+SCR	0x00000000	ReadWrite	
+VTOR	0x20070000	ReadWrite	
+SHPR1	0x00000000	ReadWrite	
+SHPR2	0x00000000	ReadWrite	
+SHPR3	0xf0000000	ReadWrite	
+SHCSR	0x00000000	ReadWrite	

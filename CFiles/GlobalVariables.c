@@ -125,6 +125,10 @@ unsigned char* curr_min_temp_values;    //Stores all the temp values of the curr
 unsigned char previous_minute =0;       //Stores the previous minute which is added to the temp data at every new minute
 unsigned char previous_hour =0;       //The hour stored at the same time as previous minute to safeguard any possible mixup
 
+unsigned char previous_day =0;          //The day stored before set day statistics is called
+unsigned char previous_month =0;        //The month stored before set day statistics is called
+unsigned char previous_year =0;         //The year stored before set day statistics is called
+
 double var_sum1 = 0.0;                  //Regular sum of all temp values of the current day
 double var_sum2 = 0.0;                  //Squared sum of all temp values of the current day
 

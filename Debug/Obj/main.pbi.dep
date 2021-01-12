@@ -6,7 +6,7 @@ main.pbi: \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Defaults.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Config_Full.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product.h \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/core_cm3.h \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/core_cmInstr.h \
@@ -34,4 +34,5 @@ main.pbi: \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/MD5.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/LoginSystem.c \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/MenuSystem.c \
+  C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/mallocstats.h \
   C:\Users\Elias\Documents\IAR\ Embedded\ Workbench\CSE_GR18_Project/CFiles/TestMode.c

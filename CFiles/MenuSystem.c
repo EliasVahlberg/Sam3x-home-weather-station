@@ -22,7 +22,7 @@ void main_menu()
     display_write_direct(0,2,14,"Recorded days:");
     if(num_saved_day_data!=0)
     {
-        int i =(curr_day_data-1),n=3;
+        int i =(curr_day_data==0)?6:(curr_day_data-1),n=3;
         do
         {
             char str[11];
@@ -33,10 +33,11 @@ void main_menu()
             display_write_direct(0,n,11,str);
             if(num_saved_day_data!=7&&i==0)
                 break;
-            i=(i==0)?7:i-1;
+            i=(i==0)?6:i-1;
             n++;
+
         } while (i!=curr_day_data);
-        char str2[17] ="Press 1-7 to view";
+        char str2[17] ="Press 1-6 to view";
         display_write_direct(0,n+1,17,str2);
     }
     display_write_direct(0,12,11,"9: Testmode");
@@ -155,5 +156,6 @@ void testmode_menu()
    display_write_direct(0,3,12,"3: hash test");
    display_write_direct(0,4,14,"4: Keypad test");
    display_write_direct(0,5,20,"5: Light sensor test");
+   display_write_direct(0,6,15,"6: Memory stats");
    display_write_direct(0,10,13,"#: Return");
 }

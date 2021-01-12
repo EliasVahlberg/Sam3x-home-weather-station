@@ -88,7 +88,7 @@
                 </option>
                 <option>
                     <name>OCLastSavedByProductVersion</name>
-                    <state>8.50.9.33458</state>
+                    <state>8.50.1.24770</state>
                 </option>
                 <option>
                     <name>UseFlashLoader</name>
@@ -733,7 +733,7 @@
                 <debug>1</debug>
                 <option>
                     <name>JLinkSpeed</name>
-                    <state>4000</state>
+                    <state>1000</state>
                 </option>
                 <option>
                     <name>CCJLinkDoLogfile</name>
@@ -781,7 +781,7 @@
                 </option>
                 <option>
                     <name>CCJLinkSpeedRadioV2</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCUSBDevice</name>

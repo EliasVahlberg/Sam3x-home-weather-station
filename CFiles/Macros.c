@@ -135,4 +135,5 @@
 #pragma region LinkedList
 #define TEMP_D_OFFSET        (100)
 #define TEMP_D_MAX            (255)
+#define TEMP_D_MIN            (0)
 #pragma endregion LinkedList

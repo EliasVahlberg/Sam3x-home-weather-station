@@ -31,7 +31,9 @@ void calc_statistics(linked_node* head,day_temp_data* data)
     update_avg_min_max(head,data);
     data->avg = var_sum1/num_of_measurements;                           //Calculate the avrage over the whole day
     data->vari = var_sum2/num_of_measurements-(data->avg)*(data->avg);  //Calculate the variance using the avrage
-
+    data->day.day   = (int)previous_day; 
+    data->day.month = (int)previous_month;
+    data->day.year  = (int)previous_year;
 
 }
 
@@ -61,7 +63,9 @@ void update_avg_min_max(linked_node* head,day_temp_data* data)
         get_node_temps(temp_node, temps);
         for (int j = 0; j < measures_per_min; j++)
         {
-            temp_double = temp_to_double(temps[i]);
+            if((int)temps[j]==TEMP_D_MAX || (int) temps[j]==TEMP_D_MIN) //Out of bounds values that indicate measurement error
+                continue;
+            temp_double = temp_to_double(temps[j]);
 
             if(temp_double<min)
             {
@@ -92,26 +96,6 @@ void update_avg_min_max(linked_node* head,day_temp_data* data)
     data->tmax.hour      =(int) tmax[0];
     data->tmax.minute    =(int) tmax[1];
 
-}
-
-void calc_avg(linked_node* head)
-{
-
-}
-
-void calc_max(linked_node* head)
-{
-    
-}
-
-void calc_min(linked_node* head)
-{
-    
-}
-
-void calc_var(day_temp_data* data)
-{
-    
 }
 
 void clear_day_data()
