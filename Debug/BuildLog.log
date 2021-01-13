@@ -3155,3 +3155,963 @@ Link time:   0.11 (CPU)   0.12 (elapsed)
 
 Total number of errors: 0
 Total number of warnings: 90
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+Building configuration: CSE_GR18_Project - Debug
+Updating build tree...
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+
+cstartup.s
+iasmarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\cstartup.s -OC:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj -s+ -M<> -w+ -r --cpu Cortex-M3 --fpu None
+Errors:   0
+Warnings: 0
+Bytes: 12
+
+exceptions.c 
+iccarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\exceptions.c -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h -Ol
+
+   IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM
+   Copyright 1999-2020 IAR Systems AB.
+   PC-locked license - IAR Embedded Workbench for Arm, 32K Kickstart Edition 8.50
+ 
+ 2 bytes of CODE memory
+
+Errors: none
+Warnings: none
+
+startup_sam3x.c 
+iccarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\startup_sam3x.c -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h -Ol
+
+   IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM
+   Copyright 1999-2020 IAR Systems AB.
+   PC-locked license - IAR Embedded Workbench for Arm, 32K Kickstart Edition 8.50
+ 
+  48 bytes of CODE  memory
+ 244 bytes of CONST memory
+
+Errors: none
+Warnings: none
+
+main.c 
+iccarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h -Ol
+
+   IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM
+   Copyright 1999-2020 IAR Systems AB.
+   PC-locked license - IAR Embedded Workbench for Arm, 32K Kickstart Edition 8.50
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(33) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(46) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(48) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(60) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(62) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(80) : Warning[Pa181]: incompatible redefinition of macro "OE" (declared <SRCREF line=51 file="C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c">at line 51</SRCREF>)
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(93) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(95) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(97) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(99) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(112) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(114) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(133) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(135) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(139) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(24) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(36) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(38) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(47) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(49) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(53) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(55) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(90) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(92) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(109) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(111) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(117) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(119) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(147) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(149) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(151) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(28) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(277) : Warning[Pe549]: variable "sc" is used before its value is set
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(358) : Warning[Pa084]: pointless integer comparison, the result is always false
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(381) : Warning[Pe940]: missing return statement at end of non-void function "clear_display_direct"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(190) : Warning[Pa093]: implicit conversion from floating point to integer
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(19) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(160) : Warning[Pe177]: variable "temp_double" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(15) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(26) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(154) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(170) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(33) : Warning[Pe513]: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(117) : Warning[Pe223]: function "validate_login" declared implicitly
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(78) : Warning[Pe177]: variable "test_temp" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(125) : Warning[Pe550]: variable "password1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(126) : Warning[Pe550]: variable "username1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(23) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(161) : Warning[Pe550]: variable "m" was set but never used
+ 
+ 17'378 bytes of CODE  memory
+  1'136 bytes of CONST memory
+    783 bytes of DATA  memory
+
+Errors: none
+Warnings: 90
+
+system_sam3x.c 
+iccarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\system_sam3x.c -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h -Ol
+
+   IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM
+   Copyright 1999-2020 IAR Systems AB.
+   PC-locked license - IAR Embedded Workbench for Arm, 32K Kickstart Edition 8.50
+ 
+ 294 bytes of CODE memory
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none
+
+Linking
+ilinkarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\cstartup.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\exceptions.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\main.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\startup_sam3x.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\system_sam3x.o --no_out_extension -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Exe\CSE_GR18_Project.out --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\List\CSE_GR18_Project.map --config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\linker\Microchip\sam3x8\sram.icf --semihosting --entry __iar_program_start --vfe --text_out locale --advanced_heap
+
+   IAR ELF Linker V8.50.9.278/W32 for ARM
+   Copyright 2007-2020 IAR Systems AB.
+
+  26'136 bytes of readonly  code memory
+   1'568 bytes of readonly  data memory
+  13'559 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
+
+Link time:   0.13 (CPU)   0.14 (elapsed)
+
+Total number of errors: 0
+Total number of warnings: 90
+Building configuration: CSE_GR18_Project - Debug
+Updating build tree...
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+
+main.c 
+iccarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h -Ol
+
+   IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM
+   Copyright 1999-2020 IAR Systems AB.
+   PC-locked license - IAR Embedded Workbench for Arm, 32K Kickstart Edition 8.50
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(33) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(46) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(48) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(60) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(62) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(80) : Warning[Pa181]: incompatible redefinition of macro "OE" (declared <SRCREF line=51 file="C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c">at line 51</SRCREF>)
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(93) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(95) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(97) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(99) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(112) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(114) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(133) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(135) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(139) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(24) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(36) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(38) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(47) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(49) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(53) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(55) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(90) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(92) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(109) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(111) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(117) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(119) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(147) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(149) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(151) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(153) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(28) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(277) : Warning[Pe549]: variable "sc" is used before its value is set
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(358) : Warning[Pa084]: pointless integer comparison, the result is always false
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(381) : Warning[Pe940]: missing return statement at end of non-void function "clear_display_direct"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(190) : Warning[Pa093]: implicit conversion from floating point to integer
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(19) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(160) : Warning[Pe177]: variable "temp_double" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(15) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(26) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(154) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(170) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(33) : Warning[Pe513]: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(117) : Warning[Pe223]: function "validate_login" declared implicitly
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(78) : Warning[Pe177]: variable "test_temp" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(121) : Warning[Pe550]: variable "password1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(122) : Warning[Pe550]: variable "username1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(23) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(161) : Warning[Pe550]: variable "m" was set but never used
+ 
+ 17'360 bytes of CODE  memory
+  1'136 bytes of CONST memory
+    799 bytes of DATA  memory
+
+Errors: none
+Warnings: 92
+
+Linking
+ilinkarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\cstartup.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\exceptions.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\main.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\startup_sam3x.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\system_sam3x.o --no_out_extension -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Exe\CSE_GR18_Project.out --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\List\CSE_GR18_Project.map --config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\linker\Microchip\sam3x8\sram.icf --semihosting --entry __iar_program_start --vfe --text_out locale --advanced_heap
+
+   IAR ELF Linker V8.50.9.278/W32 for ARM
+   Copyright 2007-2020 IAR Systems AB.
+
+  26'116 bytes of readonly  code memory
+   1'568 bytes of readonly  data memory
+  13'575 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
+
+Link time:   0.13 (CPU)   0.12 (elapsed)
+
+Total number of errors: 0
+Total number of warnings: 92
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+Building configuration: CSE_GR18_Project - Debug
+Updating build tree...
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+
+main.c 
+iccarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h -Ol
+
+   IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM
+   Copyright 1999-2020 IAR Systems AB.
+   PC-locked license - IAR Embedded Workbench for Arm, 32K Kickstart Edition 8.50
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(33) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(46) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(48) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(60) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(62) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(80) : Warning[Pa181]: incompatible redefinition of macro "OE" (declared <SRCREF line=51 file="C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c">at line 51</SRCREF>)
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(93) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(95) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(97) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(99) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(112) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(114) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(133) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(135) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(139) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(24) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(36) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(38) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(47) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(49) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(53) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(55) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(90) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(92) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(109) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(111) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(117) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(119) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(147) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(149) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(151) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(153) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(28) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(277) : Warning[Pe549]: variable "sc" is used before its value is set
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(358) : Warning[Pa084]: pointless integer comparison, the result is always false
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(381) : Warning[Pe940]: missing return statement at end of non-void function "clear_display_direct"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(190) : Warning[Pa093]: implicit conversion from floating point to integer
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(19) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(160) : Warning[Pe177]: variable "temp_double" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(15) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(26) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(154) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(170) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(33) : Warning[Pe513]: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(117) : Warning[Pe223]: function "validate_login" declared implicitly
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(78) : Warning[Pe177]: variable "test_temp" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(119) : Warning[Pe550]: variable "password1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(120) : Warning[Pe550]: variable "username1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(23) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(161) : Warning[Pe550]: variable "m" was set but never used
+ 
+ 17'344 bytes of CODE  memory
+  1'136 bytes of CONST memory
+    799 bytes of DATA  memory
+
+Errors: none
+Warnings: 92
+
+Linking
+ilinkarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\cstartup.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\exceptions.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\main.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\startup_sam3x.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\system_sam3x.o --no_out_extension -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Exe\CSE_GR18_Project.out --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\List\CSE_GR18_Project.map --config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\linker\Microchip\sam3x8\sram.icf --semihosting --entry __iar_program_start --vfe --text_out locale --advanced_heap
+
+   IAR ELF Linker V8.50.9.278/W32 for ARM
+   Copyright 2007-2020 IAR Systems AB.
+
+  26'100 bytes of readonly  code memory
+   1'568 bytes of readonly  data memory
+  13'575 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
+
+Link time:   0.09 (CPU)   0.12 (elapsed)
+
+Total number of errors: 0
+Total number of warnings: 92
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+Building configuration: CSE_GR18_Project - Debug
+Updating build tree...
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+
+Configuration is up-to-date.
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+Building configuration: CSE_GR18_Project - Debug
+Updating build tree...
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+
+main.c 
+iccarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h -Ol
+
+   IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM
+   Copyright 1999-2020 IAR Systems AB.
+   PC-locked license - IAR Embedded Workbench for Arm, 32K Kickstart Edition 8.50
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(33) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(46) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(48) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(60) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(62) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(80) : Warning[Pa181]: incompatible redefinition of macro "OE" (declared <SRCREF line=51 file="C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c">at line 51</SRCREF>)
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(93) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(95) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(97) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(99) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(112) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(114) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(133) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(135) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(139) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(24) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(36) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(38) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(47) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(49) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(53) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(55) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(90) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(92) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(109) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(111) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(117) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(119) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(147) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(149) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(151) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(153) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(28) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(277) : Warning[Pe549]: variable "sc" is used before its value is set
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(358) : Warning[Pa084]: pointless integer comparison, the result is always false
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(381) : Warning[Pe940]: missing return statement at end of non-void function "clear_display_direct"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(190) : Warning[Pa093]: implicit conversion from floating point to integer
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(19) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(160) : Warning[Pe177]: variable "temp_double" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(15) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(26) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(154) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(170) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(33) : Warning[Pe513]: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(117) : Warning[Pe223]: function "validate_login" declared implicitly
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(78) : Warning[Pe177]: variable "test_temp" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(120) : Warning[Pe550]: variable "password1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(121) : Warning[Pe550]: variable "username1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(23) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(161) : Warning[Pe550]: variable "m" was set but never used
+ 
+ 17'352 bytes of CODE  memory
+  1'136 bytes of CONST memory
+    799 bytes of DATA  memory
+
+Errors: none
+Warnings: 92
+
+Linking
+ilinkarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\cstartup.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\exceptions.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\main.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\startup_sam3x.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\system_sam3x.o --no_out_extension -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Exe\CSE_GR18_Project.out --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\List\CSE_GR18_Project.map --config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\linker\Microchip\sam3x8\sram.icf --semihosting --entry __iar_program_start --vfe --text_out locale --advanced_heap
+
+   IAR ELF Linker V8.50.9.278/W32 for ARM
+   Copyright 2007-2020 IAR Systems AB.
+
+  26'108 bytes of readonly  code memory
+   1'568 bytes of readonly  data memory
+  13'575 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
+
+Link time:   0.11 (CPU)   0.11 (elapsed)
+
+Total number of errors: 0
+Total number of warnings: 92
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+Building configuration: CSE_GR18_Project - Debug
+Updating build tree...
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+
+main.c 
+iccarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h -Ol
+
+   IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM
+   Copyright 1999-2020 IAR Systems AB.
+   PC-locked license - IAR Embedded Workbench for Arm, 32K Kickstart Edition 8.50
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(33) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(46) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(48) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(60) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(62) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(80) : Warning[Pa181]: incompatible redefinition of macro "OE" (declared <SRCREF line=51 file="C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c">at line 51</SRCREF>)
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(93) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(95) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(97) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(99) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(112) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(114) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(133) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(135) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(139) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(24) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(36) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(38) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(47) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(49) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(53) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(55) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(90) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(92) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(109) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(111) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(117) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(119) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(147) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(149) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(151) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(153) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(28) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(277) : Warning[Pe549]: variable "sc" is used before its value is set
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(358) : Warning[Pa084]: pointless integer comparison, the result is always false
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(381) : Warning[Pe940]: missing return statement at end of non-void function "clear_display_direct"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(190) : Warning[Pa093]: implicit conversion from floating point to integer
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(19) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(160) : Warning[Pe177]: variable "temp_double" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(15) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(26) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(154) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(170) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(33) : Warning[Pe513]: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(117) : Warning[Pe223]: function "validate_login" declared implicitly
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(79) : Warning[Pe177]: variable "test_temp" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(121) : Warning[Pe550]: variable "password1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(122) : Warning[Pe550]: variable "username1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(23) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(161) : Warning[Pe550]: variable "m" was set but never used
+ 
+ 17'352 bytes of CODE  memory
+  1'136 bytes of CONST memory
+    799 bytes of DATA  memory
+
+Errors: none
+Warnings: 92
+
+Linking
+ilinkarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\cstartup.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\exceptions.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\main.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\startup_sam3x.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\system_sam3x.o --no_out_extension -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Exe\CSE_GR18_Project.out --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\List\CSE_GR18_Project.map --config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\linker\Microchip\sam3x8\sram.icf --semihosting --entry __iar_program_start --vfe --text_out locale --advanced_heap
+
+   IAR ELF Linker V8.50.9.278/W32 for ARM
+   Copyright 2007-2020 IAR Systems AB.
+
+  26'108 bytes of readonly  code memory
+   1'568 bytes of readonly  data memory
+  13'575 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
+
+Link time:   0.13 (CPU)   0.12 (elapsed)
+
+Total number of errors: 0
+Total number of warnings: 92
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+Building configuration: CSE_GR18_Project - Debug
+Updating build tree...
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+
+main.c 
+iccarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h -Ol
+
+   IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM
+   Copyright 1999-2020 IAR Systems AB.
+   PC-locked license - IAR Embedded Workbench for Arm, 32K Kickstart Edition 8.50
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(33) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(46) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(48) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(60) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(62) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(80) : Warning[Pa181]: incompatible redefinition of macro "OE" (declared <SRCREF line=51 file="C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c">at line 51</SRCREF>)
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(93) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(95) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(97) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(99) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(112) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(114) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(133) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(135) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(139) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(24) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(36) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(38) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(47) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(49) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(53) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(55) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(90) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(92) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(109) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(111) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(117) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(119) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(147) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(149) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(151) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(153) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(28) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(277) : Warning[Pe549]: variable "sc" is used before its value is set
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(358) : Warning[Pa084]: pointless integer comparison, the result is always false
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(381) : Warning[Pe940]: missing return statement at end of non-void function "clear_display_direct"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(190) : Warning[Pa093]: implicit conversion from floating point to integer
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(19) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(160) : Warning[Pe177]: variable "temp_double" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(15) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(26) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(154) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(170) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(33) : Warning[Pe513]: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(117) : Warning[Pe223]: function "validate_login" declared implicitly
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(79) : Warning[Pe177]: variable "test_temp" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(121) : Warning[Pe550]: variable "password1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(122) : Warning[Pe550]: variable "username1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(23) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(161) : Warning[Pe550]: variable "m" was set but never used
+ 
+ 17'352 bytes of CODE  memory
+  1'136 bytes of CONST memory
+    799 bytes of DATA  memory
+
+Errors: none
+Warnings: 92
+
+Linking
+ilinkarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\cstartup.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\exceptions.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\main.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\startup_sam3x.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\system_sam3x.o --no_out_extension -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Exe\CSE_GR18_Project.out --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\List\CSE_GR18_Project.map --config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\linker\Microchip\sam3x8\sram.icf --semihosting --entry __iar_program_start --vfe --text_out locale --advanced_heap
+
+   IAR ELF Linker V8.50.9.278/W32 for ARM
+   Copyright 2007-2020 IAR Systems AB.
+
+  26'108 bytes of readonly  code memory
+   1'568 bytes of readonly  data memory
+  13'575 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
+
+Link time:   0.13 (CPU)   0.12 (elapsed)
+
+Total number of errors: 0
+Total number of warnings: 92
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+
+Live logging to 'C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\BuildLog.log' enabled.
+Building configuration: CSE_GR18_Project - Debug
+Updating build tree...
+
+main.c 
+iccarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc\c\DLib_Config_Full.h -Ol
+
+   IAR ANSI C/C++ Compiler V8.50.9.278/W32 for ARM
+   Copyright 1999-2020 IAR Systems AB.
+   PC-locked license - IAR Embedded Workbench for Arm, 32K Kickstart Edition 8.50
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(33) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(46) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(48) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(60) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(62) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(80) : Warning[Pa181]: incompatible redefinition of macro "OE" (declared <SRCREF line=51 file="C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c">at line 51</SRCREF>)
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(93) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(95) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(97) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(99) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(112) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(114) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(133) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(135) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Macros.c(139) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(24) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(29) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(31) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(36) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(38) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(47) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(49) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(53) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(55) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(90) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(92) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(109) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(111) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(117) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(119) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(147) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(149) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(151) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(153) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\GlobalVariables.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\ArduinoBaseInclude.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\CommonFunctions.c(27) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(28) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(277) : Warning[Pe549]: variable "sc" is used before its value is set
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(358) : Warning[Pa084]: pointless integer comparison, the result is always false
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\display.c(381) : Warning[Pe940]: missing return statement at end of non-void function "clear_display_direct"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(22) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DisplayGraphics.c(190) : Warning[Pa093]: implicit conversion from floating point to integer
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\keypad.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\DateTime.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(19) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TempStatistics.c(160) : Warning[Pe177]: variable "temp_double" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(15) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\SingleLinkedList.c(26) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(12) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TemperatureSensor.c(21) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LightSensor.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\Servo.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(11) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(14) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(59) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(61) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(154) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(156) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MD5.c(170) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(33) : Warning[Pe513]: a value of type "char *" cannot be assigned to an entity of type "unsigned char *"
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\LoginSystem.c(117) : Warning[Pe223]: function "validate_login" declared implicitly
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(10) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\MenuSystem.c(17) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(78) : Warning[Pe177]: variable "test_temp" was declared but never referenced
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(119) : Warning[Pe550]: variable "password1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\CFiles\TestMode.c(120) : Warning[Pe550]: variable "username1" was set but never used
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(13) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(16) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(18) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(23) : Warning[Pe161]: unrecognized #pragma
+C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\main.c(161) : Warning[Pe550]: variable "m" was set but never used
+ 
+ 17'344 bytes of CODE  memory
+  1'136 bytes of CONST memory
+    799 bytes of DATA  memory
+
+Errors: none
+Warnings: 92
+
+Linking
+ilinkarm.exe C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\cstartup.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\exceptions.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\main.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\startup_sam3x.o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Obj\system_sam3x.o --no_out_extension -o C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\Exe\CSE_GR18_Project.out --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map C:\Users\Elias\Documents\IAR Embedded Workbench\CSE_GR18_Project\Debug\List\CSE_GR18_Project.map --config C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\linker\Microchip\sam3x8\sram.icf --semihosting --entry __iar_program_start --vfe --text_out locale --advanced_heap
+
+   IAR ELF Linker V8.50.9.278/W32 for ARM
+   Copyright 2007-2020 IAR Systems AB.
+
+  26'100 bytes of readonly  code memory
+   1'568 bytes of readonly  data memory
+  13'575 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
+
+Link time:   0.11 (CPU)   0.12 (elapsed)
+
+Total number of errors: 0
+Total number of warnings: 92

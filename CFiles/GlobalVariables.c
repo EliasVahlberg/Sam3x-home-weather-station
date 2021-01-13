@@ -150,3 +150,7 @@ int maximum_list_size = 0;              //The largest allowed list
 int mem_full_flag = 0;
 #pragma endregion Menu
 
+#pragma region TestMode
+    char temp_test_str[6];
+    char test_delta_time[5];
+#pragma endregion TestMode

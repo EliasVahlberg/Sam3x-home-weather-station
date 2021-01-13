@@ -75,11 +75,7 @@ void temperature_sensor_test()
     display_write_direct(0,2,17,"Press # to return");
     unsigned long long t1 = 0;
     unsigned int  t2 = 0;
-    double test_temp = 0;
-    char *temp = calloc(6,sizeof(char));
-    char *delta_time = calloc(5,sizeof(char));
-    if(temp ==NULL || delta_time == NULL )
-        return;
+    double test_temp = 0;   
     while(get_user_input()!=12)
     {
         t1 = microseconds;
@@ -94,19 +90,17 @@ void temperature_sensor_test()
             temp_reset();
         }
         t2= (int)((double)(microseconds -t1)/1000);
-        double_to_str_fixed_length(temp,curr_temp,6);
-        int_to_str_fixed_length(delta_time,t2,5);
+        double_to_str_fixed_length(temp_test_str,curr_temp,6);
+        int_to_str_fixed_length(test_delta_time,5,t2);
         
-        display_write_direct(13,3,6,temp);      
+        display_write_direct(13,3,6,temp_test_str);      
         if(t2==0)
             display_write_direct(14,4,5,"<1ms  ");  
         else 
-            display_write_direct(14,4,5,delta_time);
+            display_write_direct(14,4,5,test_delta_time);
 
     }
     clear();
-    free(temp);
-    free(delta_time);
     
 }
 
