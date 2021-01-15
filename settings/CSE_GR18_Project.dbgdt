@@ -1193,7 +1193,7 @@
                     <item>circular_start</item>
                     <item>light_rotation_data</item>
                     <item>menu_type</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>
