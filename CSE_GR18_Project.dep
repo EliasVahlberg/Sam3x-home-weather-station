@@ -5,76 +5,33 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\startup_sam3x.c</file>
-            <file>$PROJ_DIR$\system_sam3x.c</file>
-            <file>$PROJ_DIR$\exceptions.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\cstartup.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\exceptions.xcl</file>
-            <file>$PROJ_DIR$\Debug\Exe\CSE_GR18_Project.out</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.xcl</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\cstartup.s</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_sam3x.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\exceptions.__cstat.et</file>
             <file>$PROJ_DIR$\Debug\Obj\system_sam3x.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_sam3x.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\startup_sam3x.c</file>
             <file>$PROJ_DIR$\Debug\Obj\system_sam3x.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\exceptions.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\cstartup.o</file>
             <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
+            <file>$PROJ_DIR$\system_sam3x.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\exceptions.o</file>
             <file>$PROJ_DIR$\Debug\List\CSE_GR18_Project.map</file>
-            <file>$PROJ_DIR$\CFiles\TempStatistics.c</file>
-            <file>$PROJ_DIR$\CFiles\TemperatureSensor.c</file>
-            <file>$PROJ_DIR$\CFiles\SingleLinkedList.c</file>
-            <file>$PROJ_DIR$\CFiles\LightSensor.c</file>
-            <file>$PROJ_DIR$\CFiles\Servo.c</file>
-            <file>$PROJ_DIR$\CFiles\MD5.c</file>
-            <file>$PROJ_DIR$\CFiles\LoginSystem.c</file>
-            <file>$PROJ_DIR$\CFiles\MenuSystem.c</file>
-            <file>$PROJ_DIR$\CFiles\mallocstats.h</file>
-            <file>$PROJ_DIR$\CFiles\TestMode.c</file>
-            <file>$PROJ_DIR$\CFiles\Structs.c</file>
-            <file>$PROJ_DIR$\CFiles\Macros.c</file>
-            <file>$PROJ_DIR$\CFiles\GlobalVariables.c</file>
-            <file>$PROJ_DIR$\CFiles\DateTime.c</file>
-            <file>$PROJ_DIR$\CFiles\display.c</file>
-            <file>$PROJ_DIR$\CFiles\ArduinoBaseInclude.c</file>
-            <file>$PROJ_DIR$\CFiles\DisplayGraphics.c</file>
-            <file>$PROJ_DIR$\CFiles\keypad.c</file>
-            <file>$PROJ_DIR$\CFiles\CommonFunctions.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$PROJ_DIR$\system_sam3x.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\core_cm3.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
-            <file>$PROJ_DIR$\core_cmInstr.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
-            <file>$PROJ_DIR$\core_cmFunc.h</file>
-            <file>$PROJ_DIR$\CFiles\Include.h</file>
-            <file>$PROJ_DIR$\at91sam3x8.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\CSE_GR18_Project.pbd</file>
-            <file>$PROJ_DIR$\exceptions.h</file>
-            <file>$TOOLKIT_DIR$\config\linker\Microchip\sam3x8\sram.icf</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$PROJ_DIR$\exceptions.c</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\exceptions.xcl</file>
+            <file>$PROJ_DIR$\cstartup.s</file>
+            <file>$PROJ_DIR$\Debug\Exe\CSE_GR18_Project.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\exceptions.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.__cstat.et</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 8 20</file>
+                    <file> 17</file>
                 </tool>
             </outputs>
         </file>
@@ -82,115 +39,60 @@
             <name>$PROJ_DIR$\startup_sam3x.c</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 3</file>
+                    <name>BICOMP</name>
+                    <file> 14</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 6</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 9</file>
+                    <file> 19</file>
                 </tool>
             </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 56 58 50 44 45 46 49 51 47 52 48 53 54</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\system_sam3x.c</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 12</file>
+                    <name>BICOMP</name>
+                    <file> 0</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 16</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 15</file>
+                    <file> 4</file>
                 </tool>
             </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 56 43 44 45 46 49 51 47 50 52 48 53 54</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\exceptions.c</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 17</file>
+                    <name>BICOMP</name>
+                    <file> 15</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 14</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 7</file>
+                    <file> 18</file>
                 </tool>
             </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 58</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Debug\Exe\CSE_GR18_Project.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 20</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 59 4 17 5 3 12 60 61 62 19</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\main.c</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 5</file>
+                    <name>BICOMP</name>
+                    <file> 6</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 13</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 18</file>
+                    <file> 8</file>
                 </tool>
             </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 55 43 44 45 46 49 51 47 50 52 48 53 54 56 42 40 41 31 32 33 36 39 35 37 38 34 21 23 22 24 25 26 27 28 29 30</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\cstartup.s</name>
             <outputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 4</file>
+                    <file> 5</file>
                 </tool>
             </outputs>
         </file>
